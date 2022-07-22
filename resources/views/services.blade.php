@@ -19,6 +19,25 @@
 </section>
 <!-- ** Breadcrumb End ** -->
 @endsection
+@section('breadcrump')
+<!-- ** Breadcrumb ** -->
+<section class="main-title-section-wrapper breadcrumb-left">
+    <div class="main-title-section-bg"
+        style="background-image: url('{{ url('wp-content/uploads/sites/12/2018/05/bc-img.jpg')}}'); background-position: left top; background-size: auto; background-repeat: no-repeat; background-attachment: fixed; ">
+    </div>
+    <div class="container">
+        <div class="main-title-section">
+            <h1>Services</h1>
+        </div>
+        <div class="breadcrumb">
+            <a href="{{ url('/')}}">Home</a>
+            <span class="fa default"></span>
+            <span class="current">Services</span>
+        </div>
+    </div>
+</section>
+<!-- ** Breadcrumb End ** -->
+@endsection
 @section('content')
 <!-- ** Container ** -->
 <div class="container">
@@ -33,16 +52,16 @@
                             <div class='dt-sc-tabs-horizontal-frame-container type4 with-circle' data-effect='fade'>
                                 <ul class='dt-sc-tabs-horizontal-frame'>
                                     <li><a href="javascript:void(0);"><img width="58" height="55"
-                                                src="{{ url('wp-content/uploads/sites/12/2018/05/tab-icon1.png')}}"
+                                                src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/tab-icon1.png')}}"
                                                 class="attachment-full" alt="" loading="lazy" />Faucets</a></li>
                                     <li><a href="javascript:void(0);"><img width="58" height="55"
-                                                src="{{ url('wp-content/uploads/sites/12/2018/05/tab-icon2.png')}}"
+                                                src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/tab-icon2.png')}}"
                                                 class="attachment-full" alt="" loading="lazy" />Sanitaryware</a></li>
                                     <li><a href="javascript:void(0);"><img width="58" height="55"
-                                                src="{{ url('wp-content/uploads/sites/12/2018/05/tab-icon3.png')}}"
+                                                src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/tab-icon3.png')}}"
                                                 class="attachment-full" alt="" loading="lazy" />Whirlpools</a></li>
                                     <li><a href="javascript:void(0);"><img width="58" height="55"
-                                                src="{{ url('wp-content/uploads/sites/12/2018/05/tab-icon4.png')}}"
+                                                src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/tab-icon4.png')}}"
                                                 class="attachment-full" alt="" loading="lazy" />Showers</a></li>
                                 </ul>
                                 <div class='dt-sc-tabs-horizontal-frame-content'>
@@ -55,7 +74,7 @@
                                                         <figure class="wpb_wrapper vc_figure">
                                                             <div class="vc_single_image-wrapper   vc_box_border_grey">
                                                                 <img width="590" height="330"
-                                                                    src="{{ url('wp-content/uploads/sites/12/2018/05/tab1.jpg')}}"
+                                                                    src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/tab1.jpg')}}"
                                                                     class="vc_single_image-img attachment-full" alt=""
                                                                     loading="lazy"
                                                                     srcset="{{ url('wp-content/uploads/sites/12/2018/05/tab1.jpg')}} 590w, {{ url('wp-content/uploads/sites/12/2018/05/tab1-300x168.jpg')}} 300w"
@@ -131,7 +150,7 @@
                                                         <figure class="wpb_wrapper vc_figure">
                                                             <div class="vc_single_image-wrapper   vc_box_border_grey">
                                                                 <img width="590" height="330"
-                                                                    src="{{ url('wp-content/uploads/sites/12/2018/05/tab2.jpg')}}"
+                                                                    src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/tab2.jpg')}}"
                                                                     class="vc_single_image-img attachment-full" alt=""
                                                                     loading="lazy"
                                                                     srcset="{{ url('wp-content/uploads/sites/12/2018/05/tab2.jpg')}} 590w, {{ url('wp-content/uploads/sites/12/2018/05/tab2-300x168.jpg')}} 300w"
@@ -153,7 +172,7 @@
                                                         <figure class="wpb_wrapper vc_figure">
                                                             <div class="vc_single_image-wrapper   vc_box_border_grey">
                                                                 <img width="590" height="330"
-                                                                    src="{{ url('wp-content/uploads/sites/12/2018/05/carousel1.jpg')}}"
+                                                                    src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/carousel1.jpg')}}"
                                                                     class="vc_single_image-img attachment-full" alt=""
                                                                     loading="lazy"
                                                                     srcset="{{ url('wp-content/uploads/sites/12/2018/05/carousel1.jpg')}} 590w, {{ url('wp-content/uploads/sites/12/2018/05/carousel1-300x168.jpg')}} 300w"
@@ -227,7 +246,7 @@
                                                         <figure class="wpb_wrapper vc_figure">
                                                             <div class="vc_single_image-wrapper   vc_box_border_grey">
                                                                 <img width="590" height="330"
-                                                                    src="{{ url('wp-content/uploads/sites/12/2018/05/carousel2.jpg')}}"
+                                                                src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/carousel2.jpg')}}"
                                                                     class="vc_single_image-img attachment-full" alt=""
                                                                     loading="lazy"
                                                                     srcset="{{ url('wp-content/uploads/sites/12/2018/05/carousel2.jpg')}} 590w, {{ url('wp-content/uploads/sites/12/2018/05/carousel2-300x168.jpg')}} 300w"
@@ -262,7 +281,7 @@
                                 <figure class="wpb_wrapper vc_figure">
                                     <div class="vc_single_image-wrapper   vc_box_border_grey"><img
                                             class="vc_single_image-img "
-                                            src="{{ url('wp-content/uploads/sites/12/2018/05/plumber2.png')}}"
+                                            src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/plumber2.png')}}"
                                             width="469" height="760" alt="plumber2" title="plumber2" /></div>
                                 </figure>
                             </div>
@@ -316,7 +335,7 @@
                         <div class="wpb_wrapper">
                             <div class='dt-sc-image-caption type6 content-with-btn'>
                                 <div class='dt-sc-image-wrapper'><img width="420" height="420"
-                                        src="{{ url('wp-content/uploads/sites/12/2018/05/service1.jpg')}}"
+                                    src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/service1.jpg')}}"
                                         class="attachment-full" alt="" loading="lazy"
                                         srcset="{{ url('wp-content/uploads/sites/12/2018/05/service1.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/service1-150x150.jpg')}} 150w, {{ url('wp-content/uploads/sites/12/2018/05/service1-300x300.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/service1-100x100.jpg')}} 100w"
                                         sizes="(max-width: 420px) 100vw, 420px" /></div>
@@ -340,7 +359,7 @@
                         <div class="wpb_wrapper">
                             <div class='dt-sc-image-caption type6 content-with-btn'>
                                 <div class='dt-sc-image-wrapper'><img width="420" height="420"
-                                        src="{{ url('wp-content/uploads/sites/12/2018/05/service2.jpg')}}"
+                                    src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/service2.jpg')}}"
                                         class="attachment-full" alt="" loading="lazy"
                                         srcset="{{ url('wp-content/uploads/sites/12/2018/05/service2.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/service2-150x150.jpg')}} 150w, {{ url('wp-content/uploads/sites/12/2018/05/service2-300x300.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/service2-100x100.jpg')}} 100w"
                                         sizes="(max-width: 420px) 100vw, 420px" /></div>
@@ -364,7 +383,7 @@
                         <div class="wpb_wrapper">
                             <div class='dt-sc-image-caption type6 content-with-btn'>
                                 <div class='dt-sc-image-wrapper'><img width="420" height="420"
-                                        src="{{ url('wp-content/uploads/sites/12/2018/05/service3.jpg')}}"
+                                    src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/service3.jpg')}}"
                                         class="attachment-full" alt="" loading="lazy"
                                         srcset="{{ url('wp-content/uploads/sites/12/2018/05/service3.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/service3-150x150.jpg')}} 150w, {{ url('wp-content/uploads/sites/12/2018/05/service3-300x300.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/service3-100x100.jpg')}} 100w"
                                         sizes="(max-width: 420px) 100vw, 420px" /></div>
@@ -388,7 +407,7 @@
                         <div class="wpb_wrapper">
                             <div class='dt-sc-image-caption type6 content-with-btn'>
                                 <div class='dt-sc-image-wrapper'><img width="420" height="420"
-                                        src="{{ url('wp-content/uploads/sites/12/2018/05/home01.jpg')}}"
+                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/home01.jpg')}}"
                                         class="attachment-full" alt="" loading="lazy"
                                         srcset="{{ url('wp-content/uploads/sites/12/2018/05/home01.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/home01-150x150.jpg')}} 150w, {{ url('wp-content/uploads/sites/12/2018/05/home01-300x300.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/home01-100x100.jpg')}} 100w"
                                         sizes="(max-width: 420px) 100vw, 420px" /></div>
@@ -411,7 +430,7 @@
                         <div class="wpb_wrapper">
                             <div class='dt-sc-image-caption type6 content-with-btn'>
                                 <div class='dt-sc-image-wrapper'><img width="420" height="420"
-                                        src="{{ url('wp-content/uploads/sites/12/2018/05/home02.jpg')}}"
+                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/home02.jpg')}}"
                                         class="attachment-full" alt="" loading="lazy"
                                         srcset="{{ url('wp-content/uploads/sites/12/2018/05/home02.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/home02-150x150.jpg')}} 150w, {{ url('wp-content/uploads/sites/12/2018/05/home02-300x300.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/home02-100x100.jpg')}} 100w"
                                         sizes="(max-width: 420px) 100vw, 420px" /></div>
@@ -434,7 +453,7 @@
                         <div class="wpb_wrapper">
                             <div class='dt-sc-image-caption type6 content-with-btn'>
                                 <div class='dt-sc-image-wrapper'><img width="420" height="420"
-                                        src="{{ url('wp-content/uploads/sites/12/2018/05/home03.jpg')}}"
+                                    src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/home03.jpg')}}"
                                         class="attachment-full" alt="" loading="lazy"
                                         srcset="{{ url('wp-content/uploads/sites/12/2018/05/home03.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/home03-150x150.jpg')}} 150w, {{ url('wp-content/uploads/sites/12/2018/05/home03-300x300.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/home03-100x100.jpg')}} 100w"
                                         sizes="(max-width: 420px) 100vw, 420px" /></div>
@@ -472,7 +491,7 @@
                                         <div class="wpb_wrapper">
                                             <div class='dt-sc-icon-box type5 icon-top-align'>
                                                 <div class="icon-wrapper"><img width="70" height="70"
-                                                        src="{{ url('wp-content/uploads/sites/12/2018/05/icon01.png')}}"
+                                                    src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/icon01.png')}}"
                                                         class="attachment-full" alt="" loading="lazy" /></div>
                                                 <div class="icon-content">
                                                     <h4>Experienced Team</h4>
@@ -488,7 +507,7 @@
                                         <div class="wpb_wrapper">
                                             <div class='dt-sc-icon-box type5 icon-top-align'>
                                                 <div class="icon-wrapper"><img width="70" height="70"
-                                                        src="{{ url('wp-content/uploads/sites/12/2018/05/icon02.png')}}"
+                                                    src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/icon02.png')}}"
                                                         class="attachment-full" alt="" loading="lazy" /></div>
                                                 <div class="icon-content">
                                                     <h4>Stylish Designs</h4>
@@ -504,7 +523,7 @@
                                         <div class="wpb_wrapper">
                                             <div class='dt-sc-icon-box type5 icon-top-align'>
                                                 <div class="icon-wrapper"><img width="70" height="70"
-                                                        src="{{ url('wp-content/uploads/sites/12/2018/05/icon03.png')}}"
+                                                    src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/icon03.png')}}"
                                                         class="attachment-full" alt="" loading="lazy" /></div>
                                                 <div class="icon-content">
                                                     <h4>Best Value</h4>
@@ -523,7 +542,7 @@
                                         <div class="wpb_wrapper">
                                             <div class='dt-sc-icon-box type5 icon-top-align'>
                                                 <div class="icon-wrapper"><img width="70" height="70"
-                                                        src="{{ url('wp-content/uploads/sites/12/2018/05/icon04.png')}}"
+                                                    src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/icon04.png')}}"
                                                         class="attachment-full" alt="" loading="lazy" /></div>
                                                 <div class="icon-content">
                                                     <h4>Wide Collections</h4>
@@ -539,7 +558,7 @@
                                         <div class="wpb_wrapper">
                                             <div class='dt-sc-icon-box type5 icon-top-align'>
                                                 <div class="icon-wrapper"><img width="70" height="70"
-                                                        src="{{ url('wp-content/uploads/sites/12/2018/05/icon05.png')}}"
+                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/icon05.png')}}"
                                                         class="attachment-full" alt="" loading="lazy" /></div>
                                                 <div class="icon-content">
                                                     <h4>Quick Fix</h4>
@@ -555,7 +574,7 @@
                                         <div class="wpb_wrapper">
                                             <div class='dt-sc-icon-box type5 icon-top-align'>
                                                 <div class="icon-wrapper"><img width="70" height="70"
-                                                        src="{{ url('wp-content/uploads/sites/12/2018/05/icon07.png')}}"
+                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/icon07.png')}}"
                                                         class="attachment-full" alt="" loading="lazy" /></div>
                                                 <div class="icon-content">
                                                     <h4>Bath Fittings</h4>
@@ -793,7 +812,7 @@
                 <div class="dt-sc-skin-highlight wpb_column vc_column_container vc_col-sm-3 vc_col-has-fill">
                     <div class="vc_column-inner vc_custom_1528897364383" style=" text-align:left; ">
                         <div class="wpb_wrapper"><img width="199" height="49"
-                                src="{{ url('wp-content/uploads/sites/12/2018/05/light-logo.png')}}"
+                            src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/light-logo.png')}}"
                                 class="aligncenter attachment-full" alt="" loading="lazy" /></div>
                     </div>
                 </div>
@@ -806,27 +825,27 @@
                                 <div class="ult-carousel-357073357862dab86241b3f ">
                                     <div class="ult-item-wrap" data-animation="animated no-animation"><img width="188"
                                             height="89"
-                                            src="{{ url('wp-content/uploads/sites/12/2018/05/client01.png')}}"
+                                            src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client01.png')}}"
                                             class="alignnone attachment-full" alt="" loading="lazy" /></div>
                                     <div class="ult-item-wrap" data-animation="animated no-animation"><img width="188"
                                             height="89"
-                                            src="{{ url('wp-content/uploads/sites/12/2018/05/client02.png')}}"
+                                            src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client02.png')}}"
                                             class="alignnone attachment-full" alt="" loading="lazy" /></div>
                                     <div class="ult-item-wrap" data-animation="animated no-animation"><img width="188"
                                             height="89"
-                                            src="{{ url('wp-content/uploads/sites/12/2018/05/client03.png')}}"
+                                            src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client03.png')}}"
                                             class="alignnone attachment-full" alt="" loading="lazy" /></div>
                                     <div class="ult-item-wrap" data-animation="animated no-animation"><img width="188"
                                             height="89"
-                                            src="{{ url('wp-content/uploads/sites/12/2018/05/client04.png')}}"
+                                            src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client04.png')}}"
                                             class="alignnone attachment-full" alt="" loading="lazy" /></div>
                                     <div class="ult-item-wrap" data-animation="animated no-animation"><img width="188"
                                             height="89"
-                                            src="{{ url('wp-content/uploads/sites/12/2018/05/client01.png')}}"
+                                            src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client01.png')}}"
                                             class="alignnone attachment-full" alt="" loading="lazy" /></div>
                                     <div class="ult-item-wrap" data-animation="animated no-animation"><img width="188"
                                             height="89"
-                                            src="{{ url('wp-content/uploads/sites/12/2018/05/client02.png')}}"
+                                            src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client02.png')}}"
                                             class="alignnone attachment-full" alt="" loading="lazy" /></div>
                                 </div>
                             </div>

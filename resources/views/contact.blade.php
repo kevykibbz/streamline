@@ -19,6 +19,25 @@
 </section>
 <!-- ** Breadcrumb End ** -->
 @endsection
+@section('breadcrump')
+<!-- ** Breadcrumb ** -->
+<section class="main-title-section-wrapper breadcrumb-left">
+    <div class="main-title-section-bg"
+        style="background-image: url('{{ url('wp-content/uploads/sites/12/2018/05/bc-img.jpg')}}'); background-position: left top; background-size: auto; background-repeat: no-repeat; background-attachment: fixed; ">
+    </div>
+    <div class="container">
+        <div class="main-title-section">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="breadcrumb">
+            <a href="{{ url('/')}}">Home</a>
+            <span class="fa default"></span>
+            <span class="current">Contact Us</span>
+        </div>
+    </div>
+</section>
+<!-- ** Breadcrumb End ** -->
+@endsection
 @section('content')
 <!-- ** Container ** -->
 <div class="container">
@@ -887,7 +906,7 @@
                             <div class="wpb_wrapper">
                                 <div class="dt-sc-image-caption  location">
                                     <div class="dt-sc-image-wrapper"><img width="480" height="350"
-                                            src="{{ url('wp-content/uploads/sites/12/2018/05/contact-img1.jpg')}}"
+                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/contact-img1.jpg')}}"
                                             class="attachment-full" alt="" loading="lazy"
                                             srcset="{{ url('wp-content/uploads/sites/12/2018/05/contact-img1.jpg')}} 480w, {{ url('wp-content/uploads/sites/12/2018/05/contact-img1-300x219.jpg')}} 300w"
                                             sizes="(max-width: 480px) 100vw, 480px">
@@ -910,7 +929,7 @@
                             <div class="wpb_wrapper">
                                 <div class="dt-sc-image-caption  location">
                                     <div class="dt-sc-image-wrapper"><img width="480" height="350"
-                                            src="{{ url('wp-content/uploads/sites/12/2018/05/contact-img2.jpg')}}"
+                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/contact-img2.jpg')}}"
                                             class="attachment-full" alt="" loading="lazy"
                                             srcset="{{ url('wp-content/uploads/sites/12/2018/05/contact-img2.jpg')}} 480w, {{ url('wp-content/uploads/sites/12/2018/05/contact-img2-300x219.jpg')}} 300w"
                                             sizes="(max-width: 480px) 100vw, 480px">
@@ -933,7 +952,7 @@
                             <div class="wpb_wrapper">
                                 <div class="dt-sc-image-caption  location">
                                     <div class="dt-sc-image-wrapper"><img width="480" height="350"
-                                            src="{{ url('wp-content/uploads/sites/12/2018/05/contact-img3.jpg')}}"
+                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/contact-img3.jpg')}}"
                                             class="attachment-full" alt="" loading="lazy"
                                             srcset="{{ url('wp-content/uploads/sites/12/2018/05/contact-img3.jpg')}} 480w, {{ url('wp-content/uploads/sites/12/2018/05/contact-img3-300x219.jpg')}} 300w"
                                             sizes="(max-width: 480px) 100vw, 480px">
@@ -967,7 +986,7 @@
                     <div class="dt-sc-skin-highlight wpb_column vc_column_container vc_col-sm-3 vc_col-has-fill">
                         <div class="vc_column-inner vc_custom_1528897434239" style=" text-align:left; ">
                             <div class="wpb_wrapper"><img width="199" height="49"
-                                    src="{{ url('wp-content/uploads/sites/12/2018/05/light-logo.png')}}"
+                                src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/light-logo.png')}}"
                                     class="aligncenter attachment-full" alt="" loading="lazy"></div>
                         </div>
                     </div>
@@ -986,81 +1005,81 @@
                                                     aria-describedby="slick-slide03" style="width: 193px;"
                                                     data-slick-index="-3" id="" aria-hidden="true"><img width="188"
                                                         height="89"
-                                                        src="{{ url('wp-content/uploads/sites/12/2018/05/client04.png')}}"
+                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client04.png')}}"
                                                         class="alignnone attachment-full" alt="" loading="lazy"></div>
                                                 <div class="ult-item-wrap slick-slide slick-cloned"
                                                     data-animation="animated no-animation" tabindex="-1" role="option"
                                                     aria-describedby="slick-slide04" style="width: 193px;"
                                                     data-slick-index="-2" id="" aria-hidden="true"><img width="188"
                                                         height="89"
-                                                        src="{{ url('wp-content/uploads/sites/12/2018/05/client01.png')}}"
+                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client01.png')}}"
                                                         class="alignnone attachment-full" alt="" loading="lazy"></div>
                                                 <div class="ult-item-wrap slick-slide slick-cloned"
                                                     data-animation="animated no-animation" tabindex="-1" role="option"
                                                     aria-describedby="slick-slide05" style="width: 193px;"
                                                     data-slick-index="-1" id="" aria-hidden="true"><img width="188"
                                                         height="89"
-                                                        src="{{ url('wp-content/uploads/sites/12/2018/05/client02.png')}}"
+                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client02.png')}}"
                                                         class="alignnone attachment-full" alt="" loading="lazy"></div>
                                                 <div class="ult-item-wrap animated no-animation slick-slide"
                                                     data-animation="animated no-animation" tabindex="-1" role="option"
                                                     aria-describedby="slick-slide00" style="width: 193px;"
                                                     data-slick-index="0" aria-hidden="true"><img width="188" height="89"
-                                                        src="{{ url('wp-content/uploads/sites/12/2018/05/client01.png')}}"
+                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client01.png')}}"
                                                         class="alignnone attachment-full" alt="" loading="lazy"></div>
                                                 <div class="ult-item-wrap slick-slide animated no-animation"
                                                     data-animation="animated no-animation" tabindex="-1" role="option"
                                                     aria-describedby="slick-slide01" style="width: 193px;"
                                                     data-slick-index="1" aria-hidden="true"><img width="188" height="89"
-                                                        src="{{ url('wp-content/uploads/sites/12/2018/05/client02.png')}}"
+                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client02.png')}}"
                                                         class="alignnone attachment-full" alt="" loading="lazy"></div>
                                                 <div class="ult-item-wrap slick-slide animated no-animation"
                                                     data-animation="animated no-animation" tabindex="-1" role="option"
                                                     aria-describedby="slick-slide02" style="width: 193px;"
                                                     data-slick-index="2" aria-hidden="true"><img width="188" height="89"
-                                                        src="{{ url('wp-content/uploads/sites/12/2018/05/client03.png')}}"
+                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client03.png')}}"
                                                         class="alignnone attachment-full" alt="" loading="lazy"></div>
                                                 <div class="ult-item-wrap slick-slide slick-current slick-active animated no-animation"
                                                     data-animation="animated no-animation" tabindex="-1" role="option"
                                                     aria-describedby="slick-slide03" style="width: 193px;"
                                                     data-slick-index="3" aria-hidden="false"><img width="188"
                                                         height="89"
-                                                        src="{{ url('wp-content/uploads/sites/12/2018/05/client04.png')}}"
+                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client04.png')}}"
                                                         class="alignnone attachment-full" alt="" loading="lazy"></div>
                                                 <div class="ult-item-wrap slick-slide slick-active animated no-animation"
                                                     data-animation="animated no-animation" tabindex="-1" role="option"
                                                     aria-describedby="slick-slide04" style="width: 193px;"
                                                     data-slick-index="4" aria-hidden="false"><img width="188"
                                                         height="89"
-                                                        src="{{ url('wp-content/uploads/sites/12/2018/05/client01.png')}}"
+                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client01.png')}}"
                                                         class="alignnone attachment-full" alt="" loading="lazy"></div>
                                                 <div class="ult-item-wrap slick-slide slick-active animated no-animation"
                                                     data-animation="animated no-animation" tabindex="-1" role="option"
                                                     aria-describedby="slick-slide05" style="width: 193px;"
                                                     data-slick-index="5" aria-hidden="false"><img width="188"
                                                         height="89"
-                                                        src="{{ url('wp-content/uploads/sites/12/2018/05/client02.png')}}"
+                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client02.png')}}"
                                                         class="alignnone attachment-full" alt="" loading="lazy"></div>
                                                 <div class="ult-item-wrap slick-slide slick-cloned animated no-animation"
                                                     data-animation="animated no-animation" tabindex="-1" role="option"
                                                     aria-describedby="slick-slide00" style="width: 193px;"
                                                     data-slick-index="6" id="" aria-hidden="true"><img width="188"
                                                         height="89"
-                                                        src="{{ url('wp-content/uploads/sites/12/2018/05/client01.png')}}"
+                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client01.png')}}"
                                                         class="alignnone attachment-full" alt="" loading="lazy"></div>
                                                 <div class="ult-item-wrap slick-slide slick-cloned"
                                                     data-animation="animated no-animation" tabindex="-1" role="option"
                                                     aria-describedby="slick-slide01" style="width: 193px;"
                                                     data-slick-index="7" id="" aria-hidden="true"><img width="188"
                                                         height="89"
-                                                        src="{{ url('wp-content/uploads/sites/12/2018/05/client02.png')}}"
+                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client02.png')}}"
                                                         class="alignnone attachment-full" alt="" loading="lazy"></div>
                                                 <div class="ult-item-wrap slick-slide slick-cloned"
                                                     data-animation="animated no-animation" tabindex="-1" role="option"
                                                     aria-describedby="slick-slide02" style="width: 193px;"
                                                     data-slick-index="8" id="" aria-hidden="true"><img width="188"
                                                         height="89"
-                                                        src="{{ url('wp-content/uploads/sites/12/2018/05/client03.png')}}"
+                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client03.png')}}"
                                                         class="alignnone attachment-full" alt="" loading="lazy"></div>
                                             </div>
                                         </div>

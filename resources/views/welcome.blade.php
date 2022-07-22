@@ -9,8 +9,8 @@
         <rs-module-wrap id="rev_slider_1_1_wrapper" data-source="gallery" style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;max-width:;">
             <rs-module id="rev_slider_1_1" style="" data-version="6.5.4">
                 <rs-slides>
-                    <rs-slide data-key="rs-2" data-title="Slide" data-thumb="{{ url('wp-content/uploads/sites/12/2018/06/slider2-100x50.jpg') }}" data-anim="ms:600;" data-in="o:0;" data-out="a:false;">
-                        <img data-src="{{ url('wp-content/plugins/revslider/public/assets/assets/dummy.png') }}" title="Home" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="{{ url('wp-content/uploads/sites/12/2018/06/slider2.jpg') }}"data-no-retina>
+                    <rs-slide data-key="rs-2" data-title="Slide" data-thumb="{{ url('wp-content/uploads/sites/12/2018/05/slider2-100x50.jpg') }}" data-anim="ms:600;" data-in="o:0;" data-out="a:false;">
+                        <img src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/plugins/revslider/public/assets/assets/dummy.png') }}" title="Home" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="{{ url('wp-content/uploads/sites/12/2018/05/slider2.jpg') }}"data-no-retina>
                         <!--
             -->
                         <rs-layer id="slider-1-slide-2-layer-4" class="tp-shape tp-shapewrapper" data-type="shape" data-rsp_ch="on" data-xy="x:256px;y:390px;" data-text="fw:300;a:inherit;" data-dim="w:397px;h:7;" data-frame_0="x:-200px;tp:600;"
@@ -47,7 +47,7 @@
 -->
                     </rs-slide>
                     <rs-slide data-key="rs-1" data-title="Slide" data-thumb="{{ url('wp-content/uploads/sites/12/2018/05/slider01-100x50.jpg') }}" data-anim="ms:600;" data-in="o:0;" data-out="a:false;">
-                        <img data-src="{{ url('wp-content/plugins/revslider/public/assets/assets/dummy.png') }}" title="Home" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="{{ url('wp-content/uploads/sites/12/2018/05/slider01.jpg') }}" data-no-retina>
+                        <img src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/plugins/revslider/public/assets/assets/dummy.png') }}" title="Home" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="{{ url('wp-content/uploads/sites/12/2018/05/slider01.jpg') }}" data-no-retina>
                         <!--
             -->
                         <rs-layer id="slider-1-slide-1-layer-4" class="tp-shape tp-shapewrapper" data-type="shape" data-rsp_ch="on" data-xy="x:256px;y:390px;" data-text="fw:300;a:inherit;" data-dim="w:250px;h:6px;" data-frame_0="x:-200px;tp:600;"
@@ -83,8 +83,8 @@
                         <!--
 -->
                     </rs-slide>
-                    <rs-slide data-key="rs-3" data-title="Slide" data-thumb="{{ url('wp-content/uploads/sites/12/2018/06/slider3-100x50.jpg') }}" data-anim="ms:600;" data-in="o:0;" data-out="a:false;">
-                        <img data-src="{{ url('wp-content/plugins/revslider/public/assets/assets/dummy.png') }}" title="Home" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="{{ url('wp-content/uploads/sites/12/2018/06/slider3.jpg') }}" data-no-retina>
+                    <rs-slide data-key="rs-3" data-title="Slide" data-thumb="{{ url('wp-content/uploads/sites/12/2018/05/slider3-100x50.jpg') }}" data-anim="ms:600;" data-in="o:0;" data-out="a:false;">
+                        <img src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/plugins/revslider/public/assets/assets/dummy.png') }}" title="Home" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="{{ url('wp-content/uploads/sites/12/2018/05/slider3.jpg') }}" data-no-retina>
                         <!--
             -->
                         <rs-layer id="slider-1-slide-3-layer-4" class="tp-shape tp-shapewrapper" data-type="shape" data-rsp_ch="on" data-xy="x:305px;y:390px;" data-text="fw:300;a:inherit;" data-dim="w:347px;h:8px;" data-frame_0="x:-200px;tp:600;"
@@ -159,7 +159,7 @@
                         <div class="wpb_wrapper">
                             <div class='dt-sc-image-caption type2 '>
                                 <div class='dt-sc-image-wrapper'>
-                                	<img width="420" height="420" data-src="{{ url('wp-content/uploads/sites/12/2018/05/home01.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/home01.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/home01-150x150.jpg')}} 150w,{{ url('wp-content/uploads/sites/12/2018/05/home01-300x300.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/home01-100x100.jpg')}} 100w"
+                                	<img width="420" height="420" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/home01.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/home01.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/home01-150x150.jpg')}} 150w,{{ url('wp-content/uploads/sites/12/2018/05/home01-300x300.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/home01-100x100.jpg')}} 100w"
                                         sizes="(max-width: 420px) 100vw, 420px" /></div>
                                 <div class='dt-sc-image-content'>
                                     <div class='dt-sc-image-title'>
@@ -223,7 +223,7 @@
                                 <div class="vc_column-inner ">
                                     <div class="wpb_wrapper">
                                         <div class='dt-sc-icon-box type3 no-bg-icon'>
-                                            <div class="icon-wrapper"><span><img width="70" height="70" src="{{ url('wp-content/uploads/sites/12/2018/05/icon1.png')}}" class="attachment-full" alt="" loading="lazy" /></span></div>
+                                            <div class="icon-wrapper"><span><img width="70" height="70" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/icon1.png')}}" class="attachment-full" alt="" loading="lazy" /></span></div>
                                             <div
                                                 class="icon-content">
                                                 <h4>Jacuzzi Tubs</h4>
@@ -237,7 +237,7 @@
                                 <div class="vc_column-inner ">
                                     <div class="wpb_wrapper">
                                         <div class='dt-sc-icon-box type3 no-bg-icon'>
-                                            <div class="icon-wrapper"><span><img width="70" height="70" src="{{ url('wp-content/uploads/sites/12/2018/05/icon2.png')}}" class="attachment-full" alt="" loading="lazy" /></span></div>
+                                            <div class="icon-wrapper"><span><img width="70" height="70" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/icon2.png')}}" class="attachment-full" alt="" loading="lazy" /></span></div>
                                             <div class="icon-content">
                                                 <h4>Premium Showers</h4>
                                                 <p>There are many variations of passages of Lorem Ipsum available all the Lorem Ipsum eiusmod tempo</p>
@@ -250,7 +250,7 @@
                                 <div class="vc_column-inner ">
                                     <div class="wpb_wrapper">
                                         <div class='dt-sc-icon-box type3 no-bg-icon'>
-                                            <div class="icon-wrapper"><span><img width="70" height="70" src="{{ url('wp-content/uploads/sites/12/2018/05/icon3.png')}}" class="attachment-full" alt="" loading="lazy" /></span></div>
+                                            <div class="icon-wrapper"><span><img width="70" height="70" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/icon3.png')}}" class="attachment-full" alt="" loading="lazy" /></span></div>
                                             <div class="icon-content">
                                                 <h4>Sanitary Wares</h4>
                                                 <p>There are many variations of passages of Lorem Ipsum available all the Lorem Ipsum eiusmod tempo</p>
@@ -263,7 +263,7 @@
                                 <div class="vc_column-inner ">
                                     <div class="wpb_wrapper">
                                         <div class='dt-sc-icon-box type3 no-bg-icon'>
-                                            <div class="icon-wrapper"><span><img width="70" height="70" src="{{ url('wp-content/uploads/sites/12/2018/05/icon4.png')}}" class="attachment-full" alt="" loading="lazy" /></span></div>
+                                            <div class="icon-wrapper"><span><img width="70" height="70" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/icon4.png')}}" class="attachment-full" alt="" loading="lazy" /></span></div>
                                             <div class="icon-content">
                                                 <h4>Whirlpools</h4>
                                                 <p>There are many variations of passages of Lorem Ipsum available all the Lorem Ipsum eiusmod tempo</p>
@@ -302,7 +302,7 @@
                             <div class='dt-sc-title script-with-sub-title subheading-text'>
                                 <h4>WHAT DO WE CREATE</h4>
                                 <h2>Providing Bathrom Designs for 30 years. Look at our projects we made so far</h2>
-                            </div><a href='#' target='_self' title='' class='dt-sc-button   medium   bordered  '> View All Projects </a></div>
+                            </div class="text-md-left text-center"><a href='#' target='_self' title='' class='dt-sc-button   medium   bordered  '> View All Projects </a></div>
                     </div>
                 </div>
                 <div class="wpb_column vc_column_container vc_col-sm-6">
@@ -320,7 +320,7 @@
                                                                 <div class="wpb_single_image wpb_content_element vc_align_left   img-carousel">
                                                                     <h2 class="wpb_heading wpb_singleimage_heading">Model: Luxury</h2>
                                                                     <figure class="wpb_wrapper vc_figure">
-                                                                        <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="590" height="330" data-src="{{ url('wp-content/uploads/sites/12/2018/05/carousel1.jpg')}}" class="vc_single_image-img attachment-full" alt=""
+                                                                        <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="590" height="330" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/carousel1.jpg')}}" class="vc_single_image-img attachment-full" alt=""
                                                                                 loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/carousel1.jpg')}} 590w, {{ url('wp-content/uploads/sites/12/2018/05/carousel1-300x168.jpg')}} 300w"
                                                                                 sizes="(max-width: 590px) 100vw, 590px" /></div>
                                                                     </figure>
@@ -364,7 +364,7 @@
                                                                 <div class="wpb_single_image wpb_content_element vc_align_left   img-carousel">
                                                                     <h2 class="wpb_heading wpb_singleimage_heading">Model: Styliz</h2>
                                                                     <figure class="wpb_wrapper vc_figure">
-                                                                        <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="590" height="330" data-src="{{ url('wp-content/uploads/sites/12/2018/05/carousel2.jpg')}}" class="vc_single_image-img attachment-full" alt=""
+                                                                        <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="590" height="330" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/carousel2.jpg')}}" class="vc_single_image-img attachment-full" alt=""
                                                                                 loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/carousel2.jpg')}} 590w, {{ url('wp-content/uploads/sites/12/2018/05/carousel2-300x168.jpg')}} 300w"
                                                                                 sizes="(max-width: 590px) 100vw, 590px" /></div>
                                                                     </figure>
@@ -408,7 +408,7 @@
                                                                 <div class="wpb_single_image wpb_content_element vc_align_left   img-carousel">
                                                                     <h2 class="wpb_heading wpb_singleimage_heading">Model: Persona</h2>
                                                                     <figure class="wpb_wrapper vc_figure">
-                                                                        <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="590" height="330" data-src="{{ url('wp-content/uploads/sites/12/2018/05/carousel3.jpg')}}" class="vc_single_image-img attachment-full" alt=""
+                                                                        <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="590" height="330" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/carousel3.jpg')}}" class="vc_single_image-img attachment-full" alt=""
                                                                                 loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/carousel3.jpg')}} 590w, {{ url('wp-content/uploads/sites/12/2018/05/carousel3-300x168.jpg')}} 300w"
                                                                                 sizes="(max-width: 590px) 100vw, 590px" /></div>
                                                                     </figure>
@@ -523,7 +523,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                           <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery1.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery1.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-600x405.jpg')}} 600w"
+                                                           <div class='dt-sc-image-wrapper'><img width="1200" height="810" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery1.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery1.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -541,7 +541,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery2.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery2.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery2-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery2-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery2-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery2-600x405.jpg')}} 600w"
+                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery2.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery2.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery2-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery2-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery2-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery2-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -559,7 +559,7 @@
 	                                            <div class="vc_column-inner ">
 	                                                <div class="wpb_wrapper">
 	                                                    <div class='dt-sc-image-caption type6 content-with-btn'>
-	                                                        <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery3.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery3.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery3-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery3-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery3-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery3-600x405.jpg')}} 600w"
+	                                                        <div class='dt-sc-image-wrapper'><img width="1200" height="810" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery3.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery3.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery3-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery3-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery3-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery3-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
 	                                                        <div class='dt-sc-image-content'>
 	                                                            <div class='dt-sc-image-title'>
@@ -577,7 +577,7 @@
 	                                            <div class="vc_column-inner ">
 	                                                <div class="wpb_wrapper">
 	                                                    <div class='dt-sc-image-caption type6 content-with-btn'>
-	                                                        <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery4.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery4.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery4-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery4-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery4-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery4-600x405.jpg')}} 600w"
+	                                                        <div class='dt-sc-image-wrapper'><img width="1200" height="810" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery4.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery4.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery4-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery4-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery4-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery4-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
 	                                                        <div class='dt-sc-image-content'>
 	                                                            <div class='dt-sc-image-title'>
@@ -594,7 +594,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                             <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery7.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery7.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery7-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery7-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery7-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery7-600x405.jpg')}} 600w"
+                                                             <div class='dt-sc-image-wrapper'><img width="1200" height="810" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery7.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery7.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery7-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery7-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery7-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery7-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -611,7 +611,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                             <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery5.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery5.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery5-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery5-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery5-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery5-600x405.jpg')}} 600w"
+                                                             <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery5.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery5.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery5-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery5-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery5-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery5-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -632,7 +632,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery6.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery6.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery6-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery6-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery6-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery6-600x405.jpg')}} 600w"
+                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery6.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery6.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery6-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery6-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery6-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery6-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -650,7 +650,7 @@
 	                                            <div class="vc_column-inner ">
 	                                                <div class="wpb_wrapper">
 	                                                    <div class='dt-sc-image-caption type6 content-with-btn'>
-	                                                           <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery7.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery7.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery7-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery7-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery7-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery7-600x405.jpg')}} 600w"
+	                                                           <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery7.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery7.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery7-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery7-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery7-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery7-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
 	                                                        <div class='dt-sc-image-content'>
 	                                                            <div class='dt-sc-image-title'>
@@ -668,7 +668,7 @@
 	                                            <div class="vc_column-inner ">
 	                                                <div class="wpb_wrapper">
 	                                                    <div class='dt-sc-image-caption type6 content-with-btn'>
-	                                                        <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery8.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery8.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery8-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery8-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery8-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery8-600x405.jpg')}} 600w"
+	                                                        <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery8.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery8.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery8-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery8-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery8-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery8-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
 	                                                        <div class='dt-sc-image-content'>
 	                                                            <div class='dt-sc-image-title'>
@@ -686,7 +686,7 @@
 	                                            <div class="vc_column-inner ">
 	                                                <div class="wpb_wrapper">
 	                                                    <div class='dt-sc-image-caption type6 content-with-btn'>
-	                                                        <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery9.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery9.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery9-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery9-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery9-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery9-600x405.jpg')}} 600w"
+	                                                        <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery9.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery9.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery9-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery9-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery9-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery9-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
 	                                                        <div class='dt-sc-image-content'>
 	                                                            <div class='dt-sc-image-title'>
@@ -703,7 +703,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery10.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery10.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery10-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery10-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery10-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery10-600x405.jpg')}} 600w"
+                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery10.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery10.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery10-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery10-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery10-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery10-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -720,7 +720,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                             <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery11.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery11.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery11-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery11-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery11-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery11-600x405.jpg')}} 600w"
+                                                             <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery11.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery11.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery11-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery11-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery11-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery11-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -741,7 +741,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery12.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery12.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery12-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery12-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery12-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery12-600x405.jpg')}} 600w"
+                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery12.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery12.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery12-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery12-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery12-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery12-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -759,7 +759,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                           <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery6.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery6.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery6-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery6-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery6-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery6-600x405.jpg')}} 600w"
+                                                           <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery6.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery6.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery6-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery6-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery6-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery6-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -777,7 +777,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery5.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery5.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery5-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery5-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery5-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery5-600x405.jpg')}} 600w"
+                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery5.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery5.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery5-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery5-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery5-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery5-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -795,7 +795,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery4.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery4.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery4-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery4-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery4-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery4-600x405.jpg')}} 600w"
+                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery4.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery4.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery4-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery4-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery4-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery4-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -812,7 +812,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery3.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery3.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery3-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery3-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery3-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery3-600x405.jpg')}} 600w"
+                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery3.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery3.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery3-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery3-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery3-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery3-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -829,7 +829,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery2.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery2.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery2-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery2-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery2-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery2-600x405.jpg')}} 600w"
+                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery2.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery2.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery2-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery2-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery2-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery2-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -850,7 +850,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery1.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery1.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-600x405.jpg')}} 600w"
+                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery1.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery1.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -868,7 +868,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                             <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery12.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery12.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery12-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery12-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery12-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery12-600x405.jpg')}} 600w"
+                                                             <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery12.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery12.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery12-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery12-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery12-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery12-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -886,7 +886,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery11.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery11.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery11-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery11-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery11-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery11-600x405.jpg')}} 600w"
+                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery11.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery11.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery11-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery11-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery11-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery11-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -904,7 +904,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                             <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery10.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery10.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery10-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery10-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery10-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery10-600x405.jpg')}} 600w"
+                                                             <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery10.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery10.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery10-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery10-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery10-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery10-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -921,7 +921,7 @@
 	                                            <div class="vc_column-inner ">
 	                                                <div class="wpb_wrapper">
 	                                                    <div class='dt-sc-image-caption type6 content-with-btn'>
-	                                                         <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery9.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery9.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery9-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery9-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery9-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery9-600x405.jpg')}} 600w"
+	                                                         <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery9.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery9.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery9-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery9-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery9-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery9-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
 	                                                        <div class='dt-sc-image-content'>
 	                                                            <div class='dt-sc-image-title'>
@@ -938,7 +938,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                              <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery8.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery8.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery8-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery8-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery8-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery8-600x405.jpg')}} 600w"
+                                                              <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery8.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery8.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery8-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery8-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery8-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery8-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -959,7 +959,7 @@
 	                                            <div class="vc_column-inner ">
 	                                                <div class="wpb_wrapper">
 	                                                    <div class='dt-sc-image-caption type6 content-with-btn'>
-	                                                        <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery1.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery1.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-600x405.jpg')}} 600w"
+	                                                        <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery1.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery1.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
 	                                                        <div class='dt-sc-image-content'>
 	                                                            <div class='dt-sc-image-title'>
@@ -977,7 +977,7 @@
 	                                            <div class="vc_column-inner ">
 	                                                <div class="wpb_wrapper">
 	                                                    <div class='dt-sc-image-caption type6 content-with-btn'>
-	                                                       <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery2.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery2.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery2-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery2-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery2-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery2-600x405.jpg')}} 600w"
+	                                                       <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery2.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery2.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery2-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery2-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery2-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery2-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
 	                                                        <div class='dt-sc-image-content'>
 	                                                            <div class='dt-sc-image-title'>
@@ -995,7 +995,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery3.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery3.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery3-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery3-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery3-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery3-600x405.jpg')}} 600w"
+                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery3.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery3.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery3-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery3-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery3-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery3-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -1013,7 +1013,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery1.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery1.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-600x405.jpg')}} 600w"
+                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery1.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery1.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -1030,7 +1030,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery5.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery5.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery5-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery5-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery5-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery5-600x405.jpg')}} 600w"
+                                                            <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery5.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery5.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery5-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery5-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery5-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery5-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -1047,7 +1047,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                             <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery6.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery6.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery6-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery6-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery6-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery6-600x405.jpg')}} 600w"
+                                                             <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery6.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery6.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery6-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery6-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery6-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery6-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -1068,7 +1068,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                             <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery4.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery4.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery4-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery4-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery4-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery4-600x405.jpg')}} 600w"
+                                                             <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery4.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery4.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery4-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery4-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery4-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery4-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -1086,7 +1086,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                             <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery11.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery11.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery11-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery11-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery11-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery11-600x405.jpg')}} 600w"
+                                                             <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery11.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery11.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery11-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery11-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery11-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery11-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -1104,7 +1104,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                             <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery12.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery12.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery12-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery12-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery12-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery12-600x405.jpg')}} 600w"
+                                                             <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery12.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery12.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery12-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery12-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery12-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery12-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -1122,7 +1122,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                              <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery1.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery1.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-600x405.jpg')}} 600w"
+                                                              <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery1.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery1.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -1139,7 +1139,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                              <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery8.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery8.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery8-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery8-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery8-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery8-600x405.jpg')}} 600w"
+                                                              <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery8.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery8.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery8-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery8-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery8-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery8-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -1156,7 +1156,7 @@
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
                                                         <div class='dt-sc-image-caption type6 content-with-btn'>
-                                                             <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery1.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery1.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-600x405.jpg')}} 600w"
+                                                             <div class='dt-sc-image-wrapper'><img width="1200" height="810" data-src="{{ url('wp-content/uploads/sites//12/2018/05/gallery1.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites//12/2018/05/gallery1.jpg')}} 1200w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-300x203.jpg')}} 300w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-768x518.jpg')}} 768w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-1024x691.jpg')}} 1024w, {{ url('wp-content/uploads/sites//12/2018/05/gallery1-600x405.jpg')}} 600w"
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
@@ -1189,7 +1189,7 @@
                             <div class="wpb_single_image wpb_content_element vc_align_center">
 
                                <figure class="wpb_wrapper vc_figure">
-                                    <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="1170" height="355" data-src="{{ url('wp-content/uploads/sites/12/2018/05/home-img1.jpg')}}" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/home-img1.jpg')}} 1170w, {{ url('wp-content/uploads/sites/12/2018/05/home-img1-300x91.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/home-img1-768x233.jpg')}} 768w, {{ url('wp-content/uploads/sites/12/2018/05/home-img1-1024x311.jpg')}} 1024w, {{ url('wp-content/uploads/sites/12/2018/05/home-img1-600x182.jpg')}} 600w"
+                                    <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="1170" height="355" data-src="{{ url('wp-content/uploads/sites/12/2018/05/home-img1.jpg')}}" src="{{ url('images/loader.gif')}}" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/home-img1.jpg')}} 1170w, {{ url('wp-content/uploads/sites/12/2018/05/home-img1-300x91.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/home-img1-768x233.jpg')}} 768w, {{ url('wp-content/uploads/sites/12/2018/05/home-img1-1024x311.jpg')}} 1024w, {{ url('wp-content/uploads/sites/12/2018/05/home-img1-600x182.jpg')}} 600w"
                                             sizes="(max-width: 1170px) 100vw, 1170px" /></div>
                                 </figure>
                             </div>
@@ -1223,7 +1223,7 @@
                                             </div><a href='#' target='_self' title='' class='dt-sc-button   xlarge icon-left with-icon  filled  with-num'><span class='fa fa-phone'> </span> (800) 880 0808 888 </a>
                                             <div class='dt-sc-clear '> </div>
                                             <div id="1528179986752-c77e5916-e85b" class="dt-sc-empty-space"></div>
-                                            <p style="text-align: left" class="vc_custom_heading normal">OPEN 7 DAYS : Mon-Fri 07.30 to 17.30,<br /> Sat 08.00 to 17.00, Sun By Appointment</p>
+                                            <p class="text-md-left text-center vc_custom_heading normal">OPEN 7 DAYS : Mon-Fri 07.30 to 17.30,<br /> Sat 08.00 to 17.00, Sun By Appointment</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1244,7 +1244,7 @@
 	                        <div class="wpb_single_image wpb_content_element vc_align_center">
 
 	                            <figure class="wpb_wrapper vc_figure">
-	                                <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="1170" height="355" data-src="{{ url('wp-content/uploads/sites/12/2018/05/home-img1.jpg')}}" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/home-img1.jpg')}} 1170w, {{ url('wp-content/uploads/sites/12/2018/05/home-img1-300x91.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/home-img1-768x233.jpg')}} 768w, {{ url('wp-content/uploads/sites/12/2018/05/home-img1-1024x311.jpg')}} 1024w, {{ url('wp-content/uploads/sites/12/2018/05/home-img1-600x182.jpg')}} 600w"
+	                                <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="1170" height="355" data-src="{{ url('wp-content/uploads/sites/12/2018/05/home-img1.jpg')}}" src="{{ url('images/loader.gif')}}" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/home-img1.jpg')}} 1170w, {{ url('wp-content/uploads/sites/12/2018/05/home-img1-300x91.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/home-img1-768x233.jpg')}} 768w, {{ url('wp-content/uploads/sites/12/2018/05/home-img1-1024x311.jpg')}} 1024w, {{ url('wp-content/uploads/sites/12/2018/05/home-img1-600x182.jpg')}} 600w"
 	                                        sizes="(max-width: 1170px) 100vw, 1170px" /></div>
 	                            </figure>
 	                        </div>
@@ -1278,7 +1278,7 @@
 	                                        </div><a href='#' target='_self' title='' class='dt-sc-button   xlarge icon-left with-icon  filled  with-num'><span class='fa fa-phone'> </span> (800) 880 0808 888 </a>
 	                                        <div class='dt-sc-clear '> </div>
 	                                        <div id="1528179986752-c77e5916-e85b" class="dt-sc-empty-space"></div>
-	                                        <p style="text-align: left" class="vc_custom_heading normal">OPEN 7 DAYS : Mon-Fri 07.30 to 17.30,<br /> Sat 08.00 to 17.00, Sun By Appointment</p>
+	                                        <p class="text-md-left text-center vc_custom_heading normal">OPEN 7 DAYS : Mon-Fri 07.30 to 17.30,<br /> Sat 08.00 to 17.00, Sun By Appointment</p>
 	                                    </div>
 	                                </div>
 	                            </div>
@@ -1304,19 +1304,19 @@
                             <div class='dt-sc-title script-with-sub-title subheading-text leftside-border'>
                                 <h4>A TRUSTED FIRM</h4>
                                 <h2>Admirable Looks Guranteed with Years of Gurantee</h2>
-                            </div><a href='#' target='_self' title='' class='dt-sc-button   medium   bordered  '> View Terms </a></div>
+                            </div class="text-md-left text-center"><a href='#' target='_self' title='' class='dt-sc-button   medium   bordered  '> View Terms </a></div>
                     </div>
                 </div>
                 <div class="wpb_column vc_column_container vc_col-sm-6">
                     <div class="vc_column-inner ">
                         <div class="wpb_wrapper">
-                            <div id="modal-trg-txt-wrap-1172" class="ult-modal-input-wrapper ult-adjust-bottom-margin dt-sc-playon-video-modal   " data-keypress-control="keypress-control-enable" data-overlay-control="overlay-control-enable"><img src="{{ url('wp-content/uploads/sites/12/2018/05/video-bg.jpg')}}" alt="null" data-class-id="content-62d6943e09d823-82686140" class="ult-modal-img overlay-show ult-align-center ult-modal-image-"
+                            <div id="modal-trg-txt-wrap-1172" class="ult-modal-input-wrapper ult-adjust-bottom-margin dt-sc-playon-video-modal   " data-keypress-control="keypress-control-enable" data-overlay-control="overlay-control-enable"><img src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/video-bg.jpg')}}" alt="null" data-class-id="content-62d6943e09d823-82686140" class="ult-modal-img overlay-show ult-align-center ult-modal-image-"
                                     data-overlay-class="overlay-doorvertical" /></div>
                             <div class="ult-overlay content-62d6943e09d823-82686140 " data-class="content-62d6943e09d823-82686140" id="button-click-overlay" style="background:rgba(232,26,70,0.8); display:none;">
                                 <div class="ult_modal ult-fade ult-medium">
                                     <div id="ult-modal-wrap-2833" class="ult_modal-content ult-hide" style="border-style:solid;border-width:2px;border-radius:0px;border-color:#333333;">
                                         <div data-ultimate-target='#ult-modal-wrap-2833 .ult_modal-body' data-responsive-json-new='{"font-size":"","line-height":""}' class="ult_modal-body ult-responsive ult-youtube" style="">
-                                            <iframe loading="lazy" style="border: 0;" data-src="//www.youtube.com/embed/DbWCAMA4wgk" width="560" height="315" allowfullscreen="allowfullscreen"></iframe>
+                                            <iframe loading="lazy" style="border: 0;" data-src="//www.youtube.com/embed/DbWCAMA4wgk" src="{{ url('images/loader.gif')}}" width="560" height="315" allowfullscreen="allowfullscreen"></iframe>
                                         </div>
                                     </div>
                                 </div>
@@ -1462,7 +1462,7 @@
                                     <div class="vc_column-inner ">
                                         <div class="wpb_wrapper">
                                             <div class='dt-sc-team hide-details-show-on-hover full-height-center'>
-                                                <div class='dt-sc-team-thumb'><img width="420" height="466" data-src="{{ url('wp-content/uploads/sites/12/2018/05/team1.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/team1.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/team1-270x300.jpg')}} 270w"
+                                                <div class='dt-sc-team-thumb'><img width="420" height="466" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/team1.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/team1.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/team1-270x300.jpg')}} 270w"
                                                         sizes="(max-width: 420px) 100vw, 420px" /></div>
                                                 <div class='dt-sc-team-details'>
                                                     <h4>Maya Lee</h4>
@@ -1477,7 +1477,7 @@
                                     <div class="vc_column-inner ">
                                         <div class="wpb_wrapper">
                                             <div class='dt-sc-team hide-details-show-on-hover full-height-center'>
-                                                <div class='dt-sc-team-thumb'><img width="420" height="466" data-src="{{ url('wp-content/uploads/sites/12/2018/05/team2.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/team2.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/team2-270x300.jpg')}} 270w"
+                                                <div class='dt-sc-team-thumb'><img width="420" height="466" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/team2.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/team2.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/team2-270x300.jpg')}} 270w"
                                                         sizes="(max-width: 420px) 100vw, 420px" /></div>
                                                 <div class='dt-sc-team-details'>
                                                     <h4>Darren Tiler</h4>
@@ -1492,7 +1492,7 @@
                                     <div class="vc_column-inner ">
                                         <div class="wpb_wrapper">
                                             <div class='dt-sc-team hide-details-show-on-hover full-height-center'>
-                                                <div class='dt-sc-team-thumb'><img width="420" height="466" data-src="{{ url('wp-content/uploads/sites/12/2018/05/team3.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/team3.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/team3-270x300.jpg')}} 270w"
+                                                <div class='dt-sc-team-thumb'><img width="420" height="466" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/team3.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/team3.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/team3-270x300.jpg')}} 270w"
                                                         sizes="(max-width: 420px) 100vw, 420px" /></div>
                                                 <div class='dt-sc-team-details'>
                                                     <h4>Mia Sara</h4>
@@ -1507,7 +1507,7 @@
                                     <div class="vc_column-inner ">
                                         <div class="wpb_wrapper">
                                             <div class='dt-sc-team hide-details-show-on-hover full-height-center'>
-                                                <div class='dt-sc-team-thumb'><img width="420" height="466" data-src="{{ url('wp-content/uploads/sites/12/2018/05/team4.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/team4.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/team4-270x300.jpg')}} 270w"
+                                                <div class='dt-sc-team-thumb'><img width="420" height="466" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/team4.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/team4.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/team4-270x300.jpg')}} 270w"
                                                         sizes="(max-width: 420px) 100vw, 420px" /></div>
                                                 <div class='dt-sc-team-details'>
                                                     <h4>Sam Jones</h4>
@@ -1542,7 +1542,7 @@
 	                                        <div class="dt-sc-testimonial-quote">
 	                                            <blockquote><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</q></blockquote>
 	                                        </div>
-	                                        <div class="dt-sc-testimonial-author"><span><img width="300" height="300" data-src="{{ url('wp-content/uploads/sites/12/2018/05/testimonial8.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/testimonial8.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/testimonial8-150x150.jpg')}} 150w, {{ url('wp-content/uploads/sites/12/2018/05/testimonial8-100x100.jpg')}} 100w" sizes="(max-width: 300px) 100vw, 300px" /></span><cite>Miranda Kerr<small>-Senior Designer</small></cite></div>
+	                                        <div class="dt-sc-testimonial-author"><span><img width="300" height="300" data-src="{{ url('wp-content/uploads/sites/12/2018/05/testimonial8.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/testimonial8.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/testimonial8-150x150.jpg')}} 150w, {{ url('wp-content/uploads/sites/12/2018/05/testimonial8-100x100.jpg')}} 100w" sizes="(max-width: 300px) 100vw, 300px" /></span><cite>Miranda Kerr<small>-Senior Designer</small></cite></div>
 	                                    </div>
 	                                </div>
 	                            </div>
@@ -1552,7 +1552,7 @@
 	                                        <div class="dt-sc-testimonial-quote">
 	                                            <blockquote><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</q></blockquote>
 	                                        </div>
-	                                        <div class="dt-sc-testimonial-author"><span><img width="300" height="300" data-src="{{ url('wp-content/uploads/sites/12/2018/05/testimonial4.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/testimonial4.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/testimonial4-150x150.jpg')}} 150w, {{ url('wp-content/uploads/sites/12/2018/05/testimonial4-100x100.jpg')}} 100w" sizes="(max-width: 300px) 100vw, 300px" /></span><cite>Allen Spicer<small>-Senior Designer</small></cite></div>
+	                                        <div class="dt-sc-testimonial-author"><span><img width="300" height="300" data-src="{{ url('wp-content/uploads/sites/12/2018/05/testimonial4.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/testimonial4.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/testimonial4-150x150.jpg')}} 150w, {{ url('wp-content/uploads/sites/12/2018/05/testimonial4-100x100.jpg')}} 100w" sizes="(max-width: 300px) 100vw, 300px" /></span><cite>Allen Spicer<small>-Senior Designer</small></cite></div>
 	                                    </div>
 	                                </div>
 	                            </div>
@@ -1562,7 +1562,7 @@
 	                                        <div class="dt-sc-testimonial-quote">
 	                                            <blockquote><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</q></blockquote>
 	                                        </div>
-	                                        <div class="dt-sc-testimonial-author"><span><img width="300" height="300" data-src="{{ url('wp-content/uploads/sites/12/2018/05/testimonial7.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/testimonial7.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/testimonial7-150x150.jpg')}} 150w, {{ url('wp-content/uploads/sites/12/2018/05/testimonial7-100x100.jpg')}} 100w" sizes="(max-width: 300px) 100vw, 300px" /></span><cite>Mia Sara<small>-Senior Designer</small></cite></div>
+	                                        <div class="dt-sc-testimonial-author"><span><img width="300" height="300" data-src="{{ url('wp-content/uploads/sites/12/2018/05/testimonial7.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/testimonial7.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/testimonial7-150x150.jpg')}} 150w, {{ url('wp-content/uploads/sites/12/2018/05/testimonial7-100x100.jpg')}} 100w" sizes="(max-width: 300px) 100vw, 300px" /></span><cite>Mia Sara<small>-Senior Designer</small></cite></div>
 	                                    </div>
 	                                </div>
 	                            </div>
@@ -1625,7 +1625,7 @@
 	    <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid dt-skin-secondary-bg dt-sc-dark-bg vcr_hook-top vc_row-o-equal-height vc_row-flex">
 	        <div class="dt-sc-skin-highlight wpb_column vc_column_container vc_col-sm-3 vc_col-has-fill">
 	            <div class="vc_column-inner vc_custom_1529052253245" style=" text-align:left; ">
-	                <div class="wpb_wrapper"><img width="199" height="49" src="{{ url('wp-content/uploads/sites/12/2018/05/light-logo.png')}}" class="aligncenter attachment-full" alt="image" loading="lazy" /></div>
+	                <div class="wpb_wrapper"><img width="199" height="49" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/light-logo.png')}}" class="aligncenter attachment-full" alt="image" loading="lazy" /></div>
 	            </div>
 	        </div>
             <div class="wpb_column vc_column_container vc_col-sm-9">
@@ -1635,18 +1635,18 @@
                         <div id="ult-carousel-290295695562d6943e0cd45" class="ult-carousel-wrapper   ult_horizontal" data-gutter="15" data-rtl="false">
                             <div class="ult-carousel-29161344662d6943e0cd34 ">
                                 <div class="ult-item-wrap" data-animation="animated no-animation">
-                                	<img width="188" height="89" src="{{ url('wp-content/uploads/sites/12/2018/05/client01.png')}}" class="alignnone attachment-full" alt="" loading="lazy" />
+                                	<img width="188" height="89" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client01.png')}}" class="alignnone attachment-full" alt="" loading="lazy" />
                                 </div>
                                 <div class="ult-item-wrap"
-                                    data-animation="animated no-animation"><img width="188" height="89" src="{{ url('wp-content/uploads/sites/12/2018/05/client02.png')}}" class="alignnone attachment-full" alt="" loading="lazy" /></div>
+                                    data-animation="animated no-animation"><img width="188" height="89" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client02.png')}}" class="alignnone attachment-full" alt="" loading="lazy" /></div>
                                 <div class="ult-item-wrap"
-                                    data-animation="animated no-animation"><img width="188" height="89" src="{{ url('wp-content/uploads/sites/12/2018/05/client03.png')}}" class="alignnone attachment-full" alt="" loading="lazy" /></div>
+                                    data-animation="animated no-animation"><img width="188" height="89" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client03.png')}}" class="alignnone attachment-full" alt="" loading="lazy" /></div>
                                 <div class="ult-item-wrap"
-                                    data-animation="animated no-animation"><img width="188" height="89" src="{{ url('wp-content/uploads/sites/12/2018/05/client04.png')}}" class="alignnone attachment-full" alt="" loading="lazy" /></div>
+                                    data-animation="animated no-animation"><img width="188" height="89" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client04.png')}}" class="alignnone attachment-full" alt="" loading="lazy" /></div>
                                 <div class="ult-item-wrap"
-                                    data-animation="animated no-animation"><img width="188" height="89" src="{{ url('wp-content/uploads/sites/12/2018/05/client01.png')}}" class="alignnone attachment-full" alt="" loading="lazy" /></div>
+                                    data-animation="animated no-animation"><img width="188" height="89" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client01.png')}}" class="alignnone attachment-full" alt="" loading="lazy" /></div>
                                 <div class="ult-item-wrap"
-                                    data-animation="animated no-animation"><img width="188" height="89" src="{{ url('wp-content/uploads/sites/12/2018/05/client01.png')}}" class="alignnone attachment-full" alt="" loading="lazy" /></div>
+                                    data-animation="animated no-animation"><img width="188" height="89" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client01.png')}}" class="alignnone attachment-full" alt="" loading="lazy" /></div>
                             </div>
                         </div>
                         <script type="text/javascript">

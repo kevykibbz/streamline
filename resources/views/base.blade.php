@@ -99,9 +99,21 @@
     <link rel='stylesheet' href="{{ url('wp-content/themes/homi/css/gutenberg.css')}}" type='text/css' />
     <link href="//fonts.googleapis.com/css?family=Lato:300%7CMontserrat:400" rel="stylesheet" property="stylesheet" media="all" type="text/css">
     <link rel='stylesheet' href="{{ url('css/streamline.css')}}" type='text/css' />
+    <link rel='stylesheet' href="{{ url('css/bootstrap.min.css')}}" type='text/css' />
     <link rel='stylesheet' href="{{ url('css/custom.css')}}" type='text/css' />
     <script type='text/javascript' src="{{ url('js/jquery-3.5.1.min.js')}}"></script>
     <script type='text/javascript' src="{{ url('wp-includes/js/jquery/jquery-migrate.min.js')}}"></script>
+    <script type='text/javascript' id='homi-jqplugins-js-extra'>
+        var dttheme_urls = { 
+                                "theme_base_url": "{{ url('/')}}\/wp-content\/themes\/homi", 
+                                "framework_base_url": "{{ url('/')}}\/wp-content\/themes\/homi\/framework\/", 
+                                "url": "{{ url('/')}}", 
+                                "isRTL": "", 
+                                "loadingbar": "disable", 
+                                "advOptions": "Show Advanced Options", 
+                                "wpnonce": "36c9b784a5" 
+                            };
+    </script>
     <script type='text/javascript' src="{{ url('wp-content/plugins/LayerSlider/assets/static/layerslider/js/layerslider.utils.js')}}"></script>
     <script type='text/javascript' src="{{ url('wp-content/plugins/LayerSlider/assets/static/layerslider/js/layerslider.kreaturamedia.jquery.js')}}"></script>
     <script type='text/javascript' src="{{ url('wp-content/plugins/LayerSlider/assets/static/layerslider/js/layerslider.transitions.js')}}"></script>
@@ -201,7 +213,7 @@
                                 <div class="dt-skin-primary-bg rs_col-sm-4 wpb_column vc_column_container vc_col-sm-2">
                                     <div class="vc_column-inner vc_custom_1557230970960" style=" text-align:left; ">
                                         <div class="wpb_wrapper">
-                                            <div id="dt-1527077571653-6fe19314-253c" class="dt-logo-container logo-align-left"> <a href="http://homi.themesrain.kinsta.cloud/" rel="home"><img src="http://homi.themesrain.kinsta.cloud/wp-content/themes/homi/images/light-logo.png" alt="Homi"/></a></div>
+                                            <div id="dt-1527077571653-6fe19314-253c" class="dt-logo-container logo-align-left"> <a href="{{ url('/')}}" rel="home"><img src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/themes/homi/images/light-logo.png')}}" alt="Streamline Ventures"/></a></div>
                                         </div>
                                     </div>
                                 </div>
@@ -248,7 +260,7 @@
                 @yield('header')  
             </div>
             <!-- ** Header Wrapper - End ** -->
-
+            @yield('breadcrump')   
             <!-- **Main** -->
             <div id="main">
                 @yield('content')   
@@ -368,7 +380,7 @@
                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14183"><a href="#" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Latest News</span></a></li>
                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14184"><a href="#" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Newsletter</span></a></li>
                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14185"><a href="#" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Careers</span></a></li>
-                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14944"><a href="http://homi.themesrain.kinsta.cloud/contact-us/" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Contact Us</span></a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14944"><a href="{{ url('/contact/us') }}" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Contact Us</span></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -469,6 +481,5 @@
     <script type='text/javascript' src="{{ url('wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate_bg.min.js')}}"></script>
     <script type='text/javascript' src="{{ url('wp-content/plugins/Ultimate_VC_Addons/assets/min-js/vhparallax.min.js')}}" ></script>
     <script type='text/javascript' src="{{ url('js/streamline.js')}}" ></script>
-    
 </body>
 </html>

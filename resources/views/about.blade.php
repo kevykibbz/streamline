@@ -19,6 +19,25 @@
 </section>
 <!-- ** Breadcrumb End ** -->
 @endsection
+@section('breadcrump')
+<!-- ** Breadcrumb ** -->
+<section class="main-title-section-wrapper breadcrumb-left">
+    <div class="main-title-section-bg"
+        style="background-image: url('{{ url('wp-content/uploads/sites/12/2018/05/bc-img.jpg')}}'); background-position: left top; background-size: auto; background-repeat: no-repeat; background-attachment: fixed; ">
+    </div>
+    <div class="container">
+        <div class="main-title-section">
+            <h1>About Us</h1>
+        </div>
+        <div class="breadcrumb">
+            <a href="{{ url('/')}}">Home</a>
+            <span class="fa default"></span>
+            <span class="current">About Us</span>
+        </div>
+    </div>
+</section>
+<!-- ** Breadcrumb End ** -->
+@endsection
 @section('content')
 <div class="container">
    	<!-- Primary -->
