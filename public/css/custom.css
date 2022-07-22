@@ -1,0 +1,301 @@
+::-webkit-scrollbar
+{
+    width:8px;
+}
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px #000;
+    box-shadow: inset 0 0 6px #000;
+    border-radius:10px;  
+}
+::-webkit-scrollbar-thumb
+{
+    -webkit-box-shadow: inset 0 0 6px #000;
+    box-shadow: inset 0 0 6px #000;
+    border-radius:10px;
+}
+.btn-fab
+{
+    display: inline-block;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: 0;
+    border-radius: 50%;
+    line-height: 50px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.btn-fab:focus,
+.btn-fab:active
+{
+    box-shadow: none;
+}
+
+.btn-fab.btn-sm
+{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.load-overlay
+{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color:rgba(255,255,255,0.7);
+    z-index:50;
+    cursor:pointer;
+    
+}
+.body-border
+{
+    background:#39f;
+    width:0;
+    height:3px;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:999999;
+    transition:all .3s;
+}
+.body-blur
+{
+    background-color:rgba(255,255,255,0.7);
+    width:100%;
+    height:100vh;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:999997;
+    display:none;
+}
+
+.load-overlay .overlay
+{
+  text-align:center;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+
+}
+.load-overlay .overlay-close
+{
+    position:absolute;    
+    top:10px;
+    left:10px;
+    color:red;
+    width:30px;
+    height:30px;
+    text-align:center;
+    background:rgba(128, 128, 128, 0.5);
+    line-height:30px;
+    border-radius:50%;
+    transition:all .3s ease-in-out;
+    cursor:pointer;
+}
+.load-overlay .overlay-close:hover
+{
+    color:#fff;
+    background:#666;
+}
+
+.loader-placeholder .load-overlay
+{
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay-loader 
+{
+position: relative;
+margin: 0px auto;
+width: 100px;
+}
+.overlay-loader:before 
+{
+content: '';
+display: block;
+padding-top: 100%;
+}
+.circular 
+{
+  -webkit-animation: rotate 2s linear infinite;
+          animation: rotate 2s linear infinite;
+  height: 100%;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.path 
+{
+  stroke-dasharray: 1,200;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+          animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  stroke-linecap: round;
+}
+
+@-webkit-keyframes rotate 
+{
+  100% 
+  {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate 
+{
+  100% 
+  {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes dash 
+{
+  0% 
+  {
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+  }
+  50% 
+  {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -35px;
+  }
+  100% 
+  {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -124px;
+  }
+}
+@keyframes dash 
+{
+  0% 
+  {
+    stroke-dasharray: 1,200;
+    stroke-dashoffset: 0;
+  }
+  50% 
+  {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -35px;
+  }
+  100% 
+  {
+    stroke-dasharray: 89,200;
+    stroke-dashoffset: -124px;
+  }
+}
+@-webkit-keyframes color 
+{
+  100%, 0% 
+  {
+    stroke: #d62d20;
+  }
+  40% 
+  {
+    stroke: #0057e7;
+  }
+  66% 
+  {
+    stroke: #008744;
+  }
+  80%, 90% 
+  {
+    stroke: #ffa700;
+  }
+}
+@keyframes color 
+{
+  100%, 0% 
+  {
+    stroke: #d62d20;
+  }
+  40% 
+  {
+    stroke: #0057e7;
+  }
+  66% 
+  {
+    stroke: #008744;
+  }
+  80%, 90% 
+  {
+    stroke: #ffa700;
+  }
+}
+.bootstrap-select.form-control:not([class*="col-"])
+{
+    width:28%;
+    text-align: left !important;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#id_phone_0
+{
+    width:30%;
+    float:left;
+}
+#id_phone_1
+{
+    width:68%;
+    float:right;
+}
+
+.phone-call
+{
+    width: 185px;
+    height: 60px;
+    left: 20px;
+    bottom: 20px;
+    background: #000;
+    position: fixed;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all;
+    border-radius: 30px;
+    z-index: 102;
+    display: inline-block;
+    line-height: 57px;
+    font-size: 20px;
+    transition: all;
+}
+.phone-call:hover
+{
+    color: #000;
+    background:#fff;
+    border:1px solid #000;
+
+}
+.reveal
+{
+    position:absolute;
+    right:20px;
+    top:39px;
+    cursor: pointer;
+    transition: all;
+}
+.reveal:hover
+{
+    color: green;
+}
