@@ -34,6 +34,7 @@
     <link rel='shortlink' href='<?php echo url()->full(); ?>' />
     <link rel="canonical" href="<?php echo url()->full(); ?>" />
     <meta name="robots" content="index, follow" />
+    <meta name="msapplication-TileImage" content="{{ url('wp-content/uploads/sites/12/2018/06/cropped-favicon-300x300.png')}}" />
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <link rel='dns-prefetch' href='<?php echo url()->full(); ?>' />
@@ -41,7 +42,7 @@
     <link rel="icon" href="{{ url('wp-content/uploads/sites/12/2018/06/cropped-favicon-100x100.png')}}" sizes="32x32" />
     <link rel="icon" href="{{ url('wp-content/uploads/sites/12/2018/06/cropped-favicon-300x300.png')}}" sizes="192x192" />
     <link rel="apple-touch-icon" href="{{ url('wp-content/uploads/sites/12/2018/06/cropped-favicon-300x300.png')}}" />
-    <meta name="msapplication-TileImage" content="{{ url('wp-content/uploads/sites/12/2018/06/cropped-favicon-300x300.png')}}" />
+
     <link rel='stylesheet'  href="{{ url('wp-content/plugins/LayerSlider/assets/static/layerslider/css/layerslider.css')}}" type='text/css'/>
     <link rel='stylesheet' href="{{ url('wp-includes/css/dist/block-library/style.min.css')}}" type='text/css'  />
     <link rel='stylesheet' href="{{ url('wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/vendors-style.css')}}" type='text/css'/>
@@ -51,14 +52,7 @@
     <link rel='stylesheet'  href="{{ url('wp-content/plugins/designthemes-core-features-homi/shortcodes/css/slick.css')}}" type='text/css' />
     <link rel='stylesheet'  href="{{ url('wp-content/plugins/designthemes-core-features-homi/shortcodes/css/shortcodes.css')}}" type='text/css' />
     <link rel='stylesheet'  href="{{ url('wp-content/plugins/designthemes-core-features-homi/custom-post-types/css/portfolio.css')}}" type='text/css' />
-    <link rel='stylesheet'  href="{{ url('wp-content/plugins/js_composer/assets/css/js_composer.min.css')}}" type='text/css' />
     <link rel='stylesheet'  href="{{ url('wp-content/uploads/sites/12/smile_fonts/Defaults/Defaults.css')}}" type='text/css' />
-    <link rel='stylesheet'  href="{{ url('wp-content/plugins/Ultimate_VC_Addons/assets/min-css/style.min.css')}}" type='text/css' />
-    <link rel='stylesheet'  href="{{ url('wp-content/plugins/Ultimate_VC_Addons/assets/min-css/slick.min.css')}}" type='text/css' />
-    <link rel='stylesheet'  href="{{ url('wp-content/plugins/Ultimate_VC_Addons/assets/css/icons.css')}}" type='text/css' />
-    <link rel='stylesheet' href="{{ url('wp-content/plugins/Ultimate_VC_Addons/assets/min-css/animate.min.css')}}" type='text/css' />
-    <link rel='stylesheet' href="{{ url('wp-content/plugins/Ultimate_VC_Addons/assets/min-css/content-box.min.css')}}" type='text/css' />
-    <link rel='stylesheet'  href="{{ url('wp-content/plugins/Ultimate_VC_Addons/assets/min-css/modal.min.css')}}" type='text/css' />
     <link rel='stylesheet'  href="{{ url('wp-content/themes/homi/style.css')}}" type='text/css' />
     <link rel='stylesheet'  href="{{ url('wp-content/themes/homi/css/base.css')}}" type='text/css' />
     <link rel='stylesheet'  href="{{ url('wp-content/themes/homi/css/grid.css')}}" type='text/css' />
@@ -68,6 +62,13 @@
     <link rel='stylesheet' href="{{ url('wp-content/themes/homi/css/contact.css')}}" type='text/css' />
     <link rel='stylesheet' href="{{ url('wp-content/themes/homi/css/custom-class.css')}}" type='text/css' />
     <link rel='stylesheet' href="{{ url('wp-content/themes/homi/css/browsers.css')}}" type='text/css' />
+    <link rel='stylesheet'  href="{{ url('wp-content/plugins/js_composer/assets/css/js_composer.min.css')}}" type='text/css' />
+    <link rel='stylesheet'  href="{{ url('wp-content/plugins/Ultimate_VC_Addons/assets/min-css/style.min.css')}}" type='text/css' />
+    <link rel='stylesheet'  href="{{ url('wp-content/plugins/Ultimate_VC_Addons/assets/min-css/slick.min.css')}}" type='text/css' />
+    <link rel='stylesheet'  href="{{ url('wp-content/plugins/Ultimate_VC_Addons/assets/css/icons.css')}}" type='text/css' />
+    <link rel='stylesheet' href="{{ url('wp-content/plugins/Ultimate_VC_Addons/assets/min-css/animate.min.css')}}" type='text/css' />
+    <link rel='stylesheet' href="{{ url('wp-content/plugins/Ultimate_VC_Addons/assets/min-css/content-box.min.css')}}" type='text/css' />
+    <link rel='stylesheet'  href="{{ url('wp-content/plugins/Ultimate_VC_Addons/assets/min-css/modal.min.css')}}" type='text/css' />
     <link rel='stylesheet' href="{{ url('wp-content/plugins/js_composer/assets/lib/prettyphoto/css/prettyPhoto.min.css')}}" type='text/css' />
     <link rel='stylesheet'  href="{{ url('wp-content/themes/homi/css/font-awesome.min.css?')}}" type='text/css' />
     <link rel='stylesheet'  href="{{ url('wp-content/themes/homi/css/pe-icon-7-stroke.css')}}" type='text/css' />
@@ -92,6 +93,7 @@
     <link rel='stylesheet'  href="{{ url('wp-content/themes/homi/css/custom.css')}}" type='text/css' />
     <link rel='stylesheet' href="{{ url('wp-content/themes/homi/css/cookieconsent.css')}}" type='text/css' />
     <link rel='stylesheet'  href="{{ url('wp-content/themes/homi/framework/js/magnific/magnific-popup.css')}}" type='text/css' />
+    <link rel='stylesheet' href="{{ url('wp-content/themes/homi/css/gutenberg.css')}}" type='text/css'/>
     <link rel='stylesheet'  href="{{ url('wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/v4-shims.min.css')}}" type='text/css'/>
     <link rel='stylesheet' href="{{ url('wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/all.min.css')}}" type='text/css'  />
     <link rel='stylesheet'  href="{{ url('wp-content/plugins/Ultimate_VC_Addons/assets/min-css/background-style.min.css')}}" type='text/css' />
@@ -103,16 +105,21 @@
     <link rel='stylesheet' href="{{ url('css/custom.css')}}" type='text/css' />
     <script type='text/javascript' src="{{ url('js/jquery-3.5.1.min.js')}}"></script>
     <script type='text/javascript' src="{{ url('wp-includes/js/jquery/jquery-migrate.min.js')}}"></script>
+    <script type='text/javascript' src="{{ url('js/custom.js')}}" ></script>
+    <script type='text/javascript' id='layerslider-utils-js-extra'>
+    </script>
     <script type='text/javascript' id='homi-jqplugins-js-extra'>
         var dttheme_urls = { 
                                 "theme_base_url": "{{ url('/')}}\/wp-content\/themes\/homi", 
+                                "loader": "{{ url('/')}}\/images", 
                                 "framework_base_url": "{{ url('/')}}\/wp-content\/themes\/homi\/framework\/", 
                                 "url": "{{ url('/')}}", 
                                 "isRTL": "", 
                                 "loadingbar": "disable", 
                                 "advOptions": "Show Advanced Options", 
                                 "wpnonce": "36c9b784a5" 
-                            };
+                            },
+            LS_Meta = { "v": "6.11.8", "fixGSAP": "1" };
     </script>
     <script type='text/javascript' src="{{ url('wp-content/plugins/LayerSlider/assets/static/layerslider/js/layerslider.utils.js')}}"></script>
     <script type='text/javascript' src="{{ url('wp-content/plugins/LayerSlider/assets/static/layerslider/js/layerslider.kreaturamedia.jquery.js')}}"></script>
@@ -128,7 +135,54 @@
     <script type='text/javascript' src="{{ url('wp-content/plugins/Ultimate_VC_Addons/assets/min-js/jquery-appear.min.js')}}"></script>
     <script type='text/javascript' src="{{ url('wp-content/plugins/Ultimate_VC_Addons/assets/min-js/slick-custom.min.js')}}"></script>
     <script type='text/javascript' src="{{ url('wp-content/plugins/Ultimate_VC_Addons/assets/min-js/modernizr-custom.min.js')}}"></script>
-    <script type='text/javascript' src="{{ url('js/custom.js')}}" ></script>
+    <script type="text/javascript">
+        function setREVStartSize(e)
+        {
+            //window.requestAnimationFrame(function() {				 
+            window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
+            window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
+            try {
+                    var pw = document.getElementById(e.c).parentNode.offsetWidth,newh;
+                    pw = pw === 0 || isNaN(pw) ? window.RSIW : pw;
+                    e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw);
+                    e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw);
+                    e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh);
+                    e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh);
+                    e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide);
+                    e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide);
+                    e.mh = e.mh === undefined || e.mh == "" || e.mh === "auto" ? 0 : parseInt(e.mh, 0);
+                    if (e.layout === "fullscreen" || e.l === "fullscreen")
+                        newh = Math.max(e.mh, window.RSIH);
+                    else 
+                    {
+                        e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+                        for (var i in e.rl) if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1];
+                        e.gh = e.el === undefined || e.el === "" || (Array.isArray(e.el) && e.el.length == 0) ? e.gh : e.el;
+                        e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+                        for (var i in e.rl) if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1];
+
+                        var nl = new Array(e.rl.length),ix = 0,sl;
+                        e.tabw = e.tabhide >= pw ? 0 : e.tabw;
+                        e.thumbw = e.thumbhide >= pw ? 0 : e.thumbw;
+                        e.tabh = e.tabhide >= pw ? 0 : e.tabh;
+                        e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh;
+                        for (var i in e.rl) nl[i] = e.rl[i] < window.RSIW ? 0 : e.rl[i];
+                        sl = nl[0];
+                        for (var i in nl) if (sl > nl[i] && nl[i] > 0) { sl = nl[i]; ix = i; }
+                        var m = pw > (e.gw[ix] + e.tabw + e.thumbw) ? 1 : (pw - (e.tabw + e.thumbw)) / (e.gw[ix]);
+                        newh = (e.gh[ix] * m) + (e.tabh + e.thumbh);
+                    }
+                    var el = document.getElementById(e.c);
+                    if (el !== null && el) el.style.height = newh + "px";
+                    el = document.getElementById(e.c + "_wrapper");
+                    if (el !== null && el) el.style.height = newh + "px";
+                } 
+                catch (e) 
+                {
+                    console.log("Failure at Presize of Slider:" + e)
+                }
+        //});
+    };</script>
     <script type="text/javascript">
         $.ajaxSetup({
             headers: {
@@ -138,7 +192,7 @@
     </script>
 </head>
 
-<body onload="load()" class="home page-template-default page page-id-4 theme-homi woocommerce-no-js layout-wide page-with-slider no-breadcrumb wpb-js-composer js-comp-ver-6.7.0 vc_responsive">
+<body onload="load()" class="home page-template-default product-template-default single single-product page page-id-4 archive post-type-archive post-type-archive-product theme-homi woocommerce-shop woocommerce woocommerce-cart woocommerce-checkout woocommerce-page  woocommerce-no-js layout-wide page-with-slider  layout-wide wpb-js-composer js-comp-ver-6.7.0 wpb-js-composer js-comp-ver-6.7.0 vc_responsive">
 
     <!-- preloader -->
      <div class="loader-placeholder" style="visibility:visible;">
@@ -232,11 +286,11 @@
                                                                 <li class="go-back"><a href="javascript:void(0);"></a></li>
                                                                 <li class="see-all"></li>
                                                                 <li id="menu-item-15249" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15249 dt-menu-item-15249 "><a href="{{ url('/bath/furniture')}}" class="item-has-icon icon-position-left"><span>Bath Furniture</span></a></li>
-                                                                <li id="menu-item-15250" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15250 dt-menu-item-15250 "><a href="http://homi.themesrain.kinsta.cloud/product-category/hot-tubs/" class="item-has-icon icon-position-left"><span>Hot Tubs</span></a></li>
-                                                                <li id="menu-item-15251" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15251 dt-menu-item-15251 "><a href="http://homi.themesrain.kinsta.cloud/product-category/faucets/" class="item-has-icon icon-position-left"><span>Faucets</span></a></li>
-                                                                <li id="menu-item-15252" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15252 dt-menu-item-15252 "><a href="http://homi.themesrain.kinsta.cloud/product-category/wash-basin/" class="item-has-icon icon-position-left"><span>Wash Basin</span></a></li>
-                                                                <li id="menu-item-15253" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15253 dt-menu-item-15253 "><a href="http://homi.themesrain.kinsta.cloud/product-category/saunas/" class="item-has-icon icon-position-left"><span>Saunas</span></a></li>
-                                                                <li id="menu-item-15254" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15254 dt-menu-item-15254 "><a href="http://homi.themesrain.kinsta.cloud/product-category/showers/" class="item-has-icon icon-position-left"><span>Showers</span></a></li>
+                                                                <li id="menu-item-15250" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15250 dt-menu-item-15250 "><a href="{{ url('/hot/tubs') }}" class="item-has-icon icon-position-left"><span>Hot Tubs</span></a></li>
+                                                                <li id="menu-item-15251" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15251 dt-menu-item-15251 "><a href="{{ url('/faucets')}}" class="item-has-icon icon-position-left"><span>Faucets</span></a></li>
+                                                                <li id="menu-item-15252" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15252 dt-menu-item-15252 "><a href="{{ url('/wash/basin')}}" class="item-has-icon icon-position-left"><span>Wash Basin</span></a></li>
+                                                                <li id="menu-item-15253" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15253 dt-menu-item-15253 "><a href="{{ url('/saunas')}}" class="item-has-icon icon-position-left"><span>Saunas</span></a></li>
+                                                                <li id="menu-item-15254" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15254 dt-menu-item-15254 "><a href="{{ url('/showers')}}" class="item-has-icon icon-position-left"><span>Showers</span></a></li>
                                                             </ul>
                                                         </li>
                                                         <li id="menu-item-14829" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14829 dt-menu-item-14829 "><a href="{{ url('/contact/us')}}" class="item-has-icon icon-position-left"><span>Contact Us</span></a></li>
@@ -260,7 +314,6 @@
                 @yield('header')  
             </div>
             <!-- ** Header Wrapper - End ** -->
-            @yield('breadcrump')   
             <!-- **Main** -->
             <div id="main">
                 @yield('content')   

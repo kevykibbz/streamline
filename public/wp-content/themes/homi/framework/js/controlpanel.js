@@ -26,7 +26,7 @@ for (var i = 0; i < $color.length; i++) {
 
 $str = '<!-- **DT Style Picker Wrapper** -->';
 $str += '<div class="dt-style-picker-wrapper">';
-$str += '	<a href="" title="" class="style-picker-ico"> <i class="icon-moon icon-moon-hammer"></i> </a>';
+$str += '	<a href="javascript:void(0);" title="layout picker" class="style-picker-ico"> <i class="icon-moon icon-moon-hammer"></i> </a>';
 $str += '	<div id="dt-style-picker">';
 $str += '   	<h2> Select Your Style </h2>';
 $str += '       <h3> Choose your layout </h3>';
@@ -41,10 +41,10 @@ $str += $patterns;
 $str += '			</ul>';
 $str += '			<div class="hr"> </div>';
 $str += '		</div>';
-/*$str += '		<h3 class="color-scheme"> Color scheme </h3>';
-$str += '		<ul class="color-picker">';
-$str += 		$colors;
-$str += '		</ul>';*/
+// /*$str += '		<h3 class="color-scheme"> Color scheme </h3>';
+// $str += '		<ul class="color-picker">';
+// $str += 		$colors;
+// $str += '		</ul>';*/
 $str += '	</div>';
 $str += '</div><!-- **DT Style Picker Wrapper - End** -->';
 

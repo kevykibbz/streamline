@@ -1180,62 +1180,7 @@
             </div>
 
             <div class="vc_row-full-width vc_clearfix"></div>
-
-            <div class="vc_row wpb_row vc_row-fluid">
-                <div class="wpb_column vc_column_container vc_col-sm-12">
-                    <div class="vc_column-inner ">
-                        <div class="wpb_wrapper">
-                            <div id="1556964498396-90ff88af-6ae2" class="dt-sc-empty-space"></div>
-                            <div class="wpb_single_image wpb_content_element vc_align_center">
-
-                               <figure class="wpb_wrapper vc_figure">
-                                    <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="1170" height="355" data-src="{{ url('wp-content/uploads/sites/12/2018/05/home-img1.jpg')}}" src="{{ url('images/loader.gif')}}" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/home-img1.jpg')}} 1170w, {{ url('wp-content/uploads/sites/12/2018/05/home-img1-300x91.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/home-img1-768x233.jpg')}} 768w, {{ url('wp-content/uploads/sites/12/2018/05/home-img1-1024x311.jpg')}} 1024w, {{ url('wp-content/uploads/sites/12/2018/05/home-img1-600x182.jpg')}} 600w"
-                                            sizes="(max-width: 1170px) 100vw, 1170px" /></div>
-                                </figure>
-                            </div>
-                            <div class="vc_row wpb_row vc_inner vc_row-fluid">
-                                <div class="top-overlay-content wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill">
-                                    <div class="vc_column-inner vc_custom_1527150322570">
-                                        <div class="wpb_wrapper">
-                                            <div id="1527150538439-56b4a6d9-7377" class="dt-sc-empty-space"></div>
-                                            <div class='dt-sc-title script-with-sub-title subheading-text leftside-border'>
-                                                <h4>OVER 30 YEARS</h4>
-                                                <h2>Making Bathroom Look Elegant since 1981</h2>
-                                            </div>
-                                            <div class="wpb_text_column wpb_content_element ">
-                                                <div class="wpb_wrapper">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wpb_column vc_column_container vc_col-sm-6">
-                                    <div class="vc_column-inner vc_custom_1527153719376">
-                                        <div class="wpb_wrapper">
-                                            <div id="1527153750129-c853d516-3158" class="dt-sc-empty-space"></div>
-                                            <div class='dt-sc-title script-with-sub-title subheading-text'>
-                                                <h4></h4>
-                                                <h2>Need advice? Call</h2>
-                                            </div><a href='#' target='_self' title='' class='dt-sc-button   xlarge icon-left with-icon  filled  with-num'><span class='fa fa-phone'> </span> (800) 880 0808 888 </a>
-                                            <div class='dt-sc-clear '> </div>
-                                            <div id="1528179986752-c77e5916-e85b" class="dt-sc-empty-space"></div>
-                                            <p class="text-md-left text-center vc_custom_heading normal">OPEN 7 DAYS : Mon-Fri 07.30 to 17.30,<br /> Sat 08.00 to 17.00, Sun By Appointment</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="1556964513230-0a119b82-510a" class="dt-sc-empty-space"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="vc_row-full-width vc_clearfix"></div>
-
+            
             <div class="vc_row wpb_row vc_row-fluid">
 	            <div class="wpb_column vc_column_container vc_col-sm-12">
 	                <div class="vc_column-inner ">

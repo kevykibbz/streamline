@@ -4,7 +4,7 @@
 <!-- ** Breadcrumb ** -->
 <section class="main-title-section-wrapper breadcrumb-left">
     <div class="main-title-section-bg"
-        style="background-image: url('{{ url('wp-content/uploads/sites/12/2018/05/bc-img.jpg')}}')}}'); background-position: left top; background-size: auto; background-repeat: no-repeat; background-attachment: fixed; ">
+        style="background-image: url('{{ url('wp-content/uploads/sites/12/2018/05/bc-img.jpg')}}'); background-position: left top; background-size: auto; background-repeat: no-repeat; background-attachment: fixed; ">
     </div>
     <div class="container">
         <div class="main-title-section">
@@ -12,6 +12,8 @@
         </div>
         <div class="breadcrumb">
             <a href="{{ url('/')}}">Home</a>
+            <span class="fa default"></span>
+            <span class="current">Shop</span>
             <span class="fa default"></span>
             <span class="current">Bath Furniture</span>
         </div>
@@ -92,7 +94,7 @@
                             <div class='product-thumb'><span class="out-of-stock"><span>Out of Stock</span></span><a
                                     class="image" href="#"
                                     title="Bathroom Hanger"><img width="300" height="300"
-                                        data-src="{{ url('wp-content/uploads/sites/12/2018/05/product-17-300x300.jpg')}}"
+                                        src="{{ url('wp-content/uploads/sites/12/2018/05/product-17-300x300.jpg')}}"
                                         class="attachment-shop_catalog size-shop_catalog wp-post-image" alt=""
                                         loading="lazy"
                                         srcset="{{ url('wp-content/uploads/sites/12/2018/05/product-17-300x300.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/product-17-150x150.jpg')}} 150w, {{ url('wp-content/uploads/sites/12/2018/05/product-17-768x768.jpg')}} 768w, {{ url('wp-content/uploads/sites/12/2018/05/product-17-600x600.jpg')}} 600w, {{ url('wp-content/uploads/sites/12/2018/05/product-17-100x100.jpg')}} 100w, {{ url('wp-content/uploads/sites/12/2018/05/product-17.jpg')}} 1000w"
