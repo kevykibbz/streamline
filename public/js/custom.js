@@ -33,15 +33,15 @@ $(document).ready(function()
   observerImages();
 });
 
-/*submit register form*/
-$(document).on('submit','.ContactForm',function()
+/*submit  form*/
+$(document).on('submit','.SubmitForm',function()
 {
   var el=$(this),
   btn_text=el.find('button:last').text(),
   form_data=new FormData(this);
-  el.find("input,textarea,select").attr('aria-invalid',false).parents('.form-group').removeClass('error').find('.help-block').html('');
+  el.find("input,textarea,select").removeClass('is-invalid').parents('.form-group').find('.feedback').removeClass('text-danger').html('');
   el.children().find('.is-invalid').removeClass('is-invalid');
-  el.parents('.form-wrapper').find('.load-overlay .loader-container').html(`<div class="loader"><svg class="circular" viewBox="25 25 50 50"><circle class="path" cx="50" cy="50" r="10" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg></div>`);
+  el.parents('.form-wrapper').find('.load-overlay .loader-container').html(`<div class="overlay-loader"><svg class="circular" viewBox="25 25 50 50"><circle class="path" cx="50" cy="50" r="10" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg></div>`);
   $.ajax(
     {
       url:el.attr('action'),
@@ -68,36 +68,12 @@ $(document).on('submit','.ContactForm',function()
             $('.small-model').modal({show:true});
             $('.small-model').find('.modal-title').text('Success');
             $('.small-model').find('.modal-body').html('<div class="text-success text-center"><i class="fa fa-check-circle"></i> '+callback.message+'</div>');
-            if(callback.email)
-            {
-              window.location='/'+callback.email;
-            }
-            if(callback.loanid)
-            {
-              window.location='/apply/'+callback.loanid;
-            }
-            if(callback.eligible)
-            {
-              window.location='/check/eligibility/'+callback.loanid;
-            }
-            if(callback.step2)
-            {
-              window.location='/check/eligibility/step2/'+callback.loanid;
-            }
-            if(callback.step3)
-            {
-              window.location='/check/eligibility/step3/'+callback.loanid;
-            }
-            if(callback.step4)
-            {
-              window.location='/check/eligibility/step4/'+callback.loanid;
-            }
         }
         else
         {
-            $.each(callback.form_errors,function(key,value)
+            $.each(callback.errors,function(key,value)
             {
-              el.find("input[aria-label='"+key+"'],select[aria-label='"+key+"']").attr('aria-invalid',true).parents('.form-group,.form-check').addClass('error').find('.help-block').html('<ul role="alert"><li>'+value+'</li></ul>');
+              el.find("input[name='"+key+"'],select[name='"+key+"'],textarea[name='"+key+"']").addClass('is-invalid').parents('.form-group').find('.feedback').addClass('text-danger').html('<i class="fa fa-exclamation-circle"><i> '+value);
             });
         }
       },
@@ -111,12 +87,14 @@ $(document).on('submit','.ContactForm',function()
   return false;
 });
 
+
 $(document).on('click','.btn-remove',function()
 {
   $(this).parent().find('.loader-container').html(`<div class="loader"><svg class="circular" viewBox="25 25 50 50"><circle class="path" cx="50" cy="50" r="10" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg></div>`);
   $(this).parent().hide(); 
   return false;                                                
 });
+
 
 $(document).on('click','.reveal',function()
 {
@@ -132,6 +110,7 @@ $(document).on('click','.reveal',function()
         el.removeClass('fa-eye').addClass('fa-eye-slash');
     }
 });
+
 $(function()
 {
   $('#submitForm1').on('submit', function(e)

@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="copyright" content="Legit Crew, https://www.devme.com/">
-    <title>Streamline Ventures | @yield('title')</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="theme-color" content="">
-    <meta name="msapplication-navbutton-color" content="">
-    <meta name="apple-mobile-web-app-status-bar-style" content="">
-    <meta name="keywords" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:url" content="">
+    <meta name="copyright" content="Legit Crew, {{Config::get('constants.designer_link')}}">
+    <title>{{$site->site_name ? $site->site_name : env('SITE_NAME') }} | @yield('title')</title>
+    <meta name="description" content="{{$site->site_descreption ? $site->site_descreption : env('SITE_DESCRIPTION') }}">
+    <meta name="author" content="{{Config::get('constants.author')}}">
+    <meta name="theme-color" content="{{$site->theme_color ? $site->theme_color : env('THEME_COLOR') }}">
+    <meta name="msapplication-navbutton-color" content="{{$site->theme_color ? $site->theme_color : env('THEME_COLOR') }}">
+    <meta name="apple-mobile-web-app-status-bar-style" content="{{$site->theme_color ? $site->theme_color : env('THEME_COLOR') }}">
+    <meta name="keywords" content="{{$site->site_keywords ? $site->site_keywords : env('SITE_KEYWORDS') }}">
+    <meta property="og:site_name" content="{{$site->site_name ? $site->site_name : env('SITE_NAME') }}">
+    <meta property="og:url" content="{{$site->site_url ? $site->site_url : env('SITE_URL') }}">
     <meta http-equiv="Content-type" content="text/html;charset:utf-8">
     <meta property="og:type" content="website"> 
     <meta property="twitter:site" content="https://twitter.com/Kevin36285655">
@@ -21,14 +21,14 @@
     <meta property="twitter:image" content="https://twitter.com/Kevin36285655/photo">
     <meta property="twitter:description" content="Life's Simple.">
     <meta property="twitter:text:title" content="Life's Simple.">
-    <meta property="og:title" content="Streamline Ventures |  @yield('title')">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:description" content="">
+    <meta property="og:title" content="{{$site->site_name ? $site->site_name : env('SITE_NAME') }} |  @yield('title')">
+    <meta property="og:locale" content="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <meta property="og:description" content="{{$site->site_descreption ? $site->site_descreption : env('SITE_DESCRIPTION') }}">
     <meta property="og:image" content="{{ url('images/logos/favicon.ico') }}">
-    <meta name="apple-mobile-web-app-title" content="Streamline Ventures">
+    <meta name="apple-mobile-web-app-title" content="{{$site->site_name ? $site->site_name : env('SITE_NAME') }}">
     <meta name="apple-mobile-web-app-status-bar-style" content="#2bbbad">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
-    <meta name="application-name" content="Streamline Ventures |  @yield('title')">
+    <meta name="application-name" content="{{$site->site_name ? $site->site_name : env('SITE_NAME') }} |  @yield('title')">
     <meta name="msapplication-TileColor" content="">
     <meta name="theme-color" content="#ffffff">
     <link rel='shortlink' href='<?php echo url()->full(); ?>' />
@@ -106,8 +106,7 @@
     <script type='text/javascript' src="{{ url('js/jquery-3.5.1.min.js')}}"></script>
     <script type='text/javascript' src="{{ url('wp-includes/js/jquery/jquery-migrate.min.js')}}"></script>
     <script type='text/javascript' src="{{ url('js/custom.js')}}" ></script>
-    <script type='text/javascript' id='layerslider-utils-js-extra'>
-    </script>
+    <script type='text/javascript' id='layerslider-utils-js-extra'></script>
     <script type='text/javascript' id='homi-jqplugins-js-extra'>
         var dttheme_urls = { 
                                 "theme_base_url": "{{ url('/')}}\/wp-content\/themes\/homi", 
@@ -234,7 +233,9 @@
                                                             <div id="dt-1528866901077-ca741579-b467" class="dt-custom-nav-wrapper none" data-default-style="none" data-hover-style="none" data-default-decoration="none" data-hover-decoration="none" data-divider="yes">
                                                                 <div class="menu-top-bar-container">
                                                                     <ul id="menu-top-bar" class="custom-sub-nav dt-custom-nav">
-                                                                        <li id="menu-item-15293" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15293"><a href="#" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Support 001 1234 987</span></a><span class="divider"></span></li>
+                                                                        <li id="menu-item-15293" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15293"><a href="#" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i>
+                                                                            <span>Support{{$site->phone ? $site->phone : env('SITE_PHONE1') }}
+                                                                            </span></a><span class="divider"></span></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -247,13 +248,17 @@
                                                             <div id="1528869452524-cba44c59-a1d0" class="dt-sc-empty-space"></div>
                                                             <ul id='dt-1528866528209-8bab47f4-d0d9' class='dt-sc-sociable small right' data-default-style='none' data-default-border-radius='no' data-default-shape='' data-hover-style='none' data-hover-border-radius='no'
                                                                 data-hover-shape=''>
-                                                                <li class="facebook"> <a href="#" title="" target="_self">      <span class="dt-icon-default"> <span></span> </span>      <i></i>      <span class="dt-icon-hover"> <span></span> </span>  </a></li>
+                                                                <li class="facebook"> 
+                                                                    <a href="{{$site->facebook ? $site->facebook : env('FACEBOOK_LINK') }}" title="" target="_self">      <span class="dt-icon-default"> 
+                                                                                <span></span>      
+                                                                            </span>      <i></i>      <span class="dt-icon-hover"> <span></span> </span>  </a>
+                                                                </li>
                                                                 <li class="twitter">
-                                                                <a href="#" title="" target="_self">      <span class="dt-icon-default"> <span></span> </span>      <i></i>      <span class="dt-icon-hover"> <span></span> </span>  </a></li>
+                                                                <a href="{{$site->twitter ? $site->twitter : env('TWITTER_LINK') }}" title="" target="_self">      <span class="dt-icon-default"> <span></span> </span>      <i></i>      <span class="dt-icon-hover"> <span></span> </span>  </a></li>
                                                                 <li class="youtube">
-                                                                <a href="#" title="" target="_self">      <span class="dt-icon-default"> <span></span> </span>      <i></i>      <span class="dt-icon-hover"> <span></span> </span>  </a></li>
-                                                                <li class="dribbble">
-                                                                <a href="#" title="" target="_self">      <span class="dt-icon-default"> <span></span> </span>      <i></i>      <span class="dt-icon-hover"> <span></span> </span>  </a></li>
+                                                                <a href="{{$site->youtube ? $site->youtube : env('YOUTUBE_LINK') }}" title="" target="_self">      <span class="dt-icon-default"> <span></span> </span>      <i></i>      <span class="dt-icon-hover"> <span></span> </span>  </a></li>
+                                                                <li class="instagram">
+                                                                <a href="{{$site->instagram ? $site->instagram : env('INSTAGRAM_LINK') }}" title="" target="_self">      <span class="dt-icon-default"> <span></span> </span>      <i></i>      <span class="dt-icon-hover"> <span></span> </span>  </a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -278,10 +283,10 @@
                                                 <div class="menu-container">
                                                     <ul id="menu-header-menu" class="dt-primary-nav " data-menu="header-menu">
                                                         <li class="close-nav"></li>
-                                                        <li id="menu-item-14827" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-4 current_page_item menu-item-14827 dt-menu-item-14827 "><a href="{{ url('/')}}" class="item-has-icon icon-position-left"><span>Home</span></a></li>
-                                                        <li id="menu-item-14828" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14828 dt-menu-item-14828 "><a href="{{ url('about/us') }}" class="item-has-icon icon-position-left"><span>About Us</span></a></li>
-                                                        <li id="menu-item-14833" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14833 dt-menu-item-14833 "><a href="{{ url('/services')}}" class="item-has-icon icon-position-left"><span>Services</span></a></li>
-                                                        <li id="menu-item-15255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-15255 dt-menu-item-15255 "><a href="http://homi.themesrain.kinsta.cloud/products/" class="item-has-icon icon-position-left"><span>Products</span></a>
+                                                        <li id="menu-item-14827" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home  page_item page-item-4 @if($path=='home')current_page_item @endif menu-item-14827 dt-menu-item-14827 "><a href="{{ url('/')}}" class="item-has-icon icon-position-left"><span>Home </span></a></li>
+                                                        <li id="menu-item-14828" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14828 dt-menu-item-14828 @if($path=='about')current_page_item @endif"><a href="{{ url('about') }}" class="item-has-icon icon-position-left"><span>About Us</span></a></li>
+                                                        <li id="menu-item-14833" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14833 dt-menu-item-14833 @if($path=='services')current_page_item @endif"><a href="{{ url('/services')}}" class="item-has-icon icon-position-left"><span>Services</span></a></li>
+                                                        <li id="menu-item-15255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-15255 dt-menu-item-15255 @if($path=='proroducts')current_page_item @endif"><a href="http://homi.themesrain.kinsta.cloud/products/" class="item-has-icon icon-position-left"><span>Products</span></a>
                                                             <ul class="sub-menu is-hidden ">
                                                                 <li class="go-back"><a href="javascript:void(0);"></a></li>
                                                                 <li class="see-all"></li>
@@ -293,7 +298,7 @@
                                                                 <li id="menu-item-15254" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15254 dt-menu-item-15254 "><a href="{{ url('/showers')}}" class="item-has-icon icon-position-left"><span>Showers</span></a></li>
                                                             </ul>
                                                         </li>
-                                                        <li id="menu-item-14829" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14829 dt-menu-item-14829 "><a href="{{ url('/contact/us')}}" class="item-has-icon icon-position-left"><span>Contact Us</span></a></li>
+                                                        <li id="menu-item-14829" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14829 dt-menu-item-14829 @if($path=='contact')current_page_item  @endif"><a href="{{ url('/contact')}}" class="item-has-icon icon-position-left"><span>Contact Us</span></a></li>
                                                     </ul>
                                                     <div class="sub-menu-overlay"></div>
                                                 </div>
@@ -363,7 +368,7 @@
                                                             <li id="menu-item-14183" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14183"><a href="#" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Latest News</span></a><span class="divider"></span></li>
                                                             <li id="menu-item-14184" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14184"><a href="#" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Newsletter</span></a><span class="divider"></span></li>
                                                             <li id="menu-item-14185" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14185"><a href="#" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Careers</span></a><span class="divider"></span></li>
-                                                            <li id="menu-item-14944" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14944"><a href="{{ url('/contact/us')}}" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Contact Us</span></a><span class="divider"></span></li>
+                                                            <li id="menu-item-14944" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14944"><a href="{{ url('/contact')}}" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Contact Us</span></a><span class="divider"></span></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -396,9 +401,9 @@
                                                 <h3 style="text-align: left" class="vc_custom_heading footer-title">Contact</h3>
                                                 <div class='dt-sc-contact-info type1 '><span class='pe-icon pe-call'> </span><strong>Toll Free:</strong> 1224 2234 LAW</div>
                                                 <div class="vc_empty_space" style="height: 10px"><span class="vc_empty_space_inner"></span></div>
-                                                <div class='dt-sc-contact-info type1 '><span class='pe-icon pe-mail'> </span><a title="" href="#"> support@livecon.com </a></div>
+                                                <div class='dt-sc-contact-info type1 '><span class='pe-icon pe-mail'> </span><a title="Mail us today" href="mailto:{{$site->email ? $site->email : env('SITE_EMAIL') }}"> {{$site->email ? $site->email : env('SITE_EMAIL') }} </a></div>
                                                 <div class="vc_empty_space" style="height: 10px"><span class="vc_empty_space_inner"></span></div>
-                                                <div class='dt-sc-contact-info type1 '><span class='pe-icon pe-map-marker'> </span>625 @ David Blake Road, <br> Adventureland, LA 14536, USA</div>
+                                                <div class='dt-sc-contact-info type1 '><span class='pe-icon pe-map-marker'> </span>{{$site->site_address ? $site->site_address : env('SITE_ADDRESS') }}, <br> {{$site->site_location ? $site->site_location : env('SITE_LOCATION') }}</div>
                                                 <div id="1557229618310-82514f87-3b33" class="dt-sc-empty-space"></div>
                                             </div>
                                         </div>
@@ -420,7 +425,7 @@
                     <div class="rs_col-sm-5 wpb_column vc_column_container vc_col-sm-6">
                         <div class="vc_column-inner ">
                             <div class="wpb_wrapper">
-                                <p style="font-size: 13px;color: #ffffff;text-align: left" class="vc_custom_heading uppercase rs_aligncenter">© <?php echo date('Y'); ?>. All Rights Reserved.Designed and coded by <a href="#" target="_blank">Devme.</a></p>
+                                <p style="font-size: 13px;color: #ffffff;text-align: left" class="vc_custom_heading uppercase rs_aligncenter">© <?php echo date('Y'); ?>. All Rights Reserved.Designed and coded by <a href="{{Config::get('constants.designer_link')}}" target="_blank">{{Config::get('constants.designer_name')}}.</a></p>
                             </div>
                         </div>
                     </div>
@@ -433,7 +438,7 @@
                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14183"><a href="#" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Latest News</span></a></li>
                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14184"><a href="#" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Newsletter</span></a></li>
                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14185"><a href="#" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Careers</span></a></li>
-                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14944"><a href="{{ url('/contact/us') }}" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Contact Us</span></a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14944"><a href="{{ url('/contact') }}" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Contact Us</span></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -501,6 +506,21 @@
             <div class='dt-sc-tabs-vertical-content'>You can read about our cookies and privacy settings in detail on our Privacy Policy Page. <br><br> <a href='#'>Privacy Policy</a></div>
         </div>
     </div>
+     <!-- Small Modal -->
+    <div class="modal fade small-model bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mySmallModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body"></div>
+            </div>
+        </div>
+    </div>
+    <script type='text/javascript' src="{{ url('js/jquery-3.5.1.min.js')}}"></script>
     <script type='text/javascript' src="{{ url('wp-content/plugins/Ultimate_VC_Addons/assets/min-js/modal-all.min.js')}}" ></script>
     <script type='text/javascript' src="{{ url('wp-content/themes/homi/framework/js/modernizr.custom.js')}}"></script>
     <script type='text/javascript' src="{{ url('wp-includes/js/dist/vendor/regenerator-runtime.min.js')}}"></script>
@@ -534,5 +554,8 @@
     <script type='text/javascript' src="{{ url('wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate_bg.min.js')}}"></script>
     <script type='text/javascript' src="{{ url('wp-content/plugins/Ultimate_VC_Addons/assets/min-js/vhparallax.min.js')}}" ></script>
     <script type='text/javascript' src="{{ url('js/streamline.js')}}" ></script>
+    <script type="text/javascript">
+            $.ajaxSetup({ headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}});
+    </script>
 </body>
 </html>

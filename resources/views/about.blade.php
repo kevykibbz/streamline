@@ -65,22 +65,18 @@
 									</div>
 								</div>
 								<div class="wpb_column vc_column_container vc_col-sm-6">
-									<div class="vc_column-inner vc_custom_1527153719376">
-										<div class="wpb_wrapper">
-											<div id="1527153750129-c853d516-3158" class="dt-sc-empty-space"></div>
-											<div class='dt-sc-title script-with-sub-title subheading-text'>
-												<h4></h4>
-												<h2>Need advice? Call</h2>
-											</div><a href='#' target='_self' title=''
-												class='dt-sc-button   xlarge icon-left with-icon  filled  with-num'><span
-													class='fa fa-phone'> </span> (800) 880 0808 888 </a>
-											<div class='dt-sc-clear '> </div>
-											<div id="1528179986752-c77e5916-e85b" class="dt-sc-empty-space"></div>
-											<p style="text-align: left" class="vc_custom_heading normal">OPEN 7 DAYS : Mon-Fri
-												07.30 to 17.30,<br />
-												Sat 08.00 to 17.00, Sun By Appointment</p>
-										</div>
-									</div>
+									 <div class="vc_column-inner vc_custom_1527153719376">
+	                                    <div class="wpb_wrapper">
+	                                        <div id="1527153750129-c853d516-3158" class="dt-sc-empty-space"></div>
+	                                        <div class='dt-sc-title script-with-sub-title subheading-text'>
+	                                            <h4></h4>
+	                                            <h2>Need advice? Call</h2>
+	                                        </div><a href="tel:{{$site->phone ? $site->phone : env('PHONE1') }}" target='_self' title='' class='dt-sc-button   xlarge icon-left with-icon  filled  with-num'><span class='fa fa-phone'> </span> {{$site->phone ? $site->phone : env('PHONE1') }} </a>
+	                                        <div class='dt-sc-clear '> </div>
+	                                        <div id="1528179986752-c77e5916-e85b" class="dt-sc-empty-space"></div>
+	                                        <p class="text-md-left text-center vc_custom_heading normal">OPEN 7 DAYS : {{$site->working_days ? $site->working_days : env('SITE_WORKING_DAYS') }} {{$site->working_hours ? $site->working_hours : env('SITE_WORKING_HOURS') }},<br /> Special days:{{$site->special_days ? $site->special_days : env('SITE_SPECIAL_DAYS') }} {{$site->special_hours ? $site->special_hours : env('SITE_SPECIAL_HOURS') }}.By Management</p>
+	                                    </div>
+	                                </div>
 								</div>
 							</div>
 							<div id="1556964513230-0a119b82-510a" class="dt-sc-empty-space"></div>

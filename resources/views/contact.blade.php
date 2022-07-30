@@ -35,7 +35,7 @@
                             <div class="wpb_wrapper">
                                 <h2 style="font-size: 60px;line-height: 1;text-align: left" class="vc_custom_heading">
                                     Toll Free<br>
-                                    <strong>+415 555 2671</strong>
+                                    <strong>{{$site->phone ? $site->phone : env('PHONE1') }}</strong>
                                 </h2>
                                 <div class="wpb_text_column wpb_content_element ">
                                     <div class="wpb_wrapper">
@@ -63,27 +63,35 @@
                                 <div class="ult-spacer spacer-62daa46932058" data-id="62daa46932058" data-height="30"
                                     data-height-mobile="30" data-height-tab="30" data-height-tab-portrait=""
                                     data-height-mobile-landscape="" style="clear:both;display:block;"></div>
-                                <div role="form" class="wpcf7" id="wpcf7-f14642-p13924-o1" lang="en-US" dir="ltr">
+                                <div role="form" class="form-wrapper position-relative wpcf7" id="wpcf7-f14642-p13924-o1" lang="en-US" dir="ltr">
+                                    <div class="load-overlay" style="display:none">
+                                      <span class="overlay-close btn-remove" title="close overlay"><i class="fa fa-close"></i></span>
+                                          <div class="wrapper-overlay">
+                                              <div class="row">
+                                                  <div class="col-12">
+                                                      <div class="loader-container">
+                                                          <div class="overlay-loader">
+                                                              <svg class="circular" viewBox="25 25 50 50">
+                                                              <circle class="path" cx="50" cy="50" r="10" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+                                                              </svg>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                    </div>
                                     <div class="screen-reader-response">
                                         <ul></ul>
                                     </div>
-                                    <form action="/contact-us/#wpcf7-f14642-p13924-o1" method="post"
-                                        class="wpcf7-form init" novalidate="novalidate" data-status="init">
-                                        <div style="display: none;">
-                                            <input type="hidden" name="_wpcf7" value="14642">
-                                            <input type="hidden" name="_wpcf7_version" value="5.4.2">
-                                            <input type="hidden" name="_wpcf7_locale" value="en_US">
-                                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f14642-p13924-o1">
-                                            <input type="hidden" name="_wpcf7_container_post" value="13924">
-                                            <input type="hidden" name="_wpcf7_posted_data_hash" value="">
-                                        </div>
+                                    <form action="" method="post" class="SubmitForm" novalidate>
                                         <div class="vc_row wpb_row vc_row-fluid">
                                             <div class="wpb_column vc_column_container vc_col-sm-12">
                                                 <div class="vc_column-inner ">
-                                                    <div class="wpb_wrapper"><span
+                                                    <div class="form-group wpb_wrapper"><span
                                                             class="wpcf7-form-control-wrap deptname">
-                                                            <div class="selection-box"><select name="deptname"
-                                                                    class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
+                                                            <div class="selection-box">
+                                                                <select aria-label="deptname" name="deptname"
+                                                                    class="form-control wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
                                                                     aria-required="true" aria-invalid="false">
                                                                     <option value="Select Department">Select Department
                                                                     </option>
@@ -91,72 +99,101 @@
                                                                     <option value="Blood Bank">Blood Bank</option>
                                                                     <option value="Ophthalmology">Ophthalmology</option>
                                                                     <option value="Oncology">Oncology</option>
-                                                                </select></div>
-                                                        </span></div>
+                                                                </select>
+                                                            </div>
+                                                        </span>
+                                                        <div class="feedback"></div>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="dt-sc-hr-top-10 "> </div>
+                                            <div class="dt-sc-hr-top-5 "> </div>
+                                            <div class="wpb_column vc_column_container vc_col-sm-12">
+                                               <div class="vc_column-inner ">
+                                                    <div class="form-group wpb_wrapper">
+                                                        <span class="wpcf7-form-control-wrap subject">
+                                                            <input 
+                                                                type="text"
+                                                                name="subject" aria-label="subject" value="" size="40"
+                                                                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required "
+                                                                aria-required="true" aria-invalid="false"
+                                                                placeholder="Subject"></span>
+                                                        <div class="feedback"></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="dt-sc-hr-top-10 "> </div>
                                             <div class="dt-sc-hr-top-5 "> </div>
                                             <div class="wpb_column vc_column_container vc_col-sm-6">
                                                 <div class="vc_column-inner ">
-                                                    <div class="wpb_wrapper"><span
-                                                            class="wpcf7-form-control-wrap firstname"><input type="text"
-                                                                name="firstname" value="" size="40"
-                                                                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                    <div class="form-group wpb_wrapper">
+                                                        <span class="wpcf7-form-control-wrap first_name">
+                                                            <input 
+                                                                type="text"
+                                                                name="first_name" aria-label="first_name" value="" size="40"
+                                                                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required "
                                                                 aria-required="true" aria-invalid="false"
-                                                                placeholder="First Name"></span></div>
+                                                                placeholder="First Name"></span>
+                                                        <div class="feedback"></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="wpb_column vc_column_container vc_col-sm-6">
                                                 <div class="vc_column-inner ">
-                                                    <div class="wpb_wrapper"><span
-                                                            class="wpcf7-form-control-wrap lastname"><input type="text"
-                                                                name="lastname" value="" size="40"
+                                                    <div class="form-group wpb_wrapper"><span
+                                                            class="wpcf7-form-control-wrap last_name"><input type="text"
+                                                                name="last_name" aria-label="last_name" value="" size="40"
                                                                 class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                                                 aria-required="true" aria-invalid="false"
-                                                                placeholder="Last Name"></span></div>
+                                                                placeholder="Last Name"></span>
+                                                        <div class="feedback"></div>
+                                                    </div>
                                                 </div>
                                             </div><br>
                                             <div class="dt-sc-hr-invisible-xsmall "> </div><br>
                                             <div class="wpb_column vc_column_container vc_col-sm-6">
                                                 <div class="vc_column-inner ">
-                                                    <div class="wpb_wrapper"><span
-                                                            class="wpcf7-form-control-wrap emailaddress"><input
-                                                                type="email" name="emailaddress" value="" size="40"
+                                                    <div class="form-group wpb_wrapper"><span
+                                                            class="wpcf7-form-control-wrap email"><input
+                                                                type="email" aria-label="email" name="email" value="" size="40"
                                                                 class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
                                                                 aria-required="true" aria-invalid="false"
-                                                                placeholder="Email Address"></span></div>
+                                                                placeholder="Email Address"></span>
+                                                    <div class="feedback"></div>
+                                                    </div>
                                                 </div>
                                             </div><br>
                                             <div class="wpb_column vc_column_container vc_col-sm-6">
                                                 <div class="vc_column-inner ">
-                                                    <div class="wpb_wrapper"><span
-                                                            class="wpcf7-form-control-wrap phonumber"><input type="tel"
-                                                                name="phonumber" value="" size="40"
+                                                    <div class="form-group wpb_wrapper"><span
+                                                            class="wpcf7-form-control-wrap phone"><input type="tel"
+                                                                name="phone" aria-label="phone" value="" size="40"
                                                                 class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel"
                                                                 aria-required="true" aria-invalid="false"
-                                                                placeholder="Phone Number"></span></div>
+                                                                placeholder="Phone Number"></span>
+                                                    <div class="feedback"></div>
+                                                    </div>
                                                 </div>
                                             </div><br>
                                             <div class="dt-sc-hr-invisible-xsmall "> </div>
                                             <div class="dt-sc-clear "> </div>
                                             <div class="wpb_column vc_column_container vc_col-sm-12">
                                                 <div class="vc_column-inner ">
-                                                    <div class="wpb_wrapper"><span
-                                                            class="wpcf7-form-control-wrap depttextarea"><textarea
-                                                                name="depttextarea" cols="40" rows="10"
+                                                    <div class="form-group wpb_wrapper"><span
+                                                            class="wpcf7-form-control-wrap message"><textarea
+                                                                name="message"  aria-label="message" cols="40" rows="10"
                                                                 class="wpcf7-form-control wpcf7-textarea"
                                                                 aria-invalid="false"
                                                                 placeholder="Your Message"></textarea></span>
+                                                        <div class="feedback"></div>
                                                         <div class="dt-sc-hr-top-5 "> </div>
-                                                        <p><input type="submit" value="Book Now"
-                                                                class="wpcf7-form-control wpcf7-submit"><span
-                                                                class="ajax-loader"></span></p>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="wpb_column vc_column_container vc_col-sm-12 text-center" style="text-align:center">
+                                                <button class="wpcf7-form-control wpcf7-submit">Submit</button>
+                                            </div>
                                         </div>
-                                        <div class="wpcf7-response-output" aria-hidden="true"></div>
                                     </form>
                                 </div>
                             </div>

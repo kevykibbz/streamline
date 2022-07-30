@@ -654,7 +654,7 @@
                         <div class="wpb_wrapper">
                             <h2 style="font-size: 60px;line-height: 1;text-align: left" class="vc_custom_heading">Toll
                                 Free<br />
-                                <strong>+415 555 2671</strong>
+                                <strong>{{$site->phone ? $site->phone : env('PHONE1') }}</strong>
                             </h2>
                             <div class="wpb_text_column wpb_content_element ">
                                 <div class="wpb_wrapper">
