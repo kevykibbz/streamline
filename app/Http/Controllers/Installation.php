@@ -59,6 +59,7 @@ class Installation extends Controller
                 'username'=>$request->username,
                 'phone'=>$request->phone,
                 'is_superuser'=>true,
+                'role'=>'superuser',
                 'password'=>Hash::make($request->password)
             ]);
             if($user)
