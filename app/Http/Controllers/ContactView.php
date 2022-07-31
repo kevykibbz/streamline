@@ -8,13 +8,15 @@ use App\Models\Contact;
 use Validator;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactMail;
+use App\Models\Category;
 
 class ContactView extends Controller
 {
     protected function get(Request $request)
     {
         $site=SiteConstants::all()[0];
-        return view('contact',['site'=>$site,'path'=>'contact']);
+        $categories=Category::all();
+        return view('contact',['site'=>$site,'path'=>'contact','categories'=>$categories]);
     }
     protected function save(Request $request)
     {

@@ -388,6 +388,7 @@
                     </li>
                     <li><a href="/admins" aria-expanded="false"><i class="nav-icon ti ti-shield"></i><span class="nav-title">Admins </span></a> </li>
                     <li><a href="/employees" aria-expanded="false"><i class="nav-icon ti ti-user"></i><span class="nav-title">Employees </span></a> </li>
+                    <li><a href="/categories" aria-expanded="false"><i class="nav-icon ti ti-shopping-cart"></i><span class="nav-title">Product categories </span></a> </li>
                     <li><a href="#" aria-expanded="false"><i class="nav-icon ti ti-email"></i><span class="nav-title">Add products </span></a> </li>
                     <li>
                         <a class="has-arrow" href="javascript:void(0)" aria-expanded="false">

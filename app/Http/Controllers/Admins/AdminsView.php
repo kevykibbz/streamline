@@ -25,7 +25,6 @@ class AdminsView extends Controller
     protected function delete(Request$request)
     {
     	User::where('id',$request->id)->delete();
-        $site=SiteConstants::all()[0];
         return response()->json(['valid'=>true,'message'=>'Admin deleted  successfully.']);
     } 
     protected function add()

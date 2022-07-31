@@ -5,6 +5,7 @@ use App\Http\Controllers\Admins\DasboardView;
 use App\Http\Controllers\Admins\ProfileView;
 use App\Http\Controllers\Admins\MessagesView;
 use App\Http\Controllers\Admins\AdminsView;
+use App\Http\Controllers\Admins\CategoryView;
 use App\Http\Controllers\Admins\EmployeesView;
 use App\Http\Controllers\Admins\SiteSettings;
 use App\Http\Controllers\Admins\LoginView;
@@ -12,12 +13,14 @@ use App\Http\Controllers\ContactView;
 use App\Http\Controllers\Installation;
 use App\Models\SiteConstants;
 use Illuminate\Support\Facades\Redirect;
+use App\Models\Category;
 
 
 Route::get('/', function ()
 {
     $site=SiteConstants::all()[0];
-    return view('welcome',['site'=>$site,'path'=>'home']);
+    $categories=Category::all();
+    return view('welcome',['site'=>$site,'path'=>'home','categories'=>$categories]);
 });
 
 Route::get('/about', function ()
@@ -130,6 +133,12 @@ Route::group(['middleware' => 'auth'], function ()
     Route::post('/management/{username}',[ProfileView::class,'update']);
     Route::post('/management/changepassword',[ProfileView::class,'userchangepassword']);
     Route::post('/management/profile/image',[ProfileView::class,'profilepic']);
+    Route::get('/categories',[CategoryView::class,'get']);
+    Route::get('/add/category',[CategoryView::class,'add']);
+    Route::post('/add/category',[CategoryView::class,'save']);
+    Route::get('/edit/category/{id}',[CategoryView::class,'edit']);
+    Route::post('/edit/category/{id}',[CategoryView::class,'update']);
+    Route::get('/delete/category/{id}',[CategoryView::class,'delete']);
 });
 
 #installation

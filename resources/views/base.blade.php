@@ -289,14 +289,15 @@
                                                         <li id="menu-item-14833" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14833 dt-menu-item-14833 @if($path=='services')current_page_item @endif"><a href="{{ url('/services')}}" class="item-has-icon icon-position-left"><span>Services</span></a></li>
                                                         <li id="menu-item-15255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-15255 dt-menu-item-15255 @if($path=='proroducts')current_page_item @endif"><a href="http://homi.themesrain.kinsta.cloud/products/" class="item-has-icon icon-position-left"><span>Products</span></a>
                                                             <ul class="sub-menu is-hidden ">
+                                                                @if(count($categories) > 0)
+                                                                @foreach ($categories as $category)
                                                                 <li class="go-back"><a href="javascript:void(0);"></a></li>
                                                                 <li class="see-all"></li>
-                                                                <li id="menu-item-15249" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15249 dt-menu-item-15249 "><a href="{{ url('/bath/furniture')}}" class="item-has-icon icon-position-left"><span>Bath Furniture</span></a></li>
-                                                                <li id="menu-item-15250" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15250 dt-menu-item-15250 "><a href="{{ url('/hot/tubs') }}" class="item-has-icon icon-position-left"><span>Hot Tubs</span></a></li>
-                                                                <li id="menu-item-15251" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15251 dt-menu-item-15251 "><a href="{{ url('/faucets')}}" class="item-has-icon icon-position-left"><span>Faucets</span></a></li>
-                                                                <li id="menu-item-15252" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15252 dt-menu-item-15252 "><a href="{{ url('/wash/basin')}}" class="item-has-icon icon-position-left"><span>Wash Basin</span></a></li>
-                                                                <li id="menu-item-15253" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15253 dt-menu-item-15253 "><a href="{{ url('/saunas')}}" class="item-has-icon icon-position-left"><span>Saunas</span></a></li>
-                                                                <li id="menu-item-15254" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15254 dt-menu-item-15254 "><a href="{{ url('/showers')}}" class="item-has-icon icon-position-left"><span>Showers</span></a></li>
+                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom "><a href="/product/{{$category->category}}" class="item-has-icon icon-position-left"><span>{{$category->category}}</span></a></li>
+                                                                @endforeach
+                                                                @else
+                                                                <li id="menu-item-15255" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15254 dt-menu-item-15255 "><a href="javascript:void(0);" class="item-has-icon icon-position-left"><span>No category found</span></a></li>
+                                                                @endif
                                                             </ul>
                                                         </li>
                                                         <li id="menu-item-14829" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14829 dt-menu-item-14829 @if($path=='contact')current_page_item  @endif"><a href="{{ url('/contact')}}" class="item-has-icon icon-position-left"><span>Contact Us</span></a></li>

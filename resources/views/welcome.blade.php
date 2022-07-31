@@ -142,6 +142,7 @@
 <!-- ** Slider End ** -->
 @endsection
 @section('content')
+
 <!-- ** Container ** -->
 <div class="container">
     <section id="primary" class="content-full-width">
