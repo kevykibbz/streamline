@@ -53,7 +53,7 @@
             <div class="mb-4 bg-light mail-f px-4 py-3">
                 <div class="py-2 bg-white px-4 py-3 d-flex justify-content-between">
                     <p>Click here to <a href="#editer" data-toggle="collapse" class="text-primary px-1">Reply</a></p>
-                    <a href="javascript:void(0)" class="text-primary"><i class="fa fa-microphone"></i></a>
+                    <a href="javascript:void(0);" class="text-primary"><i class="fa fa-microphone"></i></a>
                 </div>
                 <form action="/reply/message/{{$message->id}}" method="post" class="SubmitForm" novalidate>
                     <div class="collapse" id="editer">
