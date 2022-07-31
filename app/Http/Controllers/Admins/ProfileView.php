@@ -10,6 +10,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use App\Rules\MatchOldPassword;
 use Illuminate\Support\Facades\Hash;
+use App\Models\Contact;
 
 
 class ProfileView extends Controller
@@ -17,7 +18,8 @@ class ProfileView extends Controller
     protected function get()
     {
     	$site=SiteConstants::all()[0];
-    	return view('admin/profile',['site'=>$site]);
+        $unread=Contact::where('is_read',false)->count();
+    	return view('admin/profile',['unread'=>$unread,'site'=>$site]);
     }
 
     protected function update(Request $request)

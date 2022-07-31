@@ -194,6 +194,7 @@
                                                 <button class="wpcf7-form-control wpcf7-submit">Submit</button>
                                             </div>
                                         </div>
+                                        <div class="response"></div>
                                     </form>
                                 </div>
                             </div>

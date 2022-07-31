@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Mail;
 use App\Mail\ResponseMail;
 use Validator;
 use Illuminate\Support\Facades\Redirect;
+use App\Models\Contact;
 
 class MessagesView extends Controller
 {
@@ -17,13 +18,15 @@ class MessagesView extends Controller
     {
     	$site=SiteConstants::all()[0];
     	$messages=Contact::all();
-    	return view('admin/messages',['site'=>$site,'messages'=>$messages]);
+        $unread=Contact::where('is_read',false)->count();
+    	return view('admin/messages',['unread'=>$unread,'site'=>$site,'messages'=>$messages]);
     }
     protected function viewMessage(Request $request)
     {
     	$site=SiteConstants::all()[0];
     	$message=Contact::where('id',$request->id)->get()[0];
-    	return view('admin/view_message',['site'=>$site,'message'=>$message]);
+        $unread=Contact::where('is_read',false)->count();
+    	return view('admin/view_message',['unread'=>$unread,'site'=>$site,'message'=>$message]);
     } 
 
     protected function reply(Request $request)
@@ -42,7 +45,7 @@ class MessagesView extends Controller
         }
         else
         {
-        	$email=Contact::where('id',$request->id)->get();
+        	$data=Contact::where('id',$request->id)->get()[0];
         	$results=Contact::where('id',$request->id)->update(
         	[
         		'reply'=>$request->reply,
@@ -50,7 +53,7 @@ class MessagesView extends Controller
         	]);
         	if($results)
         	{
-        		Mail::to($email)->send(new ResponseMail());
+        		Mail::to($data->email)->send(new ResponseMail($data));
             	return response()->json(['valid'=>true,'message'=>'Message sent successfully.']);
         	}
         }

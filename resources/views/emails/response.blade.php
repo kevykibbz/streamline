@@ -1,5 +1,8 @@
 @component('mail::message')
-{{$response->reply}}
+# Query response
+Dear {{$data->first_name}},<br>
+{{$data->reply}}
+
 Thanks,<br>
 {{ $site->site_name ? $site->site_name : config('constants.site_name') }}
 <br>

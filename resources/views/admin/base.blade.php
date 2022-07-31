@@ -26,12 +26,12 @@
     <meta property="og:locale" content="en_US">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <meta property="og:description" content="{{$site->site_descreption ? $site->site_descreption : env('SITE_DESCRIPTION') }}">
-    <meta property="og:image" content="{{ url ('images/logos/favicon.ico')}}">
+    <meta property="og:image" content="/logos/{{$site->favicon}}">
     <meta name="apple-mobile-web-app-title" content="{{$site->site_name ? $site->site_name : env('SITE_NAME') }}">
     <meta name="application-name" content="{{$site->site_name ? $site->site_name : env('SITE_NAME') }}">
     <meta name="msapplication-TileColor" content="{{$site->theme_color ? $site->theme_color : env('THEME_COLOR') }}">
     <meta name="theme-color" content="#ffffff">
-    <link rel="icon" href="{{ url ('images/logos/favicon.ico')}}" type="image/x-icon">
+    <link rel="icon" href="/logos/{{$site->favicon}}" type="image/x-icon">
     <link rel="mask-icon" href="{{ url ('images/logos/safari-pinned-tab.svg')}}" color="#666666">
     <link rel="stylesheet" href="{{ url ('plugins/jquery-datatable/dataTables.bootstrap4.min.css')}}">
     <link rel="stylesheet" href="{{ url ('css/font-awesome.min.css')}}">
@@ -92,7 +92,7 @@
             <div class="navbar-header d-flex align-items-center">
                 <a href="javascript:void:(0)" class="mobile-toggle"><i class="ti ti-align-right"></i></a>
                 <a class="navbar-brand" href="{{ url('/management/dashboard') }}">
-                    <img width="30" src="{{ url ('images/loader.gif')}}" data-src="{{ url ('images/logos/favicon.ico')}}" class="img-fluid logo-desktop" alt="{{$site->site_name ? $site->site_name : env('SITE_NAME') }} logo" /> {{$site->site_name ? $site->site_name : env('SITE_NAME') }}
+                    <img width="30" src="{{ url ('images/loader.gif')}}" data-src="/logos/{{$site->favicon}}" class="img-fluid logo-desktop" alt="{{$site->site_name ? $site->site_name : env('SITE_NAME') }} logo" /> {{$site->site_name ? $site->site_name : env('SITE_NAME') }}
                     <img width="30" src="{{ url ('images/icon/loader.gif')}}" data-src="{{ url ('images/logos/favicon.ico')}}" class="img-fluid logo-mobile" alt="{{$site->site_name ? $site->site_name : env('SITE_NAME') }} logo" />
                 </a>
             </div>
@@ -386,12 +386,14 @@
                             <li> <a href="/management/site/settings">Site Settings</a> </li>
                         </ul>
                     </li>
+                    <li><a href="/admins" aria-expanded="false"><i class="nav-icon ti ti-shield"></i><span class="nav-title">Admins </span></a> </li>
+                    <li><a href="/employees" aria-expanded="false"><i class="nav-icon ti ti-user"></i><span class="nav-title">Employees </span></a> </li>
                     <li><a href="#" aria-expanded="false"><i class="nav-icon ti ti-email"></i><span class="nav-title">Add products </span></a> </li>
                     <li>
                         <a class="has-arrow" href="javascript:void(0)" aria-expanded="false">
                             <i class="nav-icon dripicons dripicons-archive"></i>
                             <span class="nav-title">Contacts</span>
-                            <span class="nav-label label label-info">3</span>
+                            <span class="nav-label label label-info">{{number_format($unread)}}</span>
                         </a>
                         <ul aria-expanded="false">
                             <li class="active"> <a href="{{ url('/messages')}}">View customer  messages</a> </li>

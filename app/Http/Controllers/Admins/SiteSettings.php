@@ -6,13 +6,16 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\SiteConstants;
 use Validator;
+use App\Models\Contact;
+
 
 class SiteSettings extends Controller
 {
     protected function get()
 	{
 		$site=SiteConstants::all()[0];
-    	return view('admin/settings',['site'=>$site]);
+        $unread=Contact::where('is_read',false)->count();
+    	return view('admin/settings',['unread'=>$unread,'site'=>$site]);
 	}
 
 	protected function update(Request $request)
@@ -22,6 +25,7 @@ class SiteSettings extends Controller
             'site_url'=>'required|url',
             'theme_color'=>'required',
             'site_descreption'=>'required',
+            'favicon'=>'mimes:svg'
         ]);
 
         if(!$validator->passes())

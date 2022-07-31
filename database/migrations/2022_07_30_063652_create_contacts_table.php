@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('email');
             $table->string('phone');
             $table->text('message');
-            $table->text('reply');
+            $table->text('reply')->nullable();
             $table->boolean('is_read')->default(0);
             $table->timestamps();
         });

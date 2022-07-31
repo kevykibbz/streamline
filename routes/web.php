@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admins\DasboardView;
 use App\Http\Controllers\Admins\ProfileView;
 use App\Http\Controllers\Admins\MessagesView;
+use App\Http\Controllers\Admins\AdminsView;
+use App\Http\Controllers\Admins\EmployeesView;
 use App\Http\Controllers\Admins\SiteSettings;
 use App\Http\Controllers\Admins\LoginView;
 use App\Http\Controllers\ContactView;
@@ -104,6 +106,17 @@ Route::post('/management/login',[LoginView::class,'Check']);
 Route::group(['middleware' => 'auth'], function ()
 {
     Route::get('/messages',[MessagesView::class,'get']);
+    Route::get('/admins',[AdminsView::class,'get']);
+    Route::get('/add/admins',[AdminsView::class,'add']);
+    Route::get('/edit/admin/{id}',[AdminsView::class,'edit']);
+    Route::get('/delete/admin/{id}',[AdminsView::class,'delete']);
+    Route::post('/edit/admin/{id}',[AdminsView::class,'update']);
+    Route::post('/add/admins',[AdminsView::class,'save']);
+    Route::get('/employees',[EmployeesView::class,'get']);
+    Route::get('/add/employees',[EmployeesView::class,'add']);
+    Route::post('/add/employees',[EmployeesView::class,'save']);
+    Route::get('/edit/employee/{id}',[EmployeesView::class,'edit']);
+    Route::post('/edit/employee/{id}',[EmployeesView::class,'update']);
     Route::get('/view/message/{id}',[MessagesView::class,'viewMessage']);
     Route::get('/delete/message/{id}',[MessagesView::class,'deleteMessage']);
     Route::post('/reply/message/{id}',[MessagesView::class,'reply']);

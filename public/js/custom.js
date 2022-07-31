@@ -64,10 +64,8 @@ $(document).on('submit','.SubmitForm',function()
         el.find('button:last').attr('disabled',false).text(btn_text);
         if(callback.valid)
         {
-            el[0].reset();
-            $('.small-model').modal({show:true});
-            $('.small-model').find('.modal-title').text('Success');
-            $('.small-model').find('.modal-body').html('<div class="text-success text-center"><i class="fa fa-check-circle"></i> '+callback.message+'</div>');
+          el[0].reset();
+          $(document).find('.response').html('<div class="wpcf7-response-output" aria-hidden="true">'+callback.message+'</div>');
         }
         else
         {

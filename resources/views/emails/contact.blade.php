@@ -1,6 +1,6 @@
 @component('mail::message')
 # Query received
-Thank you for contacting us. we will get back to you assoon as possible.
+Thank you for contacting us. we will get back to you as soon as possible.
 
 Thanks,<br>
 {{ $site->site_name ? $site->site_name : config('constants.site_name') }}

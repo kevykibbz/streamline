@@ -24,7 +24,7 @@
     <meta property="og:title" content="{{$site->site_name ? $site->site_name : env('SITE_NAME') }} |  @yield('title')">
     <meta property="og:locale" content="{{ str_replace('_', '-', app()->getLocale()) }}">
     <meta property="og:description" content="{{$site->site_descreption ? $site->site_descreption : env('SITE_DESCRIPTION') }}">
-    <meta property="og:image" content="{{ url('images/logos/favicon.ico') }}">
+    <meta property="og:image" content="/logos/{{$site->favicon}}">
     <meta name="apple-mobile-web-app-title" content="{{$site->site_name ? $site->site_name : env('SITE_NAME') }}">
     <meta name="apple-mobile-web-app-status-bar-style" content="#2bbbad">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
@@ -39,8 +39,9 @@
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <link rel='dns-prefetch' href='<?php echo url()->full(); ?>' />
     <link href='//fonts.gstatic.com' crossorigin rel='preconnect' />
-    <link rel="icon" href="{{ url('wp-content/uploads/sites/12/2018/06/cropped-favicon-100x100.png')}}" sizes="32x32" />
-    <link rel="icon" href="{{ url('wp-content/uploads/sites/12/2018/06/cropped-favicon-300x300.png')}}" sizes="192x192" />
+    <link rel="icon" href="/logos/{{$site->favicon}}" sizes="16x16" />
+    <link rel="icon" href="/logos/{{$site->favicon}}" sizes="32x32" />
+    <link rel="icon" href="/logos/{{$site->favicon}}" sizes="192x192" />
     <link rel="apple-touch-icon" href="{{ url('wp-content/uploads/sites/12/2018/06/cropped-favicon-300x300.png')}}" />
 
     <link rel='stylesheet'  href="{{ url('wp-content/plugins/LayerSlider/assets/static/layerslider/css/layerslider.css')}}" type='text/css'/>

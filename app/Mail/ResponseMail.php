@@ -7,19 +7,21 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use App\Models\Contact;
+use App\Models\SiteConstants;
 
 class ResponseMail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    private $data;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($data)
     {
-        //
+        $this->data=$data;
     }
 
     /**
@@ -30,7 +32,6 @@ class ResponseMail extends Mailable
     public function build()
     {
         $site=SiteConstants::all()[0];
-        $response=Contact::select('reply')->get()->last();
-        return $this->markdown('emails.response',['site'=>$site,'response'=>$response]);
+        return $this->markdown('emails.response',['site'=>$site,'data'=>$this->data]);
     }
 }

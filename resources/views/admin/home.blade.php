@@ -54,7 +54,7 @@
                             </div>
                         </div>
                         <div class="align-self-center ml-auto">
-                            <h3 class="f-26 mb-0"><span class="count">3</span></h3>
+                            <h3 class="f-26 mb-0"><span class="count">{{number_format($messages)}}</span></h3>
                             <p class="text-muted mb-0">Total messages</p>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                             </div>
                         </div>
                         <div class="align-self-center ml-auto">
-                            <h3 class="f-26 mb-0"><span class="count">1</span></h3>
+                            <h3 class="f-26 mb-0"><span class="count">{{number_format($admins)}}</span></h3>
                             <p class="text-muted mb-0">Site Admins</p>
                         </div>
                     </div>
@@ -86,7 +86,7 @@
                             <div id="datingdemo8"></div>
                         </div>
                         <div class="align-self-center ml-auto">
-                            <h3 class="f-26 mb-0"><span class="count">7</span></h3>
+                            <h3 class="f-26 mb-0"><span class="count">{{number_format($employees)}}</span></h3>
                             <p class="text-muted mb-0">Site Employees</p>
                         </div>
                     </div>
@@ -116,7 +116,7 @@
                                             <i class="fa fa-male"></i>
                                         </div>
                                         <div class="report-details">
-                                            <h4 class="m-b-0">7</h4>
+                                            <h4 class="m-b-0">{{number_format($read)}}</h4>
                                             <p>Answered</p>
                                         </div>
                                     </a>
@@ -125,7 +125,7 @@
                                             <i class="fa fa-female"></i>
                                         </div>
                                         <div class="report-details">
-                                            <h4 class="m-b-0">13</h4>
+                                            <h4 class="m-b-0">{{number_format($unread)}}</h4>
                                             <p>Unaswered</p>
                                         </div>
                                     </a>
