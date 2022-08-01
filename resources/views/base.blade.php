@@ -43,11 +43,16 @@
     <link rel="icon" href="/logos/{{$site->favicon}}" sizes="32x32" />
     <link rel="icon" href="/logos/{{$site->favicon}}" sizes="192x192" />
     <link rel="apple-touch-icon" href="{{ url('wp-content/uploads/sites/12/2018/06/cropped-favicon-300x300.png')}}" />
-
+    <script type="text/javascript">
+        window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"{{$site->site_url ? $site->site_url : env('SITE_URL') }}\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.4"}};
+        !function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+    </script>
     <link rel='stylesheet'  href="{{ url('wp-content/plugins/LayerSlider/assets/static/layerslider/css/layerslider.css')}}" type='text/css'/>
     <link rel='stylesheet' href="{{ url('wp-includes/css/dist/block-library/style.min.css')}}" type='text/css'  />
     <link rel='stylesheet' href="{{ url('wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/vendors-style.css')}}" type='text/css'/>
     <link rel='stylesheet' href="{{ url('wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style.css')}}" type='text/css' />
+    <link rel='stylesheet' href="{{ url('wp-content/plugins/woocommerce/assets/css/photoswipe/photoswipe.min.css')}}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{{ url('wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.min.css')}}" type='text/css' media='all' />
     <link rel='stylesheet' href="{{ url('wp-content/plugins/contact-form-7/includes/css/styles.css')}}" type='text/css'  />
     <link rel='stylesheet' href="{{ url('wp-content/plugins/designthemes-core-features-homi/shortcodes/css/animations.css')}}" type='text/css'  />
     <link rel='stylesheet'  href="{{ url('wp-content/plugins/designthemes-core-features-homi/shortcodes/css/slick.css')}}" type='text/css' />
@@ -507,6 +512,41 @@
             <div class='dt-sc-tabs-vertical-content'>You can read about our cookies and privacy settings in detail on our Privacy Policy Page. <br><br> <a href='#'>Privacy Policy</a></div>
         </div>
     </div>
+    <script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"Product","@id":"http:\/\/homi.themesrain.kinsta.cloud\/product\/bath-tub\/#product","name":"Bath Tub","url":"http:\/\/homi.themesrain.kinsta.cloud\/product\/bath-tub\/","description":"This is an external product.","image":"http:\/\/homi.themesrain.kinsta.cloud\/wp-content\/uploads\/sites\/12\/2017\/12\/product-1.jpg","sku":"wp-pennant","offers":[{"@type":"Offer","price":"11.05","priceValidUntil":"2023-12-31","priceSpecification":{"price":"11.05","priceCurrency":"USD","valueAddedTaxIncluded":"false"},"priceCurrency":"USD","availability":"http:\/\/schema.org\/InStock","url":"http:\/\/homi.themesrain.kinsta.cloud\/product\/bath-tub\/","seller":{"@type":"Organization","name":"Homi","url":"http:\/\/homi.themesrain.kinsta.cloud"}}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.00","reviewCount":2},"review":[{"@type":"Review","reviewRating":{"@type":"Rating","bestRating":"5","ratingValue":"4","worstRating":"1"},"author":{"@type":"Person","name":"Akila"},"reviewBody":"Test Reviews","datePublished":"2019-07-01T04:56:26+00:00"},{"@type":"Review","reviewRating":{"@type":"Rating","bestRating":"5","ratingValue":"4","worstRating":"1"},"author":{"@type":"Person","name":"Akila"},"reviewBody":"Test Review","datePublished":"2019-06-27T09:41:07+00:00"}]}</script><script type="text/html" id="wpb-modifications"></script>
+      <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="pswp__bg"></div>
+         <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+               <div class="pswp__item"></div>
+               <div class="pswp__item"></div>
+               <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+               <div class="pswp__top-bar">
+                  <div class="pswp__counter"></div>
+                  <button class="pswp__button pswp__button--close" aria-label="Close (Esc)"></button>
+                  <button class="pswp__button pswp__button--share" aria-label="Share"></button>
+                  <button class="pswp__button pswp__button--fs" aria-label="Toggle fullscreen"></button>
+                  <button class="pswp__button pswp__button--zoom" aria-label="Zoom in/out"></button>
+                  <div class="pswp__preloader">
+                     <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                           <div class="pswp__preloader__donut"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                  <div class="pswp__share-tooltip"></div>
+               </div>
+               <button class="pswp__button pswp__button--arrow--left" aria-label="Previous (arrow left)"></button>
+               <button class="pswp__button pswp__button--arrow--right" aria-label="Next (arrow right)"></button>
+               <div class="pswp__caption">
+                  <div class="pswp__caption__center"></div>
+               </div>
+            </div>
+         </div>
+      </div>
      <!-- Small Modal -->
     <div class="modal fade small-model bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-sm">
@@ -527,6 +567,14 @@
     <script type='text/javascript' src="{{ url('wp-includes/js/dist/vendor/regenerator-runtime.min.js')}}"></script>
     <script type='text/javascript' src="{{ url('wp-includes/js/dist/vendor/wp-polyfill.min.js')}}"></script>
     <script type='text/javascript' src="{{ url('wp-content/plugins/contact-form-7/includes/js/index.js')}}" ></script>
+    <script type='text/javascript' src="{{ url('wp-content/plugins/woocommerce/assets/js/zoom/jquery.zoom.min.js')}}"></script>
+    <script type='text/javascript' src="{{ url('wp-content/plugins/js_composer/assets/lib/flexslider/jquery.flexslider.min.js')}}"></script>
+    <script type='text/javascript' src="{{ url('wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe.min.js')}}"></script>
+    <script type='text/javascript' src="{{ url('wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe-ui-default.min.js')}}"></script>
+    <script type='text/javascript' id='wc-single-product-js-extra'>
+         var wc_single_product_params = {"i18n_required_rating_text":"Please select a rating","review_rating_required":"yes","flexslider":{"rtl":false,"animation":"slide","smoothHeight":true,"directionNav":false,"controlNav":"thumbnails","slideshow":false,"animationSpeed":500,"animationLoop":false,"allowOneSlide":false},"zoom_enabled":"1","zoom_options":[],"photoswipe_enabled":"1","photoswipe_options":{"shareEl":false,"closeOnScroll":false,"history":false,"hideAnimationDuration":0,"showAnimationDuration":0},"flexslider_enabled":"1"};
+    </script>
+    <script type='text/javascript' src="{{ url('wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js')}}"></script>
     <script type='text/javascript' src="{{ url('wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js')}}"></script>
     <script type='text/javascript' src="{{ url('wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js')}}" ></script>
     <script type='text/javascript' src="{{ url('wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js')}}"></script>

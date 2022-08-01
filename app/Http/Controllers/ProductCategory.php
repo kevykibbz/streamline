@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\SiteConstants;
 use App\Models\Category;
+use App\Models\Review;
 
 
 class ProductCategory extends Controller
@@ -23,6 +24,7 @@ class ProductCategory extends Controller
     	$site=SiteConstants::all()[0];
         $product=Product::where('product_id',$request->product_id)->get()[0];
         $categories=Category::all();
-    	return view('description',['categories'=>$categories,'site'=>$site,'product'=>$product,'path'=>'product',]);
+        $reviews=Review::orderBy('id','desc')->take(5)->get();
+    	return view('description',['reviews'=>$reviews,'categories'=>$categories,'site'=>$site,'product'=>$product,'path'=>'product',]);
     }
 }

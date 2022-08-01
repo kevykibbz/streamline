@@ -35,7 +35,7 @@
                     data-columns="4" style="opacity: 0; transition: opacity .25s ease-in-out;">
                     <figure class="woocommerce-product-gallery__wrapper">
                         <div data-thumb="/products/{{$product->image_1000}}"
-                            data-thumb-alt="" class="woocommerce-product-gallery__image">
+                            data-thumb-alt="{{$product->product_name}}" class="woocommerce-product-gallery__image">
                             <a
                                 href="/products/{{$product->image_1000}}">
                                 <img
@@ -50,40 +50,61 @@
                                     sizes="(max-width: 600px) 100vw, 600px" />
                             </a>
                         </div>
-                        <div class="product-status-labels"><span
-                                class="onsale"><span>{{$product->tagname}}</span></span></div>
+                        <div class="product-status-labels">
+                            <span class="onsale"><span>{{$product->tagname}}</span></span>
+                        </div>
                     </figure>
                 </div>
                 <div class="summary entry-summary">
                     <h1 class="product_title entry-title">{{$product->product_name}}</h1>
-                    <p class="price">
-                        <span class="woocommerce-Price-amount amount">
-                            <bdi>
-                                <span class="woocommerce-Price-currencySymbol">&#36;</span>{{number_format($product->prev_price)}}
-                            </bdi></span>
-                        &ndash; <span class="woocommerce-Price-amount amount"><bdi><span
-                                    class="woocommerce-Price-currencySymbol">&#36;</span>{{number_format($product->price)}}</bdi></span>
-                    </p>
+                    <div class="woocommerce-product-rating">
+                       <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5"><span style="width:80%">Rated <strong class="rating">4.00</strong> out of 5 based on <span class="rating">2</span> customer ratings</span></div>
+                        @if (count($reviews) > 0)
+                            <a href="#reviews" class="woocommerce-review-link" rel="nofollow">(<span class="count">{{number_format(count($reviews))}}</span> customer reviews)</a>
+                        @endif
+                    </div>
+                    <p class="price"><span class="woocommerce-Price-amount amount">Price: <bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>{{number_format($product->price)}}</bdi></span></p>
                     <div class="woocommerce-product-details__short-description">
-                        <p>This is a grouped product.</p>
+                        <strong>Description:</strong>
+                       <p>{{$product->description}}</p>
                     </div>
-                   
+                    @if ($product->tagname == 'out of stock')
+                    <form class="variations_form cart" action="" method="post" enctype='multipart/form-data' data-product_id="45" data-product_variations="[]" onsubmit="return false;">
+                        <p class="stock out-of-stock">This product is currently out of stock and unavailable.</p>
+                    </form>
+                    @endif
                     <div class="product_meta">
-                        <span class="sku_wrapper">SKU: <span class="sku">logo-collection</span></span>
-                        <span class="posted_in">Categories: 
-                            <a href="/products/{{$product->category}}" rel="tag">{{$product->category}}</a><br>
-                            Other categories:
-                            @if (count($categories) > 0)                            
-                                @foreach ($categories as $category)
-                                    @if ($category->category != $product->category)
-                                        <a href="/products/{{$category->category}}" rel="tag">{{$category->category}}</a>,
-                                    @endif
-                                @endforeach
-                            @endif
-                        </span>
+                       <span class="sku_wrapper">SKU: <span class="sku">wp-pennant</span></span>
+                       <span class="posted_in">Categories: 
+                        <a href="/products/{{$product->category}}" rel="tag">{{$product->category}}</a><br>
+                        Other categories:
+                        @if (count($categories) > 0)                            
+                            @foreach ($categories as $category)
+                                @if ($category->category != $product->category)
+                                    <a href="/products/{{$category->category}}" rel="tag">{{$category->category}}</a>,
+                                @endif
+                            @endforeach
+                        @endif
+                    </span>
                     </div>
-                </div>
-
+                    <div class="wc_cart_btn_wrapper wc_btn_inline">
+                        @if ($product->tagname == 'out of stock')
+                        <a
+                            href="javascript:void(0);" data-quantity="1"
+                            class="dt-sc-button too-small button product_type_simple add_to_cart_button ajax_add_to_cart"
+                            data-product_id="60" data-product_sku="woo-cap"
+                            aria-label="Add &ldquo;{{$product->product_name}}&rdquo; to your cart"
+                            rel="nofollow">Add to cart</a>
+                        @else
+                        <a
+                            href="/add/cart/{{$product->product_id}}" data-quantity="1"
+                            class="dt-sc-button too-small button product_type_simple add_to_cart_button ajax_add_to_cart"
+                            data-product_id="60" data-product_sku="woo-cap"
+                            aria-label="Add &ldquo;{{$product->product_name}}&rdquo; to your cart"
+                            rel="nofollow">Add to cart</a>
+                        @endif
+                    </div>
+                 </div>
 
                 <div class="woocommerce-tabs wc-tabs-wrapper">
                     <ul class="tabs wc-tabs" role="tablist">
@@ -92,10 +113,15 @@
                             <a href="#tab-description">
                                 Description </a>
                         </li>
+                        <li class="additional_information_tab" id="tab-title-additional_information" role="tab" aria-controls="tab-additional_information">
+                            <a href="#tab-additional_information">
+                                Additional information
+                            </a>
+                        </li>
                         <li class="reviews_tab" id="tab-title-reviews" role="tab"
                             aria-controls="tab-reviews">
                             <a href="#tab-reviews">
-                                Reviews (0) </a>
+                                Reviews ({{number_format(count($reviews))}}) </a>
                         </li>
                     </ul>
                     <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab"
@@ -104,6 +130,33 @@
                         <h2>Description</h2>
 
                         <p>{{$product->description?$product->description:'No description about the product found.' }}</p>
+                    </div>
+                    <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab" id="tab-additional_information" role="tabpanel" aria-labelledby="tab-title-additional_information">
+
+                        <h2>Additional information</h2>
+
+                        <table class="woocommerce-product-attributes shop_attributes">
+                            <tr class="woocommerce-product-attributes-item woocommerce-product-attributes-item--weight">
+                                <th class="woocommerce-product-attributes-item__label">Weight</th>
+                                <td class="woocommerce-product-attributes-item__value">{{$product->weight?$product->weight:'0'}} kg</td>
+                            </tr>
+                            <tr class="woocommerce-product-attributes-item woocommerce-product-attributes-item--dimensions">
+                                <th class="woocommerce-product-attributes-item__label">Dimensions</th>
+                                <td class="woocommerce-product-attributes-item__value">{{$product->dimension?$product->dimension:'0x0x0'}} cm</td>
+                            </tr>
+                            <tr class="woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_pa_color">
+                                <th class="woocommerce-product-attributes-item__label">color</th>
+                                <td class="woocommerce-product-attributes-item__value">
+                                    <p>{{$product->color?$product->color:'Color not provided'}}</p>
+                                </td>
+                            </tr>
+                            <tr class="woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_logo">
+                                <th class="woocommerce-product-attributes-item__label">Logo</th>
+                                <td class="woocommerce-product-attributes-item__value">
+                                    <p>Yes, No</p>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                     <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--reviews panel entry-content wc-tab"
                         id="tab-reviews" role="tabpanel" aria-labelledby="tab-title-reviews">
@@ -115,15 +168,19 @@
                             <div id="review_form_wrapper">
                                 <div id="review_form">
                                     <div id="respond" class="comment-respond">
+                                        @if (count($reviews) > 0)
                                         <span id="reply-title" class="comment-reply-title">Be the first
-                                            to review &ldquo;Toilet Paper Stand&rdquo; <small><a
+                                            to review &ldquo;{{$product->product_name}}&rdquo; <small><a
                                                     rel="nofollow" id="cancel-comment-reply-link"
-                                                    href="/product/toilet-paper-stand/#respond"
+                                                    href="#"
                                                     style="display:none;">Cancel
                                                     reply</a></small></span>
+                                        @else
+                                        reviews found.
+                                        @endif
                                         <form
-                                            action="#"
-                                            method="post" id="commentform" class="comment-form"
+                                            action="/product/review/{{$product->product_id}}"
+                                            method="post" id="commentform" class="SubmitForm comment-form"
                                             novalidate>
                                             <p class="comment-notes"><span id="email-notes">Your email
                                                     address will not be published.</span> Required
@@ -138,35 +195,31 @@
                                                     <option value="2">Not that bad</option>
                                                     <option value="1">Very poor</option>
                                                 </select></p>
-                                            <p class="comment-form-comment"><label for="comment">Your
+                                            <p class="form-group comment-form-comment"><label for="comment">Your
                                                     review <span
                                                         class="required">*</span></label><textarea
-                                                    id="comment" name="comment" cols="45" rows="8"
-                                                    aria-required="true" required></textarea></p>
-                                            <div class="dt-sc-one-half column first">
+                                                    id="comment" name="review" cols="45" rows="8"
+                                                    aria-required="true" required></textarea>
+                                                <div class="feedback"></div>
+                                            </p>
+                                            <div class="form-group dt-sc-one-half column first">
                                                 <p class="comment-form-author"><label for="author">Name
                                                         <span class="required">*</span></label> <input
-                                                        id="author" name="author" type="text" value=""
+                                                        id="author" name="name" type="text" value=""
                                                         size="30" aria-required="true" required /></p>
+                                                        <div class="feedback"></div>
                                             </div>
-                                            <div class="dt-sc-one-half column">
+                                            <div class="form-group dt-sc-one-half column">
                                                 <p class="comment-form-email"><label for="email">Email
                                                         <span class="required">*</span></label> <input
                                                         id="email" name="email" type="email" value=""
                                                         size="30" aria-required="true" required /></p>
+                                                        <div class="feedback"></div>
                                             </div>
-                                            <p class="form-submit"><input name="submit" type="submit"
-                                                    id="submit" class="submit" value="Submit" /> <input
-                                                    type='hidden' name='comment_post_ID' value='14658'
-                                                    id='comment_post_ID' />
-                                                <input type='hidden' name='comment_parent'
-                                                    id='comment_parent' value='0' />
-                                            </p><input type="hidden" id="ak_js" name="ak_js"
-                                                value="27" /><textarea name="ak_hp_textarea" cols="45"
-                                                rows="8" maxlength="100"
-                                                style="display: none !important;"></textarea>
+                                            <input type="submit" class="submit" value="Submit">
                                         </form>
                                     </div><!-- #respond -->
+                                    <div class="response"></div>
                                 </div>
                             </div>
                             <div class="clear"></div>

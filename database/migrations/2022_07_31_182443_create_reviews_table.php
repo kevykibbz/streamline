@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('reviews', function (Blueprint $table) {
             $table->id();
+            $table->string('product_id')->nullable();
             $table->string('name')->nullable();
             $table->string('email')->nullable();
             $table->string('rating')->nullable();
