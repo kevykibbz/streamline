@@ -1,11 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admins\ProductView;
 use App\Http\Controllers\Admins\DasboardView;
 use App\Http\Controllers\Admins\ProfileView;
 use App\Http\Controllers\Admins\MessagesView;
 use App\Http\Controllers\Admins\AdminsView;
 use App\Http\Controllers\Admins\CategoryView;
+use App\Http\Controllers\ProductCategory;
 use App\Http\Controllers\Admins\EmployeesView;
 use App\Http\Controllers\Admins\SiteSettings;
 use App\Http\Controllers\Admins\LoginView;
@@ -26,7 +28,8 @@ Route::get('/', function ()
 Route::get('/about', function ()
 {
     $site=SiteConstants::all()[0];
-    return view('about',['site'=>$site,'path'=>'about']);
+    $categories=Category::all();
+    return view('about',['site'=>$site,'path'=>'about','categories'=>$categories]);
 });
 
 Route::get('/contact',[ContactView::class,'get']);
@@ -35,7 +38,8 @@ Route::post('/contact',[ContactView::class,'save']);
 Route::get('/services',function ()
 {
     $site=SiteConstants::all()[0];
-    return view('services',['site'=>$site,'path'=>'services']);
+    $categories=Category::all();
+    return view('services',['site'=>$site,'path'=>'services','categories'=>$categories]);
 });
 
 #variables
@@ -104,6 +108,9 @@ Route::get('/management/login',array('as'=>'login',function()
 }));
 Route::get('/logout',[LoginView::class,'Logout']);
 Route::post('/management/login',[LoginView::class,'Check']);
+Route::get('/products/{category}',[ProductCategory::class,'get']);
+Route::get('/product/description/{product_id}',[ProductCategory::class,'description']);
+
 
 #admin
 Route::group(['middleware' => 'auth'], function ()
@@ -139,9 +146,22 @@ Route::group(['middleware' => 'auth'], function ()
     Route::get('/edit/category/{id}',[CategoryView::class,'edit']);
     Route::post('/edit/category/{id}',[CategoryView::class,'update']);
     Route::get('/delete/category/{id}',[CategoryView::class,'delete']);
+    Route::get('/site/products',[ProductView::class,'get']);
+    Route::get('/add/product',[ProductView::class,'add']);
+    Route::post('/add/product',[ProductView::class,'save']);
+    Route::get('/edit/product/{product_id}',[ProductView::class,'edit']);
+    Route::post('/edit/product/{product_id}',[ProductView::class,'update']);
+    Route::get('/delete/product/{product_id}',[ProductView::class,'delete']);
+    Route::get('/customized/product/images/{product_id}',[ProductView::class,'customized']);
+    Route::post('/customized/product/images/{product_id}',[ProductView::class,'custompost']);
 });
 
 #installation
 Route::get('/site/installation',[Installation::class,'get']);
 Route::post('/site/installation',[Installation::class,'post']);
 Route::get('/start',[Installation::class,'start']);
+
+Route::get('/phpinfo',function()
+{
+    return phpinfo();
+});

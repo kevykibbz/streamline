@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\SiteConstants;
 use App\Models\Contact;
 use App\Models\User;
+use App\Models\Product;
 
 class DasboardView extends Controller
 {
@@ -18,6 +19,7 @@ class DasboardView extends Controller
     	$unread=Contact::where('is_read',false)->count();
     	$read=Contact::where('is_read',true)->count();
     	$messages=Contact::all()->count();
-    	return view('admin.home',['site'=>$site,'employees'=>$employees,'admins'=>$admins,'unread'=>$unread,'messages'=>$messages,'read'=>$read]);
+        $products=Product::all()->count();
+    	return view('admin.home',['products'=>$products,'site'=>$site,'employees'=>$employees,'admins'=>$admins,'unread'=>$unread,'messages'=>$messages,'read'=>$read]);
     }
 }

@@ -164,7 +164,7 @@
                                         sizes="(max-width: 420px) 100vw, 420px" /></div>
                                 <div class='dt-sc-image-content'>
                                     <div class='dt-sc-image-title'>
-                                        <h3><a href="#" target="_self">Faucets</a></h3>
+                                        <h3><a href="/products/faucets" target="_self">Faucets</a></h3>
                                     </div>
                                     <p></p>
                                 </div>
@@ -180,7 +180,7 @@
                                         sizes="(max-width: 420px) 100vw, 420px" /></div>
                                 <div class='dt-sc-image-content'>
                                     <div class='dt-sc-image-title'>
-                                        <h3><a href="#" target="_self">Bath Tubs</a></h3>
+                                        <h3><a href="/products/bathtubs" target="_self">Bath Tubs</a></h3>
                                     </div>
                                     <p></p>
                                 </div>
@@ -196,7 +196,7 @@
                                         sizes="(max-width: 420px) 100vw, 420px" /></div>
                                 <div class='dt-sc-image-content'>
                                     <div class='dt-sc-image-title'>
-                                        <h3><a href="#" target="_self">Showers</a></h3>
+                                        <h3><a href="/products/showers" target="_self">Showers</a></h3>
                                     </div>
                                     <p></p>
                                 </div>
@@ -528,10 +528,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/bath-furniture/" target="_self" title="#">Bathroom Sink Faucets</a></h3>
+                                                                    <h3><a href="/products/faucets" target="_self" title="#">Bathroom Sink Faucets</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/bath-furniture/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
+                                                                <p><a href='/products/faucets' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
                                                             </div>
                                                         </div>
                                                         <div id="1556970394360-01b3f401-bfc3" class="dt-sc-empty-space"></div>
@@ -546,10 +546,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/bath-furniture/" target="_self" title="#">Bathroom Sinks</a></h3>
+                                                                    <h3><a href="/products/bathtubs" target="_self" title="#">Bathroom Sinks</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/bath-furniture/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
+                                                                <p><a href='/products/bathtubs' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
                                                             </div>
                                                         </div>
                                                         <div id="1556970651012-7a633879-1762" class="dt-sc-empty-space"></div>
@@ -564,10 +564,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
 	                                                        <div class='dt-sc-image-content'>
 	                                                            <div class='dt-sc-image-title'>
-	                                                                <h3><a href="//homi.vedicthemes.com/product-category/bath-furniture/" target="_self" title="#">Bathroom Accessories</a></h3>
+	                                                                <h3><a href="/products/bathtubs" target="_self" title="#">Bathroom Accessories</a></h3>
 	                                                            </div>
 	                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-	                                                            <p><a href='//homi.vedicthemes.com/product-category/bath-furniture/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
+	                                                            <p><a href='/products/bathtubs' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
 	                                                        </div>
 	                                                    </div>
 	                                                    <div id="1556970665563-b8aec624-2508" class="dt-sc-empty-space"></div>
@@ -599,10 +599,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/bath-furniture/" target="_self" title="#">Hot Tubs</a></h3>
+                                                                    <h3><a href="/products/bathtubs" target="_self" title="#">Hot Tubs</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/bath-furniture/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
+                                                                <p><a href='/products/bathtubs' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -616,10 +616,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/bath-furniture/" target="_self" title="#">Shower Systems</a></h3>
+                                                                    <h3><a href="/products/bathtubs" target="_self" title="#">Shower Systems</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/bath-furniture/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
+                                                                <p><a href='/products/bathtubs' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -637,10 +637,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/hot-tubs/" target="_self" title="#">Tub and Shower Faucets</a></h3>
+                                                                    <h3><a href="/products/hottubs" target="_self" title="#">Tub and Shower Faucets</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/hot-tubs/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
+                                                                <p><a href='/products/hottubs' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
                                                             </div>
                                                         </div>
                                                         <div id="1556970500717-6dc07999-c09c" class="dt-sc-empty-space"></div>
@@ -655,10 +655,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
 	                                                        <div class='dt-sc-image-content'>
 	                                                            <div class='dt-sc-image-title'>
-	                                                                <h3><a href="//homi.vedicthemes.com/product-category/hot-tubs/" target="_self" title="#">Bath Tub Faucets</a></h3>
+	                                                                <h3><a href="/products/hottubs" target="_self" title="#">Bath Tub Faucets</a></h3>
 	                                                            </div>
 	                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-	                                                            <p><a href='//homi.vedicthemes.com/product-category/hot-tubs/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
+	                                                            <p><a href='/products/hottubs' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
 	                                                        </div>
 	                                                    </div>
 	                                                    <div id="1556970676494-7bb0345b-6db7" class="dt-sc-empty-space"></div>
@@ -673,10 +673,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
 	                                                        <div class='dt-sc-image-content'>
 	                                                            <div class='dt-sc-image-title'>
-	                                                                <h3><a href="//homi.vedicthemes.com/product-category/hot-tubs/" target="_self" title="#">Bathtubs</a></h3>
+	                                                                <h3><a href="/products/hottubs" target="_self" title="#">Bathtubs</a></h3>
 	                                                            </div>
 	                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-	                                                            <p><a href='//homi.vedicthemes.com/product-category/hot-tubs/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
+	                                                            <p><a href='/products/hottubs' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
 	                                                        </div>
 	                                                    </div>
 	                                                    <div id="1556970686005-4bf46480-7bbb" class="dt-sc-empty-space"></div>
@@ -691,10 +691,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
 	                                                        <div class='dt-sc-image-content'>
 	                                                            <div class='dt-sc-image-title'>
-	                                                                <h3><a href="//homi.vedicthemes.com/product-category/hot-tubs/" target="_self" title="#">Showers</a></h3>
+	                                                                <h3><a href="/products/hottubs" target="_self" title="#">Showers</a></h3>
 	                                                            </div>
 	                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-	                                                            <p><a href='//homi.vedicthemes.com/product-category/hot-tubs/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
+	                                                            <p><a href='/products/hottubs' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
 	                                                        </div>
 	                                                    </div>
 	                                                </div>
@@ -708,10 +708,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/hot-tubs/" target="_self" title="#">Toilets</a></h3>
+                                                                    <h3><a href="/products/hottubs" target="_self" title="#">Toilets</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/hot-tubs/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
+                                                                <p><a href='/products/hottubs' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -725,10 +725,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/hot-tubs/" target="_self" title="#">Toilet Seats</a></h3>
+                                                                    <h3><a href="/products/hottubs" target="_self" title="#">Toilet Seats</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/hot-tubs/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
+                                                                <p><a href='/products/hottubs' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -746,10 +746,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/faucets/" target="_self" title="#">Bathroom Vanities</a></h3>
+                                                                    <h3><a href="/products/faucets" target="_self" title="#">Bathroom Vanities</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/faucets/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
+                                                                <p><a href='/products/faucets' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
                                                             </div>
                                                         </div>
                                                         <div id="1556970510274-661e8d91-027a" class="dt-sc-empty-space"></div>
@@ -764,10 +764,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/faucets/" target="_self" title="#">Medicine Cabinets</a></h3>
+                                                                    <h3><a href="/products/faucets" target="_self" title="#">Medicine Cabinets</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/faucets/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
+                                                                <p><a href='/products/faucets' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
                                                             </div>
                                                         </div>
                                                         <div id="1556970696257-201cde81-09c8" class="dt-sc-empty-space"></div>
@@ -782,10 +782,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/faucets/" target="_self" title="#">Exhaust Fans</a></h3>
+                                                                    <h3><a href="/products/faucets" target="_self" title="#">Exhaust Fans</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/faucets/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
+                                                                <p><a href='/products/faucets' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
                                                             </div>
                                                         </div>
                                                         <div id="1556970705511-a0ff5cab-c5e4" class="dt-sc-empty-space"></div>
@@ -800,10 +800,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/faucets/" target="_self" title="#">Bidet Fixtures</a></h3>
+                                                                    <h3><a href="/products/faucets" target="_self" title="#">Bidet Fixtures</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/faucets/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
+                                                                <p><a href='/products/faucets' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -817,10 +817,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/faucets/" target="_self" title="#">Bidet Faucets</a></h3>
+                                                                    <h3><a href="/products/faucets" target="_self" title="#">Bidet Faucets</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/faucets/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
+                                                                <p><a href='/products/faucets' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -834,10 +834,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/faucets/" target="_self" title="#">Wash Faucets</a></h3>
+                                                                    <h3><a href="/products/faucets" target="_self" title="#">Wash Faucets</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/faucets/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
+                                                                <p><a href='/products/faucets' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -855,10 +855,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/wash-basin/" target="_self" title="#">Bathroom Accessories</a></h3>
+                                                                    <h3><a href="//products/washbasin" target="_self" title="#">Bathroom Accessories</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/wash-basin/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
+                                                                <p><a href='//products/washbasin' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
                                                             </div>
                                                         </div>
                                                         <div id="1556970524184-8129a4bf-7cc3" class="dt-sc-empty-space"></div>
@@ -873,10 +873,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/wash-basin/" target="_self" title="#">Bath Tub Faucets</a></h3>
+                                                                    <h3><a href="//products/washbasin" target="_self" title="#">Bath Tub Faucets</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/wash-basin/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
+                                                                <p><a href='//products/washbasin' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
                                                             </div>
                                                         </div>
                                                         <div id="1556970714694-e36abcd1-5374" class="dt-sc-empty-space"></div>
@@ -891,10 +891,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/wash-basin/" target="_self" title="#">Toilet Seats</a></h3>
+                                                                    <h3><a href="//products/washbasin" target="_self" title="#">Toilet Seats</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/wash-basin/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
+                                                                <p><a href='//products/washbasin' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
                                                             </div>
                                                         </div>
                                                         <div id="1556970725257-dfcea7ac-dedc" class="dt-sc-empty-space"></div>
@@ -909,10 +909,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/wash-basin/" target="_self" title="#">Bidet Fixtures</a></h3>
+                                                                    <h3><a href="//products/washbasin" target="_self" title="#">Bidet Fixtures</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/wash-basin/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
+                                                                <p><a href='//products/washbasin' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -926,10 +926,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
 	                                                        <div class='dt-sc-image-content'>
 	                                                            <div class='dt-sc-image-title'>
-	                                                                <h3><a href="//homi.vedicthemes.com/product-category/wash-basin/" target="_self" title="#">Toilets</a></h3>
+	                                                                <h3><a href="//products/washbasin" target="_self" title="#">Toilets</a></h3>
 	                                                            </div>
 	                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-	                                                            <p><a href='//homi.vedicthemes.com/product-category/wash-basin/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
+	                                                            <p><a href='//products/washbasin' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
 	                                                        </div>
 	                                                    </div>
 	                                                </div>
@@ -943,10 +943,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/wash-basin/" target="_self" title="#">Shower Faucets</a></h3>
+                                                                    <h3><a href="//products/washbasin" target="_self" title="#">Shower Faucets</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/wash-basin/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
+                                                                <p><a href='//products/washbasin' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -964,10 +964,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
 	                                                        <div class='dt-sc-image-content'>
 	                                                            <div class='dt-sc-image-title'>
-	                                                                <h3><a href="//homi.vedicthemes.com/product-category/saunas/" target="_self" title="#">Bathroom Sink Faucets</a></h3>
+	                                                                <h3><a href="/products/saunas" target="_self" title="#">Bathroom Sink Faucets</a></h3>
 	                                                            </div>
 	                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-	                                                            <p><a href='//homi.vedicthemes.com/product-category/saunas/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
+	                                                            <p><a href='/products/saunas' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
 	                                                        </div>
 	                                                    </div>
 	                                                    <div id="1556970534926-d8c9ddb5-7630" class="dt-sc-empty-space"></div>
@@ -982,10 +982,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
 	                                                        <div class='dt-sc-image-content'>
 	                                                            <div class='dt-sc-image-title'>
-	                                                                <h3><a href="//homi.vedicthemes.com/product-category/saunas/" target="_self" title="#">Shower Systems</a></h3>
+	                                                                <h3><a href="/products/saunas" target="_self" title="#">Shower Systems</a></h3>
 	                                                            </div>
 	                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-	                                                            <p><a href='//homi.vedicthemes.com/product-category/saunas/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
+	                                                            <p><a href='/products/saunas' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
 	                                                        </div>
 	                                                    </div>
 	                                                    <div id="1556970736305-e613df38-cf18" class="dt-sc-empty-space"></div>
@@ -1000,10 +1000,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/saunas/" target="_self" title="#">Showers</a></h3>
+                                                                    <h3><a href="/products/saunas" target="_self" title="#">Showers</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/saunas/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
+                                                                <p><a href='/products/saunas' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
                                                             </div>
                                                         </div>
                                                         <div id="1556970748783-71a9cdf2-e99f" class="dt-sc-empty-space"></div>
@@ -1018,10 +1018,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/saunas/" target="_self" title="#">Medicine Cabinets</a></h3>
+                                                                    <h3><a href="/products/saunas" target="_self" title="#">Medicine Cabinets</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/saunas/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
+                                                                <p><a href='/products/saunas' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1035,10 +1035,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/saunas/" target="_self" title="#">Urinals</a></h3>
+                                                                    <h3><a href="/products/saunas" target="_self" title="#">Urinals</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/saunas/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
+                                                                <p><a href='/products/saunas' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1052,10 +1052,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/saunas/" target="_self" title="#">Tankless and Water Heaters</a></h3>
+                                                                    <h3><a href="/products/saunas" target="_self" title="#">Tankless and Water Heaters</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/saunas/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
+                                                                <p><a href='/products/saunas' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1073,10 +1073,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/showers/" target="_self" title="#">Bathroom Sinks</a></h3>
+                                                                    <h3><a href="//products/showers" target="_self" title="#">Bathroom Sinks</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/showers/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
+                                                                <p><a href='//products/showers' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
                                                             </div>
                                                         </div>
                                                         <div id="1556970544007-b37f3c73-b142" class="dt-sc-empty-space"></div>
@@ -1091,10 +1091,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/showers/" target="_self" title="#">Tub and Shower Faucets</a></h3>
+                                                                    <h3><a href="//products/showers" target="_self" title="#">Tub and Shower Faucets</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/showers/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
+                                                                <p><a href='//products/showers' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
                                                             </div>
                                                         </div>
                                                         <div id="1556970758402-62d3af44-cf6d" class="dt-sc-empty-space"></div>
@@ -1109,10 +1109,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/showers/" target="_self" title="#">Toilets</a></h3>
+                                                                    <h3><a href="//products/showers" target="_self" title="#">Toilets</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/showers/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
+                                                                <p><a href='//products/showers' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
                                                             </div>
                                                         </div>
                                                         <div id="1556970769371-36afcc13-13bc" class="dt-sc-empty-space"></div>
@@ -1127,10 +1127,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/showers/" target="_self" title="#">Exhaust Fans</a></h3>
+                                                                    <h3><a href="//products/showers" target="_self" title="#">Exhaust Fans</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/showers/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
+                                                                <p><a href='//products/showers' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1144,10 +1144,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/showers/" target="_self" title="#">Shower Faucets</a></h3>
+                                                                    <h3><a href="//products/showers" target="_self" title="#">Shower Faucets</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/showers/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
+                                                                <p><a href='//products/showers' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1161,10 +1161,10 @@
                                                                                 sizes="(max-width: 1200px) 100vw, 1200px" /></div>
                                                             <div class='dt-sc-image-content'>
                                                                 <div class='dt-sc-image-title'>
-                                                                    <h3><a href="//homi.vedicthemes.com/product-category/showers/" target="_self" title="#">Bathtubs</a></h3>
+                                                                    <h3><a href="//products/showers" target="_self" title="#">Bathtubs</a></h3>
                                                                 </div>
                                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                                                                <p><a href='//homi.vedicthemes.com/product-category/showers/' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
+                                                                <p><a href='//products/showers' target='_blank' title='' class='dt-sc-button   medium   bordered  '> Read More </a></p>
                                                             </div>
                                                         </div>
                                                     </div>

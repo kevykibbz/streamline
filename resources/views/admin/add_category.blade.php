@@ -44,7 +44,11 @@
                             <input type="text" id="id_category" class="form-control" name="category" value="{{isset($category->category) ? $category->category :''}}">
                             <div class="feedback"></div>
                         </div>
-                        <div class="form-group">               
+                         <div class="form-group">
+                            <label for="id_category">Product Tagnames</label>
+                            <input type="text" id="id_category" class="form-control" name="tagname" placeholder="Eg out of stock,instock,sale etc" value="{{isset($category->tagname) ? $category->tagname :''}}">
+                            <div class="feedback"></div>
+                        </div>
                         <div class="text-center">
                             <button type="submit" class="btn btn-primary">
                                 <span></span><span>submit</span>

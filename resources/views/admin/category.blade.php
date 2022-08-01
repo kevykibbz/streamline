@@ -46,6 +46,7 @@
                                <tr>
                                    <th class="border-top-0">No.</th>
                                    <th class="border-top-0">category Name</th>
+                                   <th class="border-top-0">Tag Names</th>
                                    <th class="border-top-0">No of Products</th>
                                    <th class="border-top-0">Date Created</th>
                                    <th class="border-top-0">Action</th>
@@ -60,6 +61,7 @@
                                   <tr id="id_{{$category->id}}">
                                       <td>@php echo $counter+=1;@endphp</td>
                                       <td>{{$category->category}}</td>
+                                      <td>{{$category->tagname}}</td>
                                       <td>{{number_format($category->items)}}</td>
                                       <td>{{Carbon::parse($category->created_at)->diffForHumans()}}</td>
                                       <td>

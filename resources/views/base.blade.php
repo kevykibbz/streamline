@@ -192,7 +192,7 @@
     </script>
 </head>
 
-<body onload="load()" class="home page-template-default product-template-default single single-product page page-id-4 archive post-type-archive post-type-archive-product theme-homi woocommerce-shop woocommerce woocommerce-cart woocommerce-checkout woocommerce-page  woocommerce-no-js layout-wide page-with-slider  layout-wide wpb-js-composer js-comp-ver-6.7.0 wpb-js-composer js-comp-ver-6.7.0 vc_responsive">
+<body onload="load()" class="home page-template-default product-template-default single single-product page page-id-4 archive post-type-archive post-type-archive-product theme-homi woocommerce woocommerce-shop  woocommerce-cart woocommerce-checkout woocommerce-page  woocommerce-no-js layout-wide page-with-slider  layout-wide wpb-js-composer js-comp-ver-6.7.0  js-comp-ver-6.7.0 vc_responsive">
 
     <!-- preloader -->
      <div class="loader-placeholder" style="visibility:visible;">
@@ -287,13 +287,12 @@
                                                         <li id="menu-item-14827" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home  page_item page-item-4 @if($path=='home')current_page_item @endif menu-item-14827 dt-menu-item-14827 "><a href="{{ url('/')}}" class="item-has-icon icon-position-left"><span>Home </span></a></li>
                                                         <li id="menu-item-14828" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14828 dt-menu-item-14828 @if($path=='about')current_page_item @endif"><a href="{{ url('about') }}" class="item-has-icon icon-position-left"><span>About Us</span></a></li>
                                                         <li id="menu-item-14833" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14833 dt-menu-item-14833 @if($path=='services')current_page_item @endif"><a href="{{ url('/services')}}" class="item-has-icon icon-position-left"><span>Services</span></a></li>
-                                                        <li id="menu-item-15255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-15255 dt-menu-item-15255 @if($path=='proroducts')current_page_item @endif"><a href="http://homi.themesrain.kinsta.cloud/products/" class="item-has-icon icon-position-left"><span>Products</span></a>
+                                                        <li id="menu-item-15255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-15255 dt-menu-item-15255 @if($path=='proroducts')current_page_item @endif"><a href="/products" class="item-has-icon icon-position-left"><span>Products</span></a>
                                                             <ul class="sub-menu is-hidden ">
                                                                 @if(count($categories) > 0)
                                                                 @foreach ($categories as $category)
                                                                 <li class="go-back"><a href="javascript:void(0);"></a></li>
-                                                                <li class="see-all"></li>
-                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom "><a href="/product/{{$category->category}}" class="item-has-icon icon-position-left"><span>{{$category->category}}</span></a></li>
+                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom "><a href="/products/{{$category->category}}" class="item-has-icon icon-position-left"><span>{{$category->category}}</span></a></li>
                                                                 @endforeach
                                                                 @else
                                                                 <li id="menu-item-15255" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15254 dt-menu-item-15255 "><a href="javascript:void(0);" class="item-has-icon icon-position-left"><span>No category found</span></a></li>
@@ -471,7 +470,7 @@
         <div class="container">
             <p class="dt_cookie_text">This site uses cookies. By continuing to browse the site, you are agreeing to our use of cookies.</p><a href='#' class='dt-sc-button filled small dt-cookie-consent-button dt-cookie-consent-button-1  dt-cookie-close-bar ' data-contents='a6fe7a635a3ae90b600d28d9abace894'>Close</a>
             <a
-                href='http://homi.themesrain.kinsta.cloud/privacy-policy/' class='dt-sc-button filled small dt-cookie-consent-button dt-cookie-consent-button-2 dt-extra-cookie-btn'>Click Here</a><a href='#dt-consent-extra-info' class='dt-sc-button filled small dt-cookie-consent-button dt-cookie-consent-button-3 dt-extra-cookie-btn dt-cookie-info-btn '>Model</a> </div>
+                href='/privacy/policy' class='dt-sc-button filled small dt-cookie-consent-button dt-cookie-consent-button-2 dt-extra-cookie-btn'>Click Here</a><a href='#dt-consent-extra-info' class='dt-sc-button filled small dt-cookie-consent-button dt-cookie-consent-button-3 dt-extra-cookie-btn dt-cookie-info-btn '>Model</a> </div>
     </div>
     <div id='dt-consent-extra-info' class='dt-inline-modal main_color zoom-anim-dialog mfp-hide'>
 

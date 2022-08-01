@@ -29,7 +29,8 @@ class CategoryView extends Controller
     protected function save(Request $request)
     {
     	$validator=Validator::make($request->all(),[
-            'category'=>'required|string'
+            'category'=>'required|string|unique:categories',
+            'tagname'=>'required|string|unique:categories'
         ]);
 
         if(!$validator->passes())
@@ -40,7 +41,8 @@ class CategoryView extends Controller
         {
             Category::insert(
             [
-                'category'=>$request->category
+                'category'=>$request->category,
+                'tagname'=>$request->tagname
             ]);
             return response()->json(['valid'=>true,'message'=>'Category created  successfully.']);
         }
@@ -64,7 +66,8 @@ class CategoryView extends Controller
     protected function update(Request $request)
     {
     	$validator=Validator::make($request->all(),[
-            'category'=>'required|string'
+            'category'=>'required|string',
+            'tagname'=>'required|string'
         ]);
 
         if(!$validator->passes())
@@ -75,12 +78,13 @@ class CategoryView extends Controller
         {
             Category::where('id',$request->id)->update(
             [
-                'category'=>$request->category
+                'category'=>$request->category,
+                'tagname'=>$request->tagname
             ]);
             return response()->json(['valid'=>true,'message'=>'Category updated  successfully.']);
         }
     }
-    protected function delete(Request$request)
+    protected function delete(Request $request)
     {
     	Category::where('id',$request->id)->delete();
         return response()->json(['valid'=>true,'message'=>'Category deleted  successfully.']);

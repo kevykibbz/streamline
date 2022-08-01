@@ -34,7 +34,7 @@ class SiteSettings extends Controller
         }
         else
         {
-            if(!empty($request->favicon))
+            if($request->hasFile('favicon'))
             {
                 $favicon=$request->file('favicon');
                 $newfile=date('YmdHi').'_'.$favicon->getClientOriginalName();

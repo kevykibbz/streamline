@@ -18,7 +18,9 @@ return new class extends Migration
             $table->id();
             $table->string('product_id')->nullable();
             $table->string('category')->nullable();
+            $table->string('product_name')->nullable();
             $table->string('tagname')->nullable();
+            $table->string('prev_price')->nullable();
             $table->string('price')->nullable();
             $table->string('rating')->nullable();
             $table->text('description')->nullable();
@@ -31,6 +33,7 @@ return new class extends Migration
             $table->string('image_600')->nullable();
             $table->string('image_300')->nullable();
             $table->string('image_150')->nullable();
+            $table->string('image_100')->nullable();
             $table->timestamps();
         });
     }

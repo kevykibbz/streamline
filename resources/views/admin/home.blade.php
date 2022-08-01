@@ -37,7 +37,7 @@
                             </div>
                         </div>
                         <div class="align-self-center ml-auto">
-                            <h3 class="f-26 mb-0"><span class="count">34</span></h3>
+                            <h3 class="f-26 mb-0"><span class="count">{{number_format($products)}}</span></h3>
                             <p class="text-muted mb-0">Total products</p>
                         </div>
                     </div>

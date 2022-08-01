@@ -8,20 +8,21 @@
     </div>
     <div class="container">
         <div class="main-title-section">
-            <h1>Hot Tubs > Description</h1>
+            <h1>{{$product->product_name}} > Description</h1>
         </div>
         <div class="breadcrumb">
             <a href="{{ url('/')}}">Home</a>
             <span class="fa default"></span>
-            <span class="current">Shop</span>
+            <a href="/shop">Shop</a>
             <span class="fa default"></span>
-            <span class="current">Hot Tubs</span>
+            <span class="current">{{$product->product_name}}</span>
             <span class="fa default"></span>
             <span class="current">Description</span>
         </div>
     </div>
 </section>
-<!-- ** Breadcrumb End ** -->
+<!-- ** Breadcrumb 
+    End ** -->
 @endsection
 @section('content')
 <div class="container">
@@ -33,155 +34,53 @@
                 <div class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images"
                     data-columns="4" style="opacity: 0; transition: opacity .25s ease-in-out;">
                     <figure class="woocommerce-product-gallery__wrapper">
-                        <div data-thumb="{{ url('wp-content/uploads/sites/12/2018/05/product-2-100x100.jpg')}}"
-                            data-thumb-alt="" class="woocommerce-product-gallery__image"><a
-                                href="{{ url('wp-content/uploads/sites/12/2018/05/product-2.jpg')}}"><img
+                        <div data-thumb="/products/{{$product->image_1000}}"
+                            data-thumb-alt="" class="woocommerce-product-gallery__image">
+                            <a
+                                href="/products/{{$product->image_1000}}">
+                                <img
                                     width="600" height="600"
-                                    src="{{ url('wp-content/uploads/sites/12/2018/05/product-2-600x600.jpg')}}"
+                                    src="/products/{{$product->image_600}}"
                                     class="wp-post-image" alt="" loading="lazy" title="product-2"
                                     data-caption=""
-                                    data-src="{{ url('wp-content/uploads/sites/12/2018/05/product-2.jpg')}}"
-                                    data-large_image="{{ url('wp-content/uploads/sites/12/2018/05/product-2.jpg')}}"
+                                    data-src="/products/{{$product->image_1000}}"
+                                    data-large_image="/products/{{$product->image_1000}}"
                                     data-large_image_width="1000" data-large_image_height="1000"
-                                    srcset="{{ url('wp-content/uploads/sites/12/2018/05/product-2-600x600.jpg')}} 600w, {{ url('wp-content/uploads/sites/12/2018/05/product-2-150x150.jpg')}} 150w, {{ url('wp-content/uploads/sites/12/2018/05/product-2-300x300.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/product-2-768x768.jpg')}} 768w, {{ url('wp-content/uploads/sites/12/2018/05/product-2-100x100.jpg')}} 100w, {{ url('wp-content/uploads/sites/12/2018/05/product-2.jpg')}} 1000w"
-                                    sizes="(max-width: 600px) 100vw, 600px" /></a></div>
-                        <div data-thumb="{{ url('wp-content/uploads/sites/12/2018/05/product-13-100x100.jpg')}}"
-                            data-thumb-alt="" class="woocommerce-product-gallery__image"><a
-                                href="{{ url('wp-content/uploads/sites/12/2018/05/product-13.jpg')}}"><img
-                                    width="600" height="600"
-                                    src="{{ url('wp-content/uploads/sites/12/2018/05/product-13-600x600.jpg')}}"
-                                    class="" alt="" loading="lazy" title="product-13" data-caption=""
-                                    data-src="{{ url('wp-content/uploads/sites/12/2018/05/product-13.jpg')}}"
-                                    data-large_image="{{ url('wp-content/uploads/sites/12/2018/05/product-13.jpg')}}"
-                                    data-large_image_width="1000" data-large_image_height="1000"
-                                    srcset="{{ url('wp-content/uploads/sites/12/2018/05/product-13-600x600.jpg')}} 600w, {{ url('wp-content/uploads/sites/12/2018/05/product-13-150x150.jpg')}} 150w, {{ url('wp-content/uploads/sites/12/2018/05/product-13-300x300.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/product-13-768x768.jpg')}} 768w, {{ url('wp-content/uploads/sites/12/2018/05/product-13-100x100.jpg')}} 100w, {{ url('wp-content/uploads/sites/12/2018/05/product-13.jpg')}} 1000w"
-                                    sizes="(max-width: 600px) 100vw, 600px" /></a></div>
-                        <div data-thumb="{{ url('wp-content/uploads/sites/12/2018/05/product-14-100x100.jpg')}}"
-                            data-thumb-alt="" class="woocommerce-product-gallery__image"><a
-                                href="{{ url('wp-content/uploads/sites/12/2018/05/product-14.jpg')}}"><img
-                                    width="600" height="600"
-                                    src="{{ url('wp-content/uploads/sites/12/2018/05/product-14-600x600.jpg')}}"
-                                    class="" alt="" loading="lazy" title="product-14" data-caption=""
-                                    data-src="{{ url('wp-content/uploads/sites/12/2018/05/product-14.jpg')}}"
-                                    data-large_image="{{ url('wp-content/uploads/sites/12/2018/05/product-14.jpg')}}"
-                                    data-large_image_width="1000" data-large_image_height="1000"
-                                    srcset="{{ url('wp-content/uploads/sites/12/2018/05/product-14-600x600.jpg')}} 600w, {{ url('wp-content/uploads/sites/12/2018/05/product-14-150x150.jpg')}} 150w, {{ url('wp-content/uploads/sites/12/2018/05/product-14-300x300.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/product-14-768x768.jpg')}} 768w, {{ url('wp-content/uploads/sites/12/2018/05/product-14-100x100.jpg')}} 100w, {{ url('wp-content/uploads/sites/12/2018/05/product-14.jpg')}} 1000w"
-                                    sizes="(max-width: 600px) 100vw, 600px" /></a></div>
-                        <div data-thumb="{{ url('wp-content/uploads/sites/12/2018/05/product-15-100x100.jpg')}}"
-                            data-thumb-alt="" class="woocommerce-product-gallery__image"><a
-                                href="{{ url('wp-content/uploads/sites/12/2018/05/product-15.jpg')}}"><img
-                                    width="600" height="600"
-                                    src="{{ url('wp-content/uploads/sites/12/2018/05/product-15-600x600.jpg')}}"
-                                    class="" alt="" loading="lazy" title="product-15" data-caption=""
-                                    data-src="{{ url('wp-content/uploads/sites/12/2018/05/product-15.jpg')}}"
-                                    data-large_image="{{ url('wp-content/uploads/sites/12/2018/05/product-15.jpg')}}"
-                                    data-large_image_width="1000" data-large_image_height="1000"
-                                    srcset="{{ url('wp-content/uploads/sites/12/2018/05/product-15-600x600.jpg')}} 600w, {{ url('wp-content/uploads/sites/12/2018/05/product-15-150x150.jpg')}} 150w, {{ url('wp-content/uploads/sites/12/2018/05/product-15-300x300.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/product-15-768x768.jpg')}} 768w, {{ url('wp-content/uploads/sites/12/2018/05/product-15-100x100.jpg')}} 100w, {{ url('wp-content/uploads/sites/12/2018/05/product-15.jpg')}} 1000w"
-                                    sizes="(max-width: 600px) 100vw, 600px" /></a></div>
+                                    srcset="/products/{{$product->image_600}} 600w, /products/{{$product->image_150}} 150w, /products/{{$product->image_300}} 300w,/products/{{$product->image_768}} 768w, /products/{{$product->image_100}} 100w, /products/{{$product->image_1000}} 1000w"
+                                    sizes="(max-width: 600px) 100vw, 600px" />
+                            </a>
+                        </div>
                         <div class="product-status-labels"><span
-                                class="onsale"><span>Sale!</span></span></div>
+                                class="onsale"><span>{{$product->tagname}}</span></span></div>
                     </figure>
                 </div>
                 <div class="summary entry-summary">
-                    <h1 class="product_title entry-title">Toilet Paper Stand</h1>
-                    <p class="price"><span class="woocommerce-Price-amount amount"><bdi><span
-                                    class="woocommerce-Price-currencySymbol">&#36;</span>18.00</bdi></span>
+                    <h1 class="product_title entry-title">{{$product->product_name}}</h1>
+                    <p class="price">
+                        <span class="woocommerce-Price-amount amount">
+                            <bdi>
+                                <span class="woocommerce-Price-currencySymbol">&#36;</span>{{number_format($product->prev_price)}}
+                            </bdi></span>
                         &ndash; <span class="woocommerce-Price-amount amount"><bdi><span
-                                    class="woocommerce-Price-currencySymbol">&#36;</span>45.00</bdi></span>
+                                    class="woocommerce-Price-currencySymbol">&#36;</span>{{number_format($product->price)}}</bdi></span>
                     </p>
                     <div class="woocommerce-product-details__short-description">
                         <p>This is a grouped product.</p>
                     </div>
-                    <form class="cart grouped_form"
-                        action="#"
-                        method="post" enctype='multipart/form-data'>
-                        <table cellspacing="0" class="woocommerce-grouped-product-list group_table">
-                            <tbody>
-                                <tr id="product-46"
-                                    class="woocommerce-grouped-product-list-item product type-product post-46 status-publish instock product_cat-bath-furniture product_cat-saunas product_cat-wash-basin has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                                    <td class="woocommerce-grouped-product-list-item__quantity">
-                                        <div class="quantity">
-                                            <label class="screen-reader-text"
-                                                for="quantity_62dee96fc72af">Water Heater
-                                                quantity</label>
-                                            <input type="number" id="quantity_62dee96fc72af"
-                                                class="input-text qty text" step="1" min="0" max=""
-                                                name="quantity[46]" value="" title="Qty" size="4"
-                                                placeholder="0" inputmode="numeric" />
-                                        </div>
-                                    </td>
-                                    <td class="woocommerce-grouped-product-list-item__label"><label
-                                            for="product-46"><a
-                                                href="#">Water
-                                                Heater</a></label></td>
-                                    <td class="woocommerce-grouped-product-list-item__price"><span
-                                            class="woocommerce-Price-amount amount"><bdi><span
-                                                    class="woocommerce-Price-currencySymbol">&#36;</span>45.00</bdi></span>
-                                    </td>
-                                </tr>
-                                <tr id="product-47"
-                                    class="woocommerce-grouped-product-list-item product type-product post-47 status-publish instock product_cat-hot-tubs product_cat-saunas product_cat-showers has-post-thumbnail shipping-taxable purchasable product-type-simple">
-                                    <td class="woocommerce-grouped-product-list-item__quantity">
-                                        <div class="quantity">
-                                            <label class="screen-reader-text"
-                                                for="quantity_62dee96fc76b6">Shower Cabin
-                                                quantity</label>
-                                            <input type="number" id="quantity_62dee96fc76b6"
-                                                class="input-text qty text" step="1" min="0" max=""
-                                                name="quantity[47]" value="" title="Qty" size="4"
-                                                placeholder="0" inputmode="numeric" />
-                                        </div>
-                                    </td>
-                                    <td class="woocommerce-grouped-product-list-item__label"><label
-                                            for="product-47"><a
-                                                href="#">Shower
-                                                Cabin</a></label></td>
-                                    <td class="woocommerce-grouped-product-list-item__price"><span
-                                            class="woocommerce-Price-amount amount"><bdi><span
-                                                    class="woocommerce-Price-currencySymbol">&#36;</span>18.00</bdi></span>
-                                    </td>
-                                </tr>
-                                <tr id="product-48"
-                                    class="woocommerce-grouped-product-list-item product type-product post-48 status-publish last instock product_cat-faucets product_cat-saunas has-post-thumbnail sale shipping-taxable purchasable product-type-simple">
-                                    <td class="woocommerce-grouped-product-list-item__quantity">
-                                        <div class="quantity">
-                                            <label class="screen-reader-text"
-                                                for="quantity_62dee96fc7930">Wash Basin quantity</label>
-                                            <input type="number" id="quantity_62dee96fc7930"
-                                                class="input-text qty text" step="1" min="0" max=""
-                                                name="quantity[48]" value="" title="Qty" size="4"
-                                                placeholder="0" inputmode="numeric" />
-                                        </div>
-                                    </td>
-                                    <td class="woocommerce-grouped-product-list-item__label"><label
-                                            for="product-48"><a
-                                                href="#">Wash
-                                                Basin</a></label></td>
-                                    <td class="woocommerce-grouped-product-list-item__price"><del
-                                            aria-hidden="true"><span
-                                                class="woocommerce-Price-amount amount"><bdi><span
-                                                        class="woocommerce-Price-currencySymbol">&#36;</span>20.00</bdi></span></del>
-                                        <ins><span class="woocommerce-Price-amount amount"><bdi><span
-                                                        class="woocommerce-Price-currencySymbol">&#36;</span>18.00</bdi></span></ins>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <input type="hidden" name="add-to-cart" value="14658" />
-                        <button type="submit" class="single_add_to_cart_button button alt">Add to
-                            cart</button>
-                    </form>
+                   
                     <div class="product_meta">
                         <span class="sku_wrapper">SKU: <span class="sku">logo-collection</span></span>
-                        <span class="posted_in">Categories: <a
-                                href="#"
-                                rel="tag">Bath Furniture</a>, <a
-                                href="#"
-                                rel="tag">Faucets</a>, <a
-                                href="#"
-                                rel="tag">Showers</a></span>
-
-
+                        <span class="posted_in">Categories: 
+                            <a href="/products/{{$product->category}}" rel="tag">{{$product->category}}</a><br>
+                            Other categories:
+                            @if (count($categories) > 0)                            
+                                @foreach ($categories as $category)
+                                    @if ($category->category != $product->category)
+                                        <a href="/products/{{$category->category}}" rel="tag">{{$category->category}}</a>,
+                                    @endif
+                                @endforeach
+                            @endif
+                        </span>
                     </div>
                 </div>
 
@@ -204,10 +103,7 @@
 
                         <h2>Description</h2>
 
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                            turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,
-                            tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-                            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                        <p>{{$product->description?$product->description:'No description about the product found.' }}</p>
                     </div>
                     <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--reviews panel entry-content wc-tab"
                         id="tab-reviews" role="tabpanel" aria-labelledby="tab-title-reviews">

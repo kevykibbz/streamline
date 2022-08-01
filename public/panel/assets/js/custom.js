@@ -38,6 +38,7 @@ $(document).on('submit','.loginForm',function()
   next=urlparams.get('next'),
   form_data=new FormData(this);
   el.children().find('.is-invalid').removeClass('is-invalid');
+  $('.small-model').find('.modal-title').removeClass('text-warning').text('');
   $.ajax(
   {
     url:el.attr('action'),
