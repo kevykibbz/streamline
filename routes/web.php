@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admins\ProductView;
-use App\Http\Controllers\Admins\DashboardView;
+use App\Http\Controllers\Admins\DasboardView;
 use App\Http\Controllers\Admins\ReviewView;
 use App\Http\Controllers\Admins\ProfileView;
 use App\Http\Controllers\Cart;
