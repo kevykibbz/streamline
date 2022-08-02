@@ -1,5 +1,5 @@
 @extends('base')
-@section('title') Bath Furniture @endsection
+@section('title') {{$title->category}} @endsection
 @section('header')
 <!-- ** Breadcrumb ** -->
 <section class="main-title-section-wrapper breadcrumb-left">
@@ -68,7 +68,7 @@
                                         <div class="wc_inline_buttons">
                                             <div class="wc_cart_btn_wrapper wc_btn_inline">
                                                 <a
-                                                    href="?add-to-cart=60" data-quantity="1"
+                                                    href="/cart/{{$product->product_id}}" data-quantity="1"
                                                     class="dt-sc-button too-small button product_type_simple add_to_cart_button ajax_add_to_cart"
                                                     data-product_id="60" data-product_sku="woo-cap"
                                                     aria-label="Add &ldquo;{{$product->product_name}}&rdquo; to your cart"

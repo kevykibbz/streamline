@@ -1,5 +1,5 @@
 @extends('base')
-@section('title') Hot Tubs > Description @endsection
+@section('title') {{$product->product_name}} > Description @endsection
 @section('header')
 <!-- ** Breadcrumb ** -->
 <section class="main-title-section-wrapper breadcrumb-left">
@@ -97,7 +97,7 @@
                             rel="nofollow">Add to cart</a>
                         @else
                         <a
-                            href="/add/cart/{{$product->product_id}}" data-quantity="1"
+                            href="/cart/{{$product->product_id}}" data-quantity="1"
                             class="dt-sc-button too-small button product_type_simple add_to_cart_button ajax_add_to_cart"
                             data-product_id="60" data-product_sku="woo-cap"
                             aria-label="Add &ldquo;{{$product->product_name}}&rdquo; to your cart"

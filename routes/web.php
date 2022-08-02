@@ -5,6 +5,7 @@ use App\Http\Controllers\Admins\ProductView;
 use App\Http\Controllers\Admins\DashboardView;
 use App\Http\Controllers\Admins\ReviewView;
 use App\Http\Controllers\Admins\ProfileView;
+use App\Http\Controllers\Cart;
 use App\Http\Controllers\Admins\MessagesView;
 use App\Http\Controllers\Admins\AdminsView;
 use App\Http\Controllers\Admins\CategoryView;
@@ -57,11 +58,16 @@ Route::get('/services', function ()
 
 
 
-Route::get('/cart', function () {
-    return view('cart');
-});
+
 Route::get('/checkout', function () {
-    return view('checkout');
+
+    $site = SiteConstants::all()[0];
+    $categories = Category::all();
+    return view('checkout', [
+        'site' => $site,
+        'path' => 'about',
+        'categories' => $categories,
+    ]);
 });
 
 Route::get('/management/login', [
@@ -80,6 +86,7 @@ Route::get('/logout', [LoginView::class, 'Logout']);
 Route::post('/management/login', [LoginView::class, 'Check']);
 Route::get('/products/{category}', [ProductCategory::class, 'get']);
 Route::get('/product/description/{product_id}', [ProductCategory::class,'description']);
+Route::get('/cart/{product_id}', [Cart::class,'get']);
 Route::post('/product/review/{product_id}', [ReviewView::class, 'save']);
 
 #admin
