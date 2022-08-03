@@ -10,7 +10,6 @@ use Illuminate\Support\Facades\Mail;
 use App\Mail\ResponseMail;
 use Validator;
 use Illuminate\Support\Facades\Redirect;
-use App\Models\Contact;
 
 class MessagesView extends Controller
 {

@@ -497,7 +497,6 @@
     </div>
     <script type='text/javascript' src="{{ url('js/jquery-3.5.1.min.js')}}"></script>
     <script type='text/javascript' src="{{ url('wp-content/plugins/Ultimate_VC_Addons/assets/min-js/modal-all.min.js')}}" ></script>
-    <script type='text/javascript' src="{{ url('wp-content/themes/homi/framework/js/modernizr.custom.js')}}"></script>
     <script type='text/javascript' src="{{ url('wp-includes/js/dist/vendor/regenerator-runtime.min.js')}}"></script>
     <script type='text/javascript' src="{{ url('wp-includes/js/dist/vendor/wp-polyfill.min.js')}}"></script>
     <script type='text/javascript' src="{{ url('wp-content/plugins/contact-form-7/includes/js/index.js')}}" ></script>

@@ -111,7 +111,7 @@
                         <div class="tab-content">
                             <div class="tab-pane fade active show p-0 border-top" id="successed" role="tabpanel" aria-labelledby="successed-tab">
                                 <div class="d-flex align-items-center justify-content-between row">
-                                    <a href="{% url 'customers queries' %}" class="upload-image d-flex align-items-center col">
+                                    <a href="#" class="upload-image d-flex align-items-center col">
                                         <div class="icon-container m-r-10 img-icon img-icon-sm">
                                             <i class="fa fa-male"></i>
                                         </div>
@@ -120,7 +120,7 @@
                                             <p>Answered</p>
                                         </div>
                                     </a>
-                                    <a href="{% url 'customers queries' %}" class="upload-image d-flex align-items-center col">
+                                    <a href="#" class="upload-image d-flex align-items-center col">
                                         <div class="icon-container m-r-10 img-icon img-icon-sm">
                                             <i class="fa fa-female"></i>
                                         </div>

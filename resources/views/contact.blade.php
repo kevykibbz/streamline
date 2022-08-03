@@ -84,28 +84,7 @@
                                         <ul></ul>
                                     </div>
                                     <form action="" method="post" class="SubmitForm" novalidate>
-                                        <div class="vc_row wpb_row vc_row-fluid">
-                                            <div class="wpb_column vc_column_container vc_col-sm-12">
-                                                <div class="vc_column-inner ">
-                                                    <div class="form-group wpb_wrapper"><span
-                                                            class="wpcf7-form-control-wrap deptname">
-                                                            <div class="selection-box">
-                                                                <select aria-label="deptname" name="deptname"
-                                                                    class="form-control wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
-                                                                    aria-required="true" aria-invalid="false">
-                                                                    <option value="Select Department">Select Department
-                                                                    </option>
-                                                                    <option value="Gynacelogy">Gynacelogy</option>
-                                                                    <option value="Blood Bank">Blood Bank</option>
-                                                                    <option value="Ophthalmology">Ophthalmology</option>
-                                                                    <option value="Oncology">Oncology</option>
-                                                                </select>
-                                                            </div>
-                                                        </span>
-                                                        <div class="feedback"></div>
-                                                    </div>
-                                                </div>
-                                            </div> 
+                                        <div class="vc_row wpb_row vc_row-fluid"> 
                                             <div class="dt-sc-hr-top-10 "> </div>
                                             <div class="dt-sc-hr-top-5 "> </div>
                                             <div class="wpb_column vc_column_container vc_col-sm-12">

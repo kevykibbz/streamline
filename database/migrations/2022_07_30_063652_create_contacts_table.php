@@ -17,7 +17,6 @@ return new class extends Migration
         {
             $table->id();
             $table->string('subject');
-            $table->string('depertment');
             $table->string('first_name');
             $table->string('last_name');
             $table->string('email');

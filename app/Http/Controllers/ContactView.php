@@ -26,7 +26,6 @@ class ContactView extends Controller
             'email.required'=>'Email address is required',
             'phone.required'=>'Phone is required',
             'subject.required'=>'Subject is required',
-            'deptname.required'=>'Depertment name is required',
             'message.required'=>'Message is required',
         ];
         $validator=Validator::make($request->all(),
@@ -36,7 +35,6 @@ class ContactView extends Controller
             'message'=>'required',
             'email'=>'required|email|regex:/(.+)@(.+)\.(.+)/i',
             'phone'=>'required|numeric',
-            'deptname'=>'required',
             'subject'=>'required'
         ],$messages);
 
@@ -52,7 +50,6 @@ class ContactView extends Controller
             $contact->email=$request->email;
             $contact->phone=$request->phone;
             $contact->subject=$request->subject;
-            $contact->depertment=$request->deptname;
             $contact->message=$request->message;
             $result=$contact->save();
             if($result)
