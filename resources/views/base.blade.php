@@ -278,7 +278,15 @@
                                 <div class="dt-skin-primary-bg rs_col-sm-4 wpb_column vc_column_container vc_col-sm-2">
                                     <div class="vc_column-inner vc_custom_1557230970960" style=" text-align:left; ">
                                         <div class="wpb_wrapper">
-                                            <div id="dt-1527077571653-6fe19314-253c" class="dt-logo-container logo-align-left"> <a href="{{ url('/')}}" rel="home"><img src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/themes/homi/images/light-logo.png')}}" alt="Streamline Ventures"/></a></div>
+                                            <div id="dt-1527077571653-6fe19314-253c" class="dt-logo-container logo-align-left"> 
+                                                <a href="{{ url('/')}}" rel="home">
+                                                    @if($site->favicon)
+                                                    <img width="160" height="40" src="{{ url('images/loader.gif')}}" data-src="/logos/{{$site->favicon}}" alt="{{$site->site_name ? $site->site_name : env('SITE_NAME') }}" style="width:160px !important;height:40px !important;" />
+                                                    @else
+                                                    <img src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/themes/homi/images/light-logo.png')}}" alt="{{$site->site_name ? $site->site_name : env('SITE_NAME') }}"/>
+                                                    @endif
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
