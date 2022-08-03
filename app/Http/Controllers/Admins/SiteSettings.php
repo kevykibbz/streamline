@@ -25,7 +25,7 @@ class SiteSettings extends Controller
             'site_url'=>'required|url',
             'theme_color'=>'required',
             'site_descreption'=>'required',
-            'favicon'=>'mimes:svg'
+            'favicon'=>'mimes:svg,ico,jgp,jpeg,png,gif'
         ]);
 
         if(!$validator->passes())

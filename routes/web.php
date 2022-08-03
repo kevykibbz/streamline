@@ -41,7 +41,7 @@ use App\Models\Memory;
 use App\Models\Featured;
 use App\Models\HomeProduct;
 use App\Models\Brochure;
-
+use App\Models\Product;
 
 
 Route::get('/', function () 
@@ -117,6 +117,19 @@ Route::get('/pages/brochure', function ()
         'path' => 'brochure',
         'categories' => $categories,
         'brochure'=>$brochure,
+    ]);
+});
+
+Route::get('/pages/products', function () 
+{
+    $site = SiteConstants::all()[0];
+    $categories = Category::all();
+    $products=!empty(Product::count())? Product::all():[];
+    return view('site_products', [
+        'site' => $site,
+        'path' => 'product',
+        'categories' => $categories,
+        'products'=>$products,
     ]);
 });
 
