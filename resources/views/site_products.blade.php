@@ -57,12 +57,12 @@
                                     </div>
                                     <a class="image"
                                         href="/product/description/{{$product->product_id}}"
-                                        title="{{$product->product_name}}"><img width="300" height="300"
-                                            src="/products/{{$product->image_300}}"
+                                        title="{{$product->product_name}}"><img width="1000" height="1000"
+                                            src="/products/{{$product->image_1000}}"
                                             class="attachment-shop_catalog size-shop_catalog wp-post-image"
                                             alt="" loading="lazy"
-                                            srcset="/products/{{$product->image_300}} 300w, /products/{{$product->image_150}} 150w, /products/{{$product->image_768}} 768w, /products/{{$product->image_600}} 600w, /products/{{$product->image_100}} 100w, /products/{{$product->image_1000}} 1000w"
-                                            sizes="(max-width: 300px) 100vw, 300px" />
+                                            srcset="/products/{{$product->image_1000}} 1000w"
+                                            sizes="(max-width: 1000px) 100vw, 300px" />
                                     </a>    
                                 </div>
                                 <div class='product-details'>

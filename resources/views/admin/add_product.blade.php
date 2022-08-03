@@ -120,7 +120,7 @@
                             <div class="feedback"></div>
                         </div> 
                         <div class="form-group">               
-                            <label for="id_theme_color">Image(768x768)  <span class="text-danger">*</span></label>
+                            <label for="id_theme_color">Image(768x768)  </label>
                             <div class="custom-file" style="cursor:pointer">
                                 <input type="file" name="image_768" id="customFileInput2" class="custom-file-input">
                                 <label for="customFileInput2" class="custom-file-label">Browse files</label>
@@ -128,7 +128,7 @@
                             <div class="feedback"></div>
                         </div> 
                         <div class="form-group">               
-                            <label for="id_theme_color">Image(600x600)  <span class="text-danger">*</span></label>
+                            <label for="id_theme_color">Image(600x600)  </label>
                             <div class="custom-file" style="cursor:pointer">
                                 <input type="file" name="image_600" id="customFileInput3" class="custom-file-input">
                                 <label for="customFileInput3" class="custom-file-label">Browse files</label>
@@ -136,7 +136,7 @@
                             <div class="feedback"></div>
                         </div> 
                         <div class="form-group">               
-                            <label for="id_theme_color">Image(300x300)  <span class="text-danger">*</span></label>
+                            <label for="id_theme_color">Image(300x300)  </label>
                             <div class="custom-file" style="cursor:pointer">
                                 <input type="file" name="image_300" id="customFileInput4" class="custom-file-input">
                                 <label for="customFileInput4" class="custom-file-label">Browse files</label>
@@ -144,7 +144,7 @@
                             <div class="feedback"></div>
                         </div> 
                         <div class="form-group">               
-                            <label for="id_theme_color">Image(150x150)  <span class="text-danger">*</span></label>
+                            <label for="id_theme_color">Image(150x150)  </label>
                             <div class="custom-file" style="cursor:pointer">
                                 <input type="file" name="image_150" id="customFileInput5" class="custom-file-input">
                                 <label for="customFileInput5" class="custom-file-label">Browse files</label>
@@ -152,7 +152,7 @@
                             <div class="feedback"></div>
                         </div> 
                         <div class="form-group">               
-                            <label for="id_theme_color">Image(100x100)  <span class="text-danger">*</span></label>
+                            <label for="id_theme_color">Image(100x100) </label>
                             <div class="custom-file" style="cursor:pointer">
                                 <input type="file" name="image_100" id="customFileInput6" class="custom-file-input">
                                 <label for="customFileInput6" class="custom-file-label">Browse files</label>

@@ -312,11 +312,11 @@ class ProductView extends Controller
             'category'=>'required|string',
             'tagname'=>'required|string',
             'image_1000'=>'required|mimes:jpg,png,jpeg|dimensions:min_width=1000,min_height=1000,max_width=1000,max_height=1000', 
-            'image_768'=>'required|mimes:jpg,png,jpeg|dimensions:min_width=768,min_height=768,max_width=768,max_height=768', 
-            'image_600'=>'required|mimes:jpg,png,jpeg|dimensions:min_width=600,min_height=600,max_width=600,max_height=600', 
-            'image_300'=>'required|mimes:jpg,png,jpeg|dimensions:min_width=300,min_height=300,max_width=300,max_height=300',
-            'image_150'=>'required|mimes:jpg,png,jpeg|dimensions:min_width=150,min_height=150,max_width=150,max_height=150',
-            'image_100'=>'required|mimes:jpg,png,jpeg|dimensions:min_width=100,min_height=100,max_width=100,max_height=100',
+            'image_768'=>'mimes:jpg,png,jpeg|dimensions:min_width=768,min_height=768,max_width=768,max_height=768', 
+            'image_600'=>'mimes:jpg,png,jpeg|dimensions:min_width=600,min_height=600,max_width=600,max_height=600', 
+            'image_300'=>'mimes:jpg,png,jpeg|dimensions:min_width=300,min_height=300,max_width=300,max_height=300',
+            'image_150'=>'mimes:jpg,png,jpeg|dimensions:min_width=150,min_height=150,max_width=150,max_height=150',
+            'image_100'=>'mimes:jpg,png,jpeg|dimensions:min_width=100,min_height=100,max_width=100,max_height=100',
         ]);
 
         if(!$validator->passes())
@@ -332,64 +332,76 @@ class ProductView extends Controller
                 $logo->move(public_path('products/logos'),$newlogo);
            }
 
-           if($request->hasFile('image_1000'))
-           {
-                /*300x300 resize*/
-           	 	$image_300=$request->file('image_300');
-                $newimage_300=date('YmdHi').'_300x300_'.$image_300->getClientOriginalName();
-                $image_300->move(public_path('products'),$newimage_300);
-
-                /*1000x1000 resize*/
-                $image_1000=$request->file('image_1000');
-                $newimage_1000=date('YmdHi').'_1000x1000_'.$image_1000->getClientOriginalName();
-                $image_1000->move(public_path('products'),$newimage_1000);
-
-                /*768x768 resize*/
-                $image_768=$request->file('image_768');
-                $newimage_768=date('YmdHi').'_768x768_'.$image_768->getClientOriginalName();
-                $image_768->move(public_path('products'),$newimage_768);
-
-                /*600x600 resize*/
-                $image_600=$request->file('image_600');
-                $newimage_600=date('YmdHi').'_600x600_'.$image_600->getClientOriginalName();
-                $image_600->move(public_path('products'),$newimage_600);
-
-                /*150x150 resize*/
-                $image_150=$request->file('image_150');
-                $newimage_150=date('YmdHi').'_150x150_'.$image_150->getClientOriginalName();
-                $image_150->move(public_path('products'),$newimage_150); 
-
+            if($request->hasFile('image_100'))
+            {
                 /*100x100 resize*/
                 $image_100=$request->file('image_100');
                 $newimage_100=date('YmdHi').'_100x100_'.$image_100->getClientOriginalName();
                 $image_100->move(public_path('products'),$newimage_100);
-                
-                $results=Product::insert(
-	            [
-	                'product_id'=>Str::random(20),
-	                'product_name'=>$request->product_name,
-	                'category'=>$request->category,
-	                'tagname'=>$request->tagname,
-	                'weight'=>$request->weight,
-	                'dimension'=>$request->dimension,
-	                'color'=>$request->color,
-	                'logo'=>$request->logo,
-	                'description'=>$request->description,
-	                'logo'=>isset($newlogo)? $newlogo:'',
-	                'image_1000'=>isset($newimage_1000)? $newimage_1000:'',
-	                'image_768'=>isset($newimage_768)? $newimage_768:'',
-	                'image_600'=>isset($newimage_600)? $newimage_600:'',
-	                'image_300'=>isset($newimage_300)? $newimage_300:'',
-	                'image_150'=>isset($newimage_150)? $newimage_150:'',
-	                'image_100'=>isset($newimage_100)? $newimage_100:'',
-	            ]);
-	            if($results)
-	            {
-	            	return response()->json(['valid'=>true,'message'=>'Product added  successfully.']);
-	            }
-           }
+            }
+            if($request->hasFile('image_150'))
+            {
+                /*150x150 resize*/
+                $image_150=$request->file('image_150');
+                $newimage_150=date('YmdHi').'_150x150_'.$image_150->getClientOriginalName();
+                $image_150->move(public_path('products'),$newimage_150); 
+            } 
 
+            if($request->hasFile('image_300'))
+            {
+                 /*300x300 resize*/
+                $image_300=$request->file('image_300');
+                $newimage_300=date('YmdHi').'_300x300_'.$image_300->getClientOriginalName();
+                $image_300->move(public_path('products'),$newimage_300);
+            } 
 
+            if($request->hasFile('image_600'))
+            {
+                /*600x600 resize*/
+                $image_600=$request->file('image_600');
+                $newimage_600=date('YmdHi').'_600x600_'.$image_600->getClientOriginalName();
+                $image_600->move(public_path('products'),$newimage_600);
+            }
+
+            if($request->hasFile('image_768'))
+            {
+                /*768x768 resize*/
+                $image_768=$request->file('image_768');
+                $newimage_768=date('YmdHi').'_768x768_'.$image_768->getClientOriginalName();
+                $image_768->move(public_path('products'),$newimage_768);
+            }
+
+            if($request->hasFile('image_1000'))
+            {
+                /*1000x1000 resize*/
+                $image_1000=$request->file('image_1000');
+                $newimage_1000=date('YmdHi').'_1000x1000_'.$image_1000->getClientOriginalName();
+                $image_1000->move(public_path('products'),$newimage_1000);
+            }
+
+            $results=Product::insert(
+            [
+                'product_id'=>Str::random(20),
+                'product_name'=>$request->product_name,
+                'category'=>$request->category,
+                'tagname'=>$request->tagname,
+                'weight'=>$request->weight,
+                'dimension'=>$request->dimension,
+                'color'=>$request->color,
+                'logo'=>$request->logo,
+                'description'=>$request->description,
+                'logo'=>isset($newlogo)? $newlogo:'',
+                'image_1000'=>isset($newimage_1000)? $newimage_1000:'',
+                'image_768'=>isset($newimage_768)? $newimage_768:'',
+                'image_600'=>isset($newimage_600)? $newimage_600:'',
+                'image_300'=>isset($newimage_300)? $newimage_300:'',
+                'image_150'=>isset($newimage_150)? $newimage_150:'',
+                'image_100'=>isset($newimage_100)? $newimage_100:'',
+            ]);
+            if($results)
+            {
+                return response()->json(['valid'=>true,'message'=>'Product added  successfully.']);
+            }
         }
     }
 }
