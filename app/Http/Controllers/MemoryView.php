@@ -48,24 +48,24 @@ class MemoryView extends Controller
         	$home=Memory::where('id',$request->id)->get()[0];
         	if($request->hasFile('image_175x51'))
             {
-            	if(File::exists(public_path().'/homepage/'.$home->image_175x51))
+            	if(File::exists(public_path().'/aboutpage/'.$home->image_175x51))
 		        {
-		        	File::delete(public_path().'/homepage/'.$home->image_175x51);
+		        	File::delete(public_path().'/aboutpage/'.$home->image_175x51);
 		        }
 		        $image_175x51=$request->file('image_175x51');
 	        	$newimage_175x51=date('YmdHi').'_175x51_'.$image_175x51->getClientOriginalName();
-	        	$image_175x51->move(public_path('homepage'),$newimage_175x51);
+	        	$image_175x51->move(public_path('aboutpage'),$newimage_175x51);
 		        
             }
         	if($request->hasFile('image_494x702'))
             {
-            	if(File::exists(public_path().'/homepage/'.$home->image_494x702))
+            	if(File::exists(public_path().'/aboutpage/'.$home->image_494x702))
 		        {
-		        	File::delete(public_path().'/homepage/'.$home->image_494x702);
+		        	File::delete(public_path().'/aboutpage/'.$home->image_494x702);
 		        }
 		        $image_494x702=$request->file('image_494x702');
 	        	$newimage_494x702=date('YmdHi').'_100x50_'.$image_494x702->getClientOriginalName();
-	        	$image_494x702->move(public_path('homepage'),$newimage_494x702);
+	        	$image_494x702->move(public_path('aboutpage'),$newimage_494x702);
 		        
             }
 

@@ -70,7 +70,7 @@
                                           </a>
                                     </td>
                                     <td>
-                                        <a href="/edit/setting/{{$homedata->id}}" class="mr-2 btn btn-icon btn-outline-primary btn-round">
+                                        <a href="/edit/banner/setting/{{$homedata->id}}" class="mr-2 btn btn-icon btn-outline-primary btn-round">
                                           <i class="ti ti-pencil" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"></i>
                                         </a>
                                     </td>
@@ -135,7 +135,7 @@
                                           </a>
                                     </td>
                                     <td>
-                                        <a href="/edit/setting/{{$homedata->id}}" class="mr-2 btn btn-icon btn-outline-primary btn-round">
+                                        <a href="/edit/middle/setting/{{$homedata->id}}" class="mr-2 btn btn-icon btn-outline-primary btn-round">
                                           <i class="ti ti-pencil" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"></i>
                                         </a>
                                     </td>
@@ -200,7 +200,7 @@
                                           </a>
                                     </td>
                                     <td>
-                                        <a href="/edit/setting/{{$homedata->id}}" class="mr-2 btn btn-icon btn-outline-primary btn-round">
+                                        <a href="/edit/partone/setting/{{$homedata->id}}" class="mr-2 btn btn-icon btn-outline-primary btn-round">
                                           <i class="ti ti-pencil" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"></i>
                                         </a>
                                     </td>
@@ -261,7 +261,7 @@
                                    <td>{{$homedata->item_name}}</td>
                                     <td>No preview</td>
                                     <td>
-                                        <a href="/edit/setting/{{$homedata->id}}" class="mr-2 btn btn-icon btn-outline-primary btn-round">
+                                        <a href="/edit/parttwo/setting/{{$homedata->id}}" class="mr-2 btn btn-icon btn-outline-primary btn-round">
                                           <i class="ti ti-pencil" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"></i>
                                         </a>
                                     </td>
@@ -323,7 +323,7 @@
                                    <td>{{$homedata->item_name}}</td>
                                     <td>No preview</td>
                                     <td>
-                                        <a href="/edit/setting/{{$homedata->id}}" class="mr-2 btn btn-icon btn-outline-primary btn-round">
+                                        <a href="/edit/partthree/setting/{{$homedata->id}}" class="mr-2 btn btn-icon btn-outline-primary btn-round">
                                           <i class="ti ti-pencil" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"></i>
                                         </a>
                                     </td>
@@ -388,7 +388,7 @@
                                         </a>
                                     </td>
                                     <td>
-                                        <a href="/edit/setting/{{$homedata->id}}" class="mr-2 btn btn-icon btn-outline-primary btn-round">
+                                        <a href="/edit/developers/setting/{{$homedata->id}}" class="mr-2 btn btn-icon btn-outline-primary btn-round">
                                           <i class="ti ti-pencil" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"></i>
                                         </a>
                                     </td>
@@ -453,7 +453,7 @@
                                         </a>
                                     </td>
                                     <td>
-                                        <a href="/edit/setting/{{$homedata->id}}" class="mr-2 btn btn-icon btn-outline-primary btn-round">
+                                        <a href="/edit/review/setting/{{$homedata->id}}" class="mr-2 btn btn-icon btn-outline-primary btn-round">
                                           <i class="ti ti-pencil" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"></i>
                                         </a>
                                     </td>
@@ -515,7 +515,7 @@
                                         </a>
                                     </td>
                                     <td>
-                                        <a href="/edit/setting/{{$homedata->id}}" class="mr-2 btn btn-icon btn-outline-primary btn-round">
+                                        <a href="/edit/home/product/setting/{{$homedata->id}}" class="mr-2 btn btn-icon btn-outline-primary btn-round">
                                           <i class="ti ti-pencil" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"></i>
                                         </a>
                                     </td>

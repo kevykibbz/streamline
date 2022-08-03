@@ -216,11 +216,11 @@ Route::group(['middleware' => 'auth'], function () {
         'view',
     ]);
      
-    Route::get('/edit/setting/{id}', [
+    Route::get('/edit/banner/setting/{id}', [
         HomeView::class,
         'edit',
     ]); 
-    Route::post('/edit/setting/{id}', [
+    Route::post('/edit/banner/setting/{id}', [
         HomeView::class,
         'update',
     ]);
@@ -236,11 +236,11 @@ Route::group(['middleware' => 'auth'], function () {
         MiddleView::class,
         'save',
     ]); 
-    Route::get('/edit/setting/{id}', [
+    Route::get('/edit/middle/setting/{id}', [
         MiddleView::class,
         'edit',
     ]);
-    Route::post('/edit/setting/{id}', [
+    Route::post('/edit/middle/setting/{id}', [
         MiddleView::class,
         'update',
     ]);  
@@ -249,11 +249,11 @@ Route::group(['middleware' => 'auth'], function () {
         MiddlePartView::class,
         'get',
     ]); 
-    Route::get('/edit/setting/{id}', [
+    Route::get('/edit/partone/setting/{id}', [
         MiddlePartView::class,
         'edit',
     ]);  
-    Route::post('/edit/setting/{id}', [
+    Route::post('/edit/partone/setting/{id}', [
         MiddlePartView::class,
         'update',
     ]);
@@ -271,11 +271,11 @@ Route::group(['middleware' => 'auth'], function () {
         MiddlePartTwoView::class,
         'save',
     ]);
-    Route::get('/edit/setting/{id}', [
+    Route::get('/edit/parttwo/setting/{id}', [
         MiddlePartTwoView::class,
         'edit',
     ]);  
-    Route::post('/edit/setting/{id}', [
+    Route::post('/edit/parttwo/setting/{id}', [
         MiddlePartTwoView::class,
         'update',
     ]); 
@@ -290,11 +290,11 @@ Route::group(['middleware' => 'auth'], function () {
         MiddlePartThreeView::class,
         'save',
     ]);
-    Route::get('/edit/setting/{id}', [
+    Route::get('/edit/partthree/setting/{id}', [
         MiddlePartThreeView::class,
         'edit',
     ]);  
-    Route::post('/edit/setting/{id}', [
+    Route::post('/edit/partthree/setting/{id}', [
         MiddlePartThreeView::class,
         'update',
     ]);
@@ -309,11 +309,11 @@ Route::group(['middleware' => 'auth'], function () {
         DeveloperView::class,
         'save',
     ]);
-    Route::get('/edit/setting/{id}', [
+    Route::get('/edit/developers/setting/{id}', [
         DeveloperView::class,
         'edit',
     ]);  
-    Route::post('/edit/setting/{id}', [
+    Route::post('/edit/developers/setting/{id}', [
         DeveloperView::class,
         'update',
     ]);
@@ -327,11 +327,11 @@ Route::group(['middleware' => 'auth'], function () {
         ReviewView::class,
         'save',
     ]);
-    Route::get('/edit/setting/{id}', [
+    Route::get('/edit/review/setting/{id}', [
         ReviewView::class,
         'edit',
     ]);  
-    Route::post('/edit/setting/{id}', [
+    Route::post('/edit/review/setting/{id}', [
         ReviewView::class,
         'update',
     ]);
@@ -345,11 +345,11 @@ Route::group(['middleware' => 'auth'], function () {
         MemoryView::class,
         'save',
     ]);
-    Route::get('/edit/setting/{id}', [
+    Route::get('/edit/memory/setting/{id}', [
         MemoryView::class,
         'edit',
     ]);  
-    Route::post('/edit/setting/{id}', [
+    Route::post('/edit/memory/setting/{id}', [
         MemoryView::class,
         'update',
     ]);
@@ -377,11 +377,11 @@ Route::group(['middleware' => 'auth'], function () {
         FeaturedView::class,
         'save',
     ]);
-     Route::get('/edit/setting/{id}', [
+     Route::get('/edit/featured/setting/{id}', [
         FeaturedView::class,
         'edit',
     ]);  
-    Route::post('/edit/setting/{id}', [
+    Route::post('/edit/featured/setting/{id}', [
         FeaturedView::class,
         'update',
     ]);
@@ -395,11 +395,11 @@ Route::group(['middleware' => 'auth'], function () {
         HomeProductView::class,
         'save',
     ]);
-    Route::get('/edit/setting/{id}', [
+    Route::get('/edit/home/product/setting/{id}', [
         HomeProductView::class,
         'edit',
     ]);
-    Route::post('/edit/setting/{id}', [
+    Route::post('/edit/home/product/setting/{id}', [
         HomeProductView::class,
         'update',
     ]);

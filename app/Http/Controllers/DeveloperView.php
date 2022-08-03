@@ -96,7 +96,7 @@ class DeveloperView extends Controller
 	                'name'=>$request->name,
 	                'title'=>$request->title,
 	                'item_name'=>$request->item_name,
-	                'preview'=>isset($image_420x466) ? $image_420x466:''
+	                'preview'=>isset($newimage_420x466) ? $newimage_420x466:''
 	            ]);
 	            return response()->json(['valid'=>true,'message'=>'Developer created  successfully.']);
             }

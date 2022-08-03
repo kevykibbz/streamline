@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div class="card-body"> 
-                    <form class="SubmitForm" method="post" action="{{isset($home)? '/edit/setting/'.$home->id:''}}" enctype="multipart/form-data" novalidate>
+                    <form class="SubmitForm" method="post" action="{{isset($home)? '/edit/banner/setting/'.$home->id:''}}" enctype="multipart/form-data" novalidate>
                         <div class="form-group">
                             <label for="id_category">Setting name(name of your choice)</label>
                             <input type="text" id="id_category" class="form-control" name="item_name" value="{{isset($home->item_name) ? $home->item_name :''}}">
@@ -99,7 +99,7 @@
                     </div>
                 </div>
                 <div class="card-body"> 
-                     <form class="SubmitForm" method="post" action="{{isset($middle)? '/edit/setting/'.$middle->id:''}}" enctype="multipart/form-data" novalidate>
+                     <form class="SubmitForm" method="post" action="{{isset($middle)? '/edit/middle/setting/'.$middle->id:''}}" enctype="multipart/form-data" novalidate>
                         <div class="form-group">
                             <label for="id_category">Setting name(name of your choice)</label>
                             <input type="text" id="id_category" class="form-control" name="item_name" value="{{isset($middle->item_name) ? $middle->item_name :''}}">
@@ -142,7 +142,7 @@
                     </div>
                 </div>
                 <div class="card-body"> 
-                     <form class="SubmitForm" method="post" action="{{isset($middlepart)? '/edit/setting/'.$middlepart->id:''}}" enctype="multipart/form-data" novalidate>
+                     <form class="SubmitForm" method="post" action="{{isset($middlepart)? '/edit/partone/setting/'.$middlepart->id:''}}" enctype="multipart/form-data" novalidate>
                         <div class="form-group">
                             <label for="id_category">Setting name(name of your choice)</label>
                             <input type="text" id="id_category" class="form-control" name="item_name" value="{{isset($middlepart->item_name) ? $middlepart->item_name :''}}">
@@ -190,7 +190,7 @@
                     </div>
                 </div>
                 <div class="card-body"> 
-                     <form class="SubmitForm" method="post" action="{{isset($middlepartb)? '/edit/setting/'.$middlepartb->id:''}}" enctype="multipart/form-data" novalidate>
+                     <form class="SubmitForm" method="post" action="{{isset($middlepartb)? '/edit/parttwo/setting/'.$middlepartb->id:''}}" enctype="multipart/form-data" novalidate>
                         <div class="form-group">
                             <label for="id_category">Setting name(name of your choice)</label>
                             <input type="text" id="id_category" class="form-control" name="item_name" value="{{isset($middlepartb->item_name) ? $middlepartb->item_name :''}}">
@@ -236,7 +236,7 @@
                     </div>
                 </div>
                 <div class="card-body"> 
-                     <form class="SubmitForm" method="post" action="{{isset($middlepartc)? '/edit/setting/'.$middlepartc->id:''}}" enctype="multipart/form-data" novalidate>
+                     <form class="SubmitForm" method="post" action="{{isset($middlepartc)? '/edit/partthree/setting/'.$middlepartc->id:''}}" enctype="multipart/form-data" novalidate>
                         <div class="form-group">
                             <label for="id_category">Setting name(name of your choice)</label>
                             <input type="text" id="id_category" class="form-control" name="item_name" value="{{isset($middlepartc->item_name) ? $middlepartc->item_name :''}}">
@@ -281,7 +281,7 @@
                     </div>
                 </div>
                 <div class="card-body"> 
-                     <form class="SubmitForm" method="post" action="{{isset($developers)? '/edit/setting/'.$developers->id:''}}" enctype="multipart/form-data" novalidate>
+                     <form class="SubmitForm" method="post" action="{{isset($developers)? '/edit/developers/setting/'.$developers->id:''}}" enctype="multipart/form-data" novalidate>
                         <div class="form-group">
                             <label for="id_category">Setting name(name of your choice)</label>
                             <input type="text" id="id_category" class="form-control" name="item_name" value="{{isset($developers->item_name) ? $developers->item_name :''}}">
@@ -329,7 +329,7 @@
                     </div>
                 </div>
                 <div class="card-body"> 
-                     <form class="SubmitForm" method="post" action="{{isset($reviews)? '/edit/setting/'.$reviews->id:''}}" enctype="multipart/form-data" novalidate>
+                     <form class="SubmitForm" method="post" action="{{isset($reviews)? '/edit/review/setting/'.$reviews->id:''}}" enctype="multipart/form-data" novalidate>
                         <div class="form-group">
                             <label for="id_category">Setting name(name of your choice)</label>
                             <input type="text" id="id_category" class="form-control" name="item_name" value="{{isset($reviews->item_name) ? $reviews->item_name :''}}">
@@ -382,7 +382,7 @@
                     </div>
                 </div>
                 <div class="card-body"> 
-                     <form class="SubmitForm" method="post" action="{{isset($product)? '/edit/setting/'.$product->id:''}}" enctype="multipart/form-data" novalidate>
+                     <form class="SubmitForm" method="post" action="{{isset($product)? '/edit/home/product/setting/'.$product->id:''}}" enctype="multipart/form-data" novalidate>
                         <div class="form-group">
                             <label for="id_category">Setting name(name of your choice)</label>
                             <input type="text" id="id_category" class="form-control" name="item_name" value="{{isset($product->item_name) ? $product->item_name :''}}">
@@ -399,7 +399,7 @@
                         <div class="form-group">
                             <label for="id_category">Image category </label>
                             <select name="category" id="" class="form-control">
-                                @if (count($categories)> 0)
+                                @if (isset($categories) and count($categories)> 0)
                                     @if (!isset($product))
                                         <option value="" selected disabled>Select Product category</option>
                                     @endif

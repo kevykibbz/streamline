@@ -70,7 +70,7 @@
                                           </a>
                                     </td>
                                     <td>
-                                        <a href="/edit/setting/{{$homedata->id}}" class="mr-2 btn btn-icon btn-outline-primary btn-round">
+                                        <a href="/edit/memory/setting/{{$homedata->id}}" class="mr-2 btn btn-icon btn-outline-primary btn-round">
                                           <i class="ti ti-pencil" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"></i>
                                         </a>
                                     </td>
@@ -135,7 +135,7 @@
                                           </a>
                                     </td>
                                     <td>
-                                        <a href="/edit/setting/{{$homedata->id}}" class="mr-2 btn btn-icon btn-outline-primary btn-round">
+                                        <a href="/edit/featured/setting/{{$homedata->id}}" class="mr-2 btn btn-icon btn-outline-primary btn-round">
                                           <i class="ti ti-pencil" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"></i>
                                         </a>
                                     </td>

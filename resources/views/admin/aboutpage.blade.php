@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div class="card-body"> 
-                    <form class="SubmitForm" method="post" action="{{isset($memory)? '/edit/setting/'.$memory->id:''}}" enctype="multipart/form-data" novalidate>
+                    <form class="SubmitForm" method="post" action="{{isset($memory)? '/edit/memory/setting/'.$memory->id:''}}" enctype="multipart/form-data" novalidate>
                         <div class="form-group">
                             <label for="id_category">Setting name(name of your choice)</label>
                             <input type="text" id="id_category" class="form-control" name="item_name" value="{{isset($memory->item_name) ? $memory->item_name :''}}">
@@ -100,7 +100,7 @@
                     </div>
                 </div>
                 <div class="card-body"> 
-                    <form class="SubmitForm" method="post" action="{{isset($feature)? '/edit/setting/'.$feature->id:''}}" enctype="multipart/form-data" novalidate>
+                    <form class="SubmitForm" method="post" action="{{isset($feature)? '/edit/featured/setting/'.$feature->id:''}}" enctype="multipart/form-data" novalidate>
                         <div class="form-group">
                             <label for="id_category">Setting name(name of your choice)</label>
                             <input type="text" id="id_category" class="form-control" name="item_name" value="{{isset($feature->item_name) ? $feature->item_name :''}}">

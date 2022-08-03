@@ -16,7 +16,7 @@ class MiddlePartView extends Controller
     {
     	$site=SiteConstants::all()[0];
         $unread=Contact::where('is_read',false)->count();
-    	return view('admin.homepage',['path'=>'middlepart','unread'=>$unread,'site'=>$site,'title'=>'Home middle part one section settings']);
+    	return view('admin.homepage',['path'=>'middlepartone','unread'=>$unread,'site'=>$site,'title'=>'Home middle part one section settings']);
     } 
     protected function edit(Request $request)
     {

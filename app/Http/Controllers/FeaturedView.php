@@ -46,13 +46,13 @@ class FeaturedView extends Controller
         	$home=Featured::where('id',$request->id)->get()[0];
         	if($request->hasFile('image_480x430'))
             {
-            	if(File::exists(public_path().'/homepage/'.$home->image_480x430))
+            	if(File::exists(public_path().'/aboutpage/'.$home->image_480x430))
 		        {
-		        	File::delete(public_path().'/homepage/'.$home->image_480x430);
+		        	File::delete(public_path().'/aboutpage/'.$home->image_480x430);
 		        }
 		        $image_480x430=$request->file('image_480x430');
 	        	$newimage_480x430=date('YmdHi').'_480x430_'.$image_480x430->getClientOriginalName();
-	        	$image_480x430->move(public_path('homepage'),$newimage_480x430);
+	        	$image_480x430->move(public_path('aboutpage'),$newimage_480x430);
 		        
             }
 
