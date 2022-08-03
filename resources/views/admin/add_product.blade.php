@@ -87,17 +87,7 @@
                                 @endif
                              </select>
                             <div class="feedback"></div>
-                        </div>  
-                        <div class="form-group">
-                            <label for="id_category">Previous Price <span class="text-danger">*</span></label>
-                            <input type="number" class="form-control" name="prev_price" value="{{isset($product->prev_price) ? $product->prev_price :''}}">
-                            <div class="feedback"></div>
-                        </div>  
-                        <div class="form-group">
-                            <label for="id_category">Current Price <span class="text-danger">*</span></label>
-                            <input type="number" class="form-control" name="price" value="{{isset($product->price) ? $product->price :''}}">
-                            <div class="feedback"></div>
-                        </div>  
+                        </div>   
                         <div class="form-group">
                             <label for="id_category">Weight</label>
                             <input type="text" class="form-control" name="weight" value="{{isset($product->weight) ? $product->weight :''}}">
@@ -122,16 +112,53 @@
                             <div class="feedback"></div>
                         </div> 
                         <div class="form-group">               
-                            <label for="id_theme_color">Product Image  <span class="text-danger">*</span></label>
+                            <label for="id_theme_color">Image(1000x1000)  <span class="text-danger">*</span></label>
                             <div class="custom-file" style="cursor:pointer">
-                                <input type="file" name="image" id="customFileInput2" class="custom-file-input">
+                                <input type="file" name="image_1000" id="customFileInput1" class="custom-file-input">
+                                <label for="customFileInput1" class="custom-file-label">Browse files</label>
+                            </div>
+                            <div class="feedback"></div>
+                        </div> 
+                        <div class="form-group">               
+                            <label for="id_theme_color">Image(768x768)  <span class="text-danger">*</span></label>
+                            <div class="custom-file" style="cursor:pointer">
+                                <input type="file" name="image_768" id="customFileInput2" class="custom-file-input">
                                 <label for="customFileInput2" class="custom-file-label">Browse files</label>
                             </div>
-                            @if(isset($product))
-                                <span class="mt-4"><a href="/customized/product/images/{{$product->product_id}}">Upload customized images</a></span>
-                            @endif
                             <div class="feedback"></div>
-                        </div>
+                        </div> 
+                        <div class="form-group">               
+                            <label for="id_theme_color">Image(600x600)  <span class="text-danger">*</span></label>
+                            <div class="custom-file" style="cursor:pointer">
+                                <input type="file" name="image_600" id="customFileInput3" class="custom-file-input">
+                                <label for="customFileInput3" class="custom-file-label">Browse files</label>
+                            </div>
+                            <div class="feedback"></div>
+                        </div> 
+                        <div class="form-group">               
+                            <label for="id_theme_color">Image(300x300)  <span class="text-danger">*</span></label>
+                            <div class="custom-file" style="cursor:pointer">
+                                <input type="file" name="image_300" id="customFileInput4" class="custom-file-input">
+                                <label for="customFileInput4" class="custom-file-label">Browse files</label>
+                            </div>
+                            <div class="feedback"></div>
+                        </div> 
+                        <div class="form-group">               
+                            <label for="id_theme_color">Image(150x150)  <span class="text-danger">*</span></label>
+                            <div class="custom-file" style="cursor:pointer">
+                                <input type="file" name="image_150" id="customFileInput5" class="custom-file-input">
+                                <label for="customFileInput5" class="custom-file-label">Browse files</label>
+                            </div>
+                            <div class="feedback"></div>
+                        </div> 
+                        <div class="form-group">               
+                            <label for="id_theme_color">Image(100x100)  <span class="text-danger">*</span></label>
+                            <div class="custom-file" style="cursor:pointer">
+                                <input type="file" name="image_100" id="customFileInput6" class="custom-file-input">
+                                <label for="customFileInput6" class="custom-file-label">Browse files</label>
+                            </div>
+                            <div class="feedback"></div>
+                        </div> 
                         <div class="form-group">
                             <label for="id_category">Description</label>
                             <textarea name="description" id="id_description" cols="30" rows="10" class="form-control">{{isset($product->description) ? $product->description :''}}</textarea>

@@ -9,117 +9,86 @@
         <rs-module-wrap id="rev_slider_1_1_wrapper" data-source="gallery" style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;max-width:;">
             <rs-module id="rev_slider_1_1" style="" data-version="6.5.4">
                 <rs-slides>
+                    @if(count($homedata) > 0)
+                        @foreach ($homedata as $home)
+                        <rs-slide data-key="rs-{{$home->id}}" data-title="Slide" data-thumb="/homepage/{{$home->slider_100x50}}" data-anim="ms:600;" data-in="o:0;" data-out="a:false;">
+                            <img src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/plugins/revslider/public/assets/assets/dummy.png') }}" title="Home" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="/homepage/{{$home->slider_1920x950}}"data-no-retina>
+                            <rs-layer id="slider-1-slide-2-layer-{{$home->id}}" class="tp-shape tp-shapewrapper" data-type="shape" data-rsp_ch="on" data-xy="x:256px;y:390px;" data-text="fw:300;a:inherit;" data-dim="w:397px;h:7;" data-frame_0="x:-200px;tp:600;"
+                                data-frame_0_mask="u:t;" data-frame_1="tp:600;st:1880;sp:1200;sR:1880;" data-frame_1_mask="u:t;" data-frame_999="o:0;tp:600;st:w;sR:5920;" style="z-index:5;background-color:#e81a46;">
+                                <rs-bg-elem style="position:absolute; top:0px;left:0px;"></rs-bg-elem>
+
+                            </rs-layer>
+                            <rs-layer id="slider-1-slide-2-layer-{{$home->id}}" data-type="text" data-color="#000000" data-xy="x:30px;y:303px;" data-text="s:85;l:95;fw:300;a:inherit;" data-frame_0="y:40px;tp:600;" data-frame_1="tp:600;st:500;sp:1400;sR:500;"
+                                data-frame_999="o:0;tp:600;st:w;sR:7100;" style="z-index:6;font-family:Lato;">
+                                <rs-bg-elem style="position:absolute; top:0px;left:0px;"></rs-bg-elem>
+                                {{$home->heading_plain}} <strong>{{$home->heading_strong}}</strong>
+                            </rs-layer>
+                            <rs-layer id="slider-1-slide-2-layer-{{$home->id}}" data-type="text" data-color="#000000" data-rsp_ch="on" data-xy="x:30px;y:407px;" data-text="s:35;l:40;fw:300;a:inherit;" data-frame_0="y:50px;tp:600;" data-frame_1="tp:600;st:2810;sp:1400;sR:2810;"
+                                data-frame_999="o:0;tp:600;st:w;sR:4790;" style="z-index:7;font-family:Lato;">
+                                <rs-bg-elem style="position:absolute; top:0px;left:0px;"></rs-bg-elem>
+                               {{$home->text}}
+                            </rs-layer>
+                        </rs-slide>
+                        @endforeach
+                    @else
+
                     <rs-slide data-key="rs-2" data-title="Slide" data-thumb="{{ url('wp-content/uploads/sites/12/2018/05/slider2-100x50.jpg') }}" data-anim="ms:600;" data-in="o:0;" data-out="a:false;">
                         <img src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/plugins/revslider/public/assets/assets/dummy.png') }}" title="Home" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="{{ url('wp-content/uploads/sites/12/2018/05/slider2.jpg') }}"data-no-retina>
-                        <!--
-            -->
                         <rs-layer id="slider-1-slide-2-layer-4" class="tp-shape tp-shapewrapper" data-type="shape" data-rsp_ch="on" data-xy="x:256px;y:390px;" data-text="fw:300;a:inherit;" data-dim="w:397px;h:7;" data-frame_0="x:-200px;tp:600;"
                             data-frame_0_mask="u:t;" data-frame_1="tp:600;st:1880;sp:1200;sR:1880;" data-frame_1_mask="u:t;" data-frame_999="o:0;tp:600;st:w;sR:5920;" style="z-index:5;background-color:#e81a46;">
                             <rs-bg-elem style="position:absolute; top:0px;left:0px;"></rs-bg-elem>
 
                         </rs-layer>
-                        <!--
-
-            -->
                         <rs-layer id="slider-1-slide-2-layer-1" data-type="text" data-color="#000000" data-xy="x:30px;y:303px;" data-text="s:85;l:95;fw:300;a:inherit;" data-frame_0="y:40px;tp:600;" data-frame_1="tp:600;st:500;sp:1400;sR:500;"
                             data-frame_999="o:0;tp:600;st:w;sR:7100;" style="z-index:6;font-family:Lato;">
                             <rs-bg-elem style="position:absolute; top:0px;left:0px;"></rs-bg-elem>
                             Think <strong>Innovative</strong>
                         </rs-layer>
-                        <!--
-
-            -->
                         <rs-layer id="slider-1-slide-2-layer-2" data-type="text" data-color="#000000" data-rsp_ch="on" data-xy="x:30px;y:407px;" data-text="s:35;l:40;fw:300;a:inherit;" data-frame_0="y:50px;tp:600;" data-frame_1="tp:600;st:2810;sp:1400;sR:2810;"
                             data-frame_999="o:0;tp:600;st:w;sR:4790;" style="z-index:7;font-family:Lato;">
                             <rs-bg-elem style="position:absolute; top:0px;left:0px;"></rs-bg-elem>
                             Specialists in branded bathroom suites
                         </rs-layer>
-                        <!--
-
-            -->
-                        <rs-layer id="slider-1-slide-2-layer-3" class="rev-btn" data-type="button" data-color="#000000" data-xy="x:30px;y:478px;" data-text="s:17;l:17;ls:0px;a:inherit;" data-vbility="t,t,t,f" data-rsp_bd="off" data-padding="t:20;r:35;b:20;l:35;"
-                            data-border="bos:solid;boc:#000000;bow:2px,2px,2px,2px;" data-frame_0="x:150px;tp:600;" data-frame_1="tp:600;st:4220;sp:1400;sR:4220;" data-frame_999="o:0;tp:600;st:w;sR:3380;" data-frame_hover="c:#fff;bgc:#e81a46;boc:#e81a46;bor:0px,0px,0px,0px;bos:solid;bow:2px,2px,2px,2px;oX:50;oY:50;sp:250;e:none;"
-                            style="z-index:8;background-color:rgba(0,0,0,0);font-family:Montserrat;cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">
-                            <rs-bg-elem style="position:absolute; top:0px;left:0px;"></rs-bg-elem>
-                            READ MORE
-                        </rs-layer>
-                        <!--
--->
                     </rs-slide>
+
                     <rs-slide data-key="rs-1" data-title="Slide" data-thumb="{{ url('wp-content/uploads/sites/12/2018/05/slider01-100x50.jpg') }}" data-anim="ms:600;" data-in="o:0;" data-out="a:false;">
                         <img src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/plugins/revslider/public/assets/assets/dummy.png') }}" title="Home" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="{{ url('wp-content/uploads/sites/12/2018/05/slider01.jpg') }}" data-no-retina>
-                        <!--
-            -->
                         <rs-layer id="slider-1-slide-1-layer-4" class="tp-shape tp-shapewrapper" data-type="shape" data-rsp_ch="on" data-xy="x:256px;y:390px;" data-text="fw:300;a:inherit;" data-dim="w:250px;h:6px;" data-frame_0="x:-200px;tp:600;"
                             data-frame_0_mask="u:t;" data-frame_1="tp:600;st:1880;sp:1200;sR:1880;" data-frame_1_mask="u:t;" data-frame_999="o:0;tp:600;st:w;sR:5920;" style="z-index:5;background-color:#e81a46;">
                             <rs-bg-elem style="position:absolute; top:0px;left:0px;"></rs-bg-elem>
 
                         </rs-layer>
-                        <!--
-
-            -->
                         <rs-layer id="slider-1-slide-1-layer-1" data-type="text" data-color="#ffffff" data-xy="x:30px;y:303px;" data-text="s:85;l:95;fw:300;a:inherit;" data-frame_0="y:40px;tp:600;" data-frame_1="tp:600;st:500;sp:1400;sR:500;"
                             data-frame_999="o:0;tp:600;st:w;sR:7100;" style="z-index:6;font-family:Lato;">
                             <rs-bg-elem style="position:absolute; top:0px;left:0px;"></rs-bg-elem>
                             Think <strong>Luxury</strong>
                         </rs-layer>
-                        <!--
-
-            -->
                         <rs-layer id="slider-1-slide-1-layer-2" data-type="text" data-color="#ffffff" data-rsp_ch="on" data-xy="x:30px;y:407px;" data-text="w:normal;s:35;l:40;fw:300;a:inherit;" data-dim="w:500px;" data-frame_0="y:50px;tp:600;"
                             data-frame_1="tp:600;st:2810;sp:1400;sR:2810;" data-frame_999="o:0;tp:600;st:w;sR:4790;" style="z-index:7;font-family:Lato;">
                             <rs-bg-elem style="position:absolute; top:0px;left:0px;"></rs-bg-elem>
                             We design fully bespoke and personalised bathroom solutions
                         </rs-layer>
-                        <!--
-
-            -->
-                        <rs-layer id="slider-1-slide-1-layer-3" class="rev-btn" data-type="button" data-color="rgba(255,255,255,1)" data-xy="x:30px;y:520px;" data-text="s:17;l:17;ls:0px;a:inherit;" data-vbility="t,t,t,f" data-rsp_bd="off"
-                            data-padding="t:20;r:35;b:20;l:35;" data-border="bos:solid;boc:#ffffff;bow:2px,2px,2px,2px;" data-frame_0="x:150px;tp:600;" data-frame_1="tp:600;st:4220;sp:1400;sR:4220;" data-frame_999="o:0;tp:600;st:w;sR:3380;"
-                            data-frame_hover="bgc:#e81a46;boc:#e81a46;bor:0px,0px,0px,0px;bos:solid;bow:2px,2px,2px,2px;oX:50;oY:50;sp:250;e:none;" style="z-index:8;background-color:rgba(0,0,0,0);font-family:Montserrat;cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">
-                            <rs-bg-elem style="position:absolute; top:0px;left:0px;"></rs-bg-elem>
-                            READ MORE
-                        </rs-layer>
-                        <!--
--->
                     </rs-slide>
+
                     <rs-slide data-key="rs-3" data-title="Slide" data-thumb="{{ url('wp-content/uploads/sites/12/2018/05/slider3-100x50.jpg') }}" data-anim="ms:600;" data-in="o:0;" data-out="a:false;">
                         <img src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/plugins/revslider/public/assets/assets/dummy.png') }}" title="Home" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="{{ url('wp-content/uploads/sites/12/2018/05/slider3.jpg') }}" data-no-retina>
-                        <!--
-            -->
                         <rs-layer id="slider-1-slide-3-layer-4" class="tp-shape tp-shapewrapper" data-type="shape" data-rsp_ch="on" data-xy="x:305px;y:390px;" data-text="fw:300;a:inherit;" data-dim="w:347px;h:8px;" data-frame_0="x:-200px;tp:600;"
                             data-frame_0_mask="u:t;" data-frame_1="tp:600;st:1880;sp:1200;sR:1880;" data-frame_1_mask="u:t;" data-frame_999="o:0;tp:600;st:w;sR:5920;" style="z-index:5;background-color:#e81a46;">
                             <rs-bg-elem style="position:absolute; top:0px;left:0px;"></rs-bg-elem>
 
                         </rs-layer>
-                        <!--
-
-            -->
                         <rs-layer id="slider-1-slide-3-layer-1" data-type="text" data-color="#000000" data-xy="x:30px;y:303px;" data-text="s:85;l:95;fw:300;a:inherit;" data-frame_0="y:40px;tp:600;" data-frame_1="tp:600;st:500;sp:1400;sR:500;"
                             data-frame_999="o:0;tp:600;st:w;sR:7100;" style="z-index:6;font-family:Lato;">
                             <rs-bg-elem style="position:absolute; top:0px;left:0px;"></rs-bg-elem>
                             Design <strong>Solutions</strong>
                         </rs-layer>
-                        <!--
-
-            -->
                         <rs-layer id="slider-1-slide-3-layer-2" data-type="text" data-color="#000000" data-rsp_ch="on" data-xy="x:34px;y:407px;" data-text="s:35;l:40;fw:300;a:inherit;" data-frame_0="y:50px;tp:600;" data-frame_1="tp:600;st:2810;sp:1400;sR:2810;"
                             data-frame_999="o:0;tp:600;st:w;sR:4790;" style="z-index:7;font-family:Lato;">
                             <rs-bg-elem style="position:absolute; top:0px;left:0px;"></rs-bg-elem>
                             Bringing designs to life.
                         </rs-layer>
-                        <!--
-
-            -->
-                        <rs-layer id="slider-1-slide-3-layer-3" class="rev-btn" data-type="button" data-color="#000000" data-xy="x:36px;y:478px;" data-text="s:17;l:17;ls:0px;a:inherit;" data-vbility="t,t,t,f" data-rsp_bd="off" data-padding="t:20;r:35;b:20;l:35;"
-                            data-border="bos:solid;boc:#000000;bow:2px,2px,2px,2px;" data-frame_0="x:150px;tp:600;" data-frame_1="tp:600;st:4220;sp:1400;sR:4220;" data-frame_999="o:0;tp:600;st:w;sR:3380;" data-frame_hover="c:#fff;bgc:#e81a46;boc:#e81a46;bor:0px,0px,0px,0px;bos:solid;bow:2px,2px,2px,2px;oX:50;oY:50;sp:250;e:none;"
-                            style="z-index:8;background-color:rgba(0,0,0,0);font-family:Montserrat;cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">
-                            <rs-bg-elem style="position:absolute; top:0px;left:0px;"></rs-bg-elem>
-                            READ MORE
-                        </rs-layer>
-                        <!--
--->
                     </rs-slide>
+                    @endif
                 </rs-slides>
             </rs-module>
             <script type="text/javascript">
@@ -137,6 +106,7 @@
             </script>
         </rs-module-wrap>
         <!-- END REVOLUTION SLIDER -->
+
     </div>
 </div>
 <!-- ** Slider End ** -->
@@ -155,13 +125,34 @@
                         </div>
                     </div>
                 </div>
+                @if(count($middle) > 0)
+                    @foreach ($middle as $home)
+                    <div class="wpb_column vc_column_container vc_col-sm-4">
+                        <div class="vc_column-inner ">
+                            <div class="wpb_wrapper">
+                                <div class='dt-sc-image-caption type2 '>
+                                    <div class='dt-sc-image-wrapper'>
+                                        <img width="420" height="420" src="{{ url('images/loader.gif')}}" data-src="/homepage/{{$home->image_420x420}}" class="attachment-full" alt="" loading="lazy" srcset="/homepage/{{$home->image_420x420}} 420w"
+                                            sizes="(max-width: 420px) 420px" /></div>
+                                    <div class='dt-sc-image-content'>
+                                        <div class='dt-sc-image-title'>
+                                            <h3><a href="/products/faucets" target="_self">{{$home->image_text}}</a></h3>
+                                        </div>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+                @else
                 <div class="wpb_column vc_column_container vc_col-sm-4">
                     <div class="vc_column-inner ">
                         <div class="wpb_wrapper">
                             <div class='dt-sc-image-caption type2 '>
                                 <div class='dt-sc-image-wrapper'>
-                                	<img width="420" height="420" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/home01.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/home01.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/home01-150x150.jpg')}} 150w,{{ url('wp-content/uploads/sites/12/2018/05/home01-300x300.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/home01-100x100.jpg')}} 100w"
-                                        sizes="(max-width: 420px) 100vw, 420px" /></div>
+                                	<img width="420" height="420" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/home01.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/home01.jpg')}} 420w"
+                                        sizes="(max-width: 420px) 420px" /></div>
                                 <div class='dt-sc-image-content'>
                                     <div class='dt-sc-image-title'>
                                         <h3><a href="/products/faucets" target="_self">Faucets</a></h3>
@@ -176,8 +167,8 @@
                     <div class="vc_column-inner ">
                         <div class="wpb_wrapper">
                             <div class='dt-sc-image-caption type2 '>
-                                <div class='dt-sc-image-wrapper'><img width="420" height="420" data-src="{{ url('wp-content/uploads/sites/12/2018/05/home02.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/home02.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/home02-150x150.jpg')}} 150w, {{ url('wp-content/uploads/sites/12/2018/05/home02-300x300.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/home02-100x100.jpg')}} 100w"
-                                        sizes="(max-width: 420px) 100vw, 420px" /></div>
+                                <div class='dt-sc-image-wrapper'><img width="420" height="420" data-src="{{ url('wp-content/uploads/sites/12/2018/05/home02.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/home02.jpg')}} 420w"
+                                        sizes="(max-width: 420px) 420px" /></div>
                                 <div class='dt-sc-image-content'>
                                     <div class='dt-sc-image-title'>
                                         <h3><a href="/products/bathtubs" target="_self">Bath Tubs</a></h3>
@@ -192,8 +183,8 @@
                     <div class="vc_column-inner ">
                         <div class="wpb_wrapper">
                             <div class='dt-sc-image-caption type2 '>
-                                <div class='dt-sc-image-wrapper'><img width="420" height="420" data-src="{{ url('wp-content/uploads/sites/12/2018/05/home03.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/home03.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/home03-150x150.jpg')}} 150w, {{ url('wp-content/uploads/sites/12/2018/05/home03-300x300.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/home03-100x100.jpg')}} 100w"
-                                        sizes="(max-width: 420px) 100vw, 420px" /></div>
+                                <div class='dt-sc-image-wrapper'><img width="420" height="420" data-src="{{ url('wp-content/uploads/sites/12/2018/05/home03.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/home03.jpg')}} 420w"
+                                        sizes="(max-width: 420px) 420px" /></div>
                                 <div class='dt-sc-image-content'>
                                     <div class='dt-sc-image-title'>
                                         <h3><a href="/products/showers" target="_self">Showers</a></h3>
@@ -204,6 +195,7 @@
                         </div>
                     </div>
                 </div>
+                @endif
                 <div class="wpb_column vc_column_container vc_col-sm-12">
                     <div class="vc_column-inner ">
                         <div class="wpb_wrapper">
@@ -220,6 +212,24 @@
                     <div class="wpb_wrapper">
                        	<div id="1556963558321-4d506aa3-9f28" class="dt-sc-empty-space"></div>
                         <div class="vc_row wpb_row vc_inner vc_row-fluid dt-sc-dark-bg">
+                            @if(count($middlepart) > 0)
+                                @foreach ($middlepart as $home)
+                                <div class="wpb_column vc_column_container vc_col-sm-3">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class='dt-sc-icon-box type3 no-bg-icon'>
+                                                <div class="icon-wrapper"><span><img width="70" height="70" src="{{ url('images/loader.gif')}}" data-src="/homepage/{{$home->image_70x70}}" class="attachment-full" alt="" loading="lazy" /></span></div>
+                                                <div
+                                                    class="icon-content">
+                                                    <h4>{{$home->image_heading}}</h4>
+                                                    <p>{{$home->image_text}}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
+                            @else
                             <div class="wpb_column vc_column_container vc_col-sm-3">
                                 <div class="vc_column-inner ">
                                     <div class="wpb_wrapper">
@@ -273,6 +283,7 @@
                                     </div>
                                 </div>
                             </div>
+                            @endif
                         </div>
                     	<div id="1556963576218-3c2537a2-4477" class="dt-sc-empty-space"></div>
                 	</div>
@@ -282,6 +293,9 @@
 
     	<div class="vc_row-full-width vc_clearfix"></div>
 
+
+
+
     	<!-- Row Backgrounds -->
         <div class="upb_bg_img" data-ultimate-bg="url({{ url('wp-content/uploads/sites/12/2018/05/home-bg1.jpg')}}" data-image-id="id^14506|url^{{ url('wp-content/uploads/sites/12/2018/05/home-bg1.jpg')}}|caption^null|alt^null|title^home-bg1|description^null"
             data-ultimate-bg-style="vcpb-vz-jquery" data-bg-img-repeat="no-repeat" data-bg-img-size="cover" data-bg-img-position="" data-parallx_sense="30" data-bg-override="0" data-bg_img_attach="scroll" data-upb-overlay-color="" data-upb-bg-animation=""
@@ -289,220 +303,7 @@
             data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.7.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity=""
             data-overlay-pattern-size=""></div>
 
-            <div class="vc_row wpb_row vc_row-fluid vc_custom_1556964384893 vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
-                <div class="wpb_column vc_column_container vc_col-sm-12">
-                    <div class="vc_column-inner ">
-                        <div class="wpb_wrapper">
-                            <div id="1556964411781-3f820146-d66a" class="dt-sc-empty-space"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="wpb_column vc_column_container vc_col-sm-6">
-                    <div class="vc_column-inner " style=" text-align:left; ">
-                        <div class="wpb_wrapper">
-                            <div class='dt-sc-title script-with-sub-title subheading-text'>
-                                <h4>WHAT DO WE CREATE</h4>
-                                <h2>Providing Bathrom Designs for 30 years. Look at our projects we made so far</h2>
-                            </div class="text-md-left text-center"><a href='#' target='_self' title='' class='dt-sc-button   medium   bordered  '> View All Projects </a></div>
-                    </div>
-                </div>
-                <div class="wpb_column vc_column_container vc_col-sm-6">
-                    <div class="vc_column-inner ">
-                        <div class="wpb_wrapper">
-                            <div id="ult-carousel-154301941762d6943df389f" class="ult-carousel-wrapper  pdt-img-scroll ult_horizontal" data-gutter="15" data-rtl="false">
-                                <div class="ult-carousel-51171360062d6943df3889 ">
-                                    <div class="ult-item-wrap" data-animation="animated no-animation">
-                                        <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1528086620964">
-                                            <div class="ult-item-wrap" data-animation="animated no-animation">
-                                                <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-has-fill" style=" text-align:center; ">
-                                                    <div class="vc_column-inner vc_custom_1527143569292">
-                                                        <div class="wpb_wrapper">
-                                                            <div class="ult-item-wrap" data-animation="animated no-animation">
-                                                                <div class="wpb_single_image wpb_content_element vc_align_left   img-carousel">
-                                                                    <h2 class="wpb_heading wpb_singleimage_heading">Model: Luxury</h2>
-                                                                    <figure class="wpb_wrapper vc_figure">
-                                                                        <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="590" height="330" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/carousel1.jpg')}}" class="vc_single_image-img attachment-full" alt=""
-                                                                                loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/carousel1.jpg')}} 590w, {{ url('wp-content/uploads/sites/12/2018/05/carousel1-300x168.jpg')}} 300w"
-                                                                                sizes="(max-width: 590px) 100vw, 590px" /></div>
-                                                                    </figure>
-                                                                </div>
-                                                            </div>
-                                                            <div class="ult-item-wrap" data-animation="animated no-animation">
-                                                                <div class="ult-content-box-container ">
-                                                                    <div class="ult-content-box" style="box-shadow: px px px px none;padding-top:50px;padding-right:50px;padding-bottom:50px;padding-left:50px;-webkit-transition: all 700ms ease;-moz-transition: all 700ms ease;-ms-transition: all 700ms ease;-o-transition: all 700ms ease;transition: all 700ms ease;"
-                                                                        data-hover_box_shadow="none">
-                                                                        <div class="ult-item-wrap" data-animation="animated no-animation">
-                                                                            <h3>Ingenious Faucets</h3>
-                                                                        </div>
-                                                                        <div class="ult-item-wrap" data-animation="animated no-animation">
-                                                                            <div class="wpb_text_column wpb_content_element ">
-                                                                                <div class="wpb_wrapper">
-                                                                                    <p>There are many variations of passages of Lorem Ipsum available,There are many variations of passages</p>
-
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="ult-item-wrap" data-animation="animated no-animation">
-                                                                            <div class="ult-spacer spacer-62d6943e00127" data-id="62d6943e00127" data-height="50" data-height-mobile="50" data-height-tab="50" data-height-tab-portrait="50" data-height-mobile-landscape="50"
-                                                                                style="clear:both;display:block;"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="ult-item-wrap" data-animation="animated no-animation">
-                                        <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1527143542148">
-                                            <div class="ult-item-wrap" data-animation="animated no-animation">
-                                                <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-has-fill" style=" text-align:center; ">
-                                                    <div class="vc_column-inner vc_custom_1527143569292">
-                                                        <div class="wpb_wrapper">
-                                                            <div class="ult-item-wrap" data-animation="animated no-animation">
-                                                                <div class="wpb_single_image wpb_content_element vc_align_left   img-carousel">
-                                                                    <h2 class="wpb_heading wpb_singleimage_heading">Model: Styliz</h2>
-                                                                    <figure class="wpb_wrapper vc_figure">
-                                                                        <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="590" height="330" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/carousel2.jpg')}}" class="vc_single_image-img attachment-full" alt=""
-                                                                                loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/carousel2.jpg')}} 590w, {{ url('wp-content/uploads/sites/12/2018/05/carousel2-300x168.jpg')}} 300w"
-                                                                                sizes="(max-width: 590px) 100vw, 590px" /></div>
-                                                                    </figure>
-                                                                </div>
-                                                            </div>
-                                                            <div class="ult-item-wrap" data-animation="animated no-animation">
-                                                                <div class="ult-content-box-container ">
-                                                                    <div class="ult-content-box" style="box-shadow: px px px px none;padding-top:50px;padding-right:50px;padding-bottom:50px;padding-left:50px;-webkit-transition: all 700ms ease;-moz-transition: all 700ms ease;-ms-transition: all 700ms ease;-o-transition: all 700ms ease;transition: all 700ms ease;"
-                                                                        data-hover_box_shadow="none">
-                                                                        <div class="ult-item-wrap" data-animation="animated no-animation">
-                                                                            <h3>Curvy Bath Tubs</h3>
-                                                                        </div>
-                                                                        <div class="ult-item-wrap" data-animation="animated no-animation">
-                                                                            <div class="wpb_text_column wpb_content_element ">
-                                                                                <div class="wpb_wrapper">
-                                                                                    <p>There are many variations of passages of Lorem Ipsum available,There are many variations of passages</p>
-
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="ult-item-wrap" data-animation="animated no-animation">
-                                                                            <div class="ult-spacer spacer-62d6943e007d0" data-id="62d6943e007d0" data-height="50" data-height-mobile="50" data-height-tab="50" data-height-tab-portrait="50" data-height-mobile-landscape="50"
-                                                                                style="clear:both;display:block;"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="ult-item-wrap" data-animation="animated no-animation">
-                                        <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1527143542148">
-                                            <div class="ult-item-wrap" data-animation="animated no-animation">
-                                                <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-has-fill" style=" text-align:center; ">
-                                                    <div class="vc_column-inner vc_custom_1527143569292">
-                                                        <div class="wpb_wrapper">
-                                                            <div class="ult-item-wrap" data-animation="animated no-animation">
-                                                                <div class="wpb_single_image wpb_content_element vc_align_left   img-carousel">
-                                                                    <h2 class="wpb_heading wpb_singleimage_heading">Model: Persona</h2>
-                                                                    <figure class="wpb_wrapper vc_figure">
-                                                                        <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="590" height="330" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/carousel3.jpg')}}" class="vc_single_image-img attachment-full" alt=""
-                                                                                loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/carousel3.jpg')}} 590w, {{ url('wp-content/uploads/sites/12/2018/05/carousel3-300x168.jpg')}} 300w"
-                                                                                sizes="(max-width: 590px) 100vw, 590px" /></div>
-                                                                    </figure>
-                                                                </div>
-                                                            </div>
-                                                            <div class="ult-item-wrap" data-animation="animated no-animation">
-                                                                <div class="ult-content-box-container ">
-                                                                    <div class="ult-content-box" style="box-shadow: px px px px none;padding-top:50px;padding-right:50px;padding-bottom:50px;padding-left:50px;-webkit-transition: all 700ms ease;-moz-transition: all 700ms ease;-ms-transition: all 700ms ease;-o-transition: all 700ms ease;transition: all 700ms ease;"
-                                                                        data-hover_box_shadow="none">
-                                                                        <div class="ult-item-wrap" data-animation="animated no-animation">
-                                                                            <h3>Value Faucets</h3>
-                                                                        </div>
-                                                                        <div class="ult-item-wrap" data-animation="animated no-animation">
-                                                                            <div class="wpb_text_column wpb_content_element ">
-                                                                                <div class="wpb_wrapper">
-                                                                                    <p>There are many variations of passages of Lorem Ipsum available,There are many variations of passages</p>
-
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="ult-item-wrap" data-animation="animated no-animation">
-                                                                            <div class="ult-spacer spacer-62d6943e00e6b" data-id="62d6943e00e6b" data-height="50" data-height-mobile="50" data-height-tab="50" data-height-tab-portrait="50" data-height-mobile-landscape="50"
-                                                                                style="clear:both;display:block;"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <script type="text/javascript">
-                                jQuery(document).ready(function($) {
-                                    if (typeof jQuery('.ult-carousel-51171360062d6943df3889').slick == "function") {
-                                        $('.ult-carousel-51171360062d6943df3889').slick({
-                                            dots: true,
-                                            autoplay: true,
-                                            autoplaySpeed: 5000,
-                                            speed: 300,
-                                            infinite: true,
-                                            arrows: false,
-                                            slidesToScroll: 1,
-                                            slidesToShow: 1,
-                                            swipe: true,
-                                            draggable: true,
-                                            touchMove: true,
-                                            pauseOnHover: true,
-                                            pauseOnFocus: false,
-                                            responsive: [{
-                                                    breakpoint: 1026,
-                                                    settings: {
-                                                        slidesToShow: 1,
-                                                        slidesToScroll: 1,
-                                                    }
-                                                },
-                                                {
-                                                    breakpoint: 1025,
-                                                    settings: {
-                                                        slidesToShow: 1,
-                                                        slidesToScroll: 1
-                                                    }
-                                                },
-                                                {
-                                                    breakpoint: 760,
-                                                    settings: {
-                                                        slidesToShow: 1,
-                                                        slidesToScroll: 1
-                                                    }
-                                                }
-                                            ],
-                                            pauseOnDotsHover: true,
-                                            customPaging: function(slider, i) {
-                                                return '<i type="button" style= "color:#cccccc;" class="ultsl-record" data-role="none"></i>';
-                                            },
-                                        });
-                                    }
-                                });
-                            </script>
-                        </div>
-                    </div>
-                </div>
-                <div class="wpb_column vc_column_container vc_col-sm-12">
-                    <div class="vc_column-inner ">
-                        <div class="wpb_wrapper">
-                            <div id="1556964430636-2a07d79e-1fcf" class="dt-sc-empty-space"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
 
             <div id="gallery" data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid dt-skin-secondary-bg dt-sc-dark-bg gallery-wrapper-main vc_custom_1556971074329">
                 <div class="dt-sc-stretch-row-content">
@@ -510,16 +311,49 @@
                         <div class="vc_column-inner ">
                             <div class="wpb_wrapper">
                                 <div class='dt-sc-tabs-horizontal-frame-container type5 alter' data-effect='fade'>
-                                    <ul class='dt-sc-tabs-horizontal-frame'>
+                                    <ul class='mb-4 dt-sc-tabs-horizontal-frame' style="margin-bottom:40px!important;">
+                                        @if(count($categories) > 0)
+                                            @foreach ($categories as $category)
+                                                <li><a href="javascript:void(0);">{{$category->category}}</a></li>
+                                            @endforeach
+                                        @else
                                         <li><a href="javascript:void(0);">Bath Furniture</a></li>
                                         <li><a href="javascript:void(0);">Hot Tubs</a></li>
                                         <li><a href="javascript:void(0);">Faucets</a></li>
                                         <li><a href="javascript:void(0);">Wash Basin</a></li>
                                         <li><a href="javascript:void(0);">Saunas</a></li>
                                         <li><a href="javascript:void(0);">Showers</a></li>
+                                        @endif
                                     </ul>
+                                    @if (count($product) > 0)
                                     <div class='dt-sc-tabs-horizontal-frame-content'>
                                         <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                        @foreach ($product as $pro)
+                                            <div class="wpb_column vc_column_container vc_col-sm-4">
+                                                <div class="vc_column-inner ">
+                                                    <div class="wpb_wrapper">
+                                                        <div class='dt-sc-image-caption type6 content-with-btn'>
+                                                           <div class='dt-sc-image-wrapper'><img width="1200" height="810" src="{{ url('images/loader.gif')}}" data-src="/homepage/{{$pro->image_1200x810}}" class="attachment-full" alt="" loading="lazy" srcset="/homepage/{{$pro->image_1200x810}} 1200w"
+                                                            sizes="(max-width: 1200px) 100vw, 1200px" /></div>
+                                                            <div class='dt-sc-image-content'>
+                                                                <div class='dt-sc-image-title'>
+                                                                    <h3><a href="/products/{{$pro->category}}" target="_self" title="#">{{$pro->title}}</a></h3>
+                                                                </div>
+                                                                <p>{{$pro->text}}</p>
+                                                                <p><a href='/products/{{$pro->category}}' target='_blank' title='' class='dt-sc-button   medium   bordered  '> View Collection </a></p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="1556970394360-01b3f401-bfc3" class="dt-sc-empty-space"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        @endforeach
+                                        </div>
+                                    </div>
+                                    @else
+                                    <div class='dt-sc-tabs-horizontal-frame-content'>
+                                        <div class="vc_row wpb_row vc_inner vc_row-fluid">
+
                                             <div class="wpb_column vc_column_container vc_col-sm-4">
                                                 <div class="vc_column-inner ">
                                                     <div class="wpb_wrapper">
@@ -1172,6 +1006,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                    @endif
                                 </div>
                                 <div id="1528802493183-732db9d5-5499" class="dt-sc-empty-space"></div>
                             </div>
@@ -1182,58 +1017,6 @@
 
             <div class="vc_row-full-width vc_clearfix"></div>
             
-            <div class="vc_row wpb_row vc_row-fluid">
-	            <div class="wpb_column vc_column_container vc_col-sm-12">
-	                <div class="vc_column-inner ">
-	                    <div class="wpb_wrapper">
-	                        <div id="1556964498396-90ff88af-6ae2" class="dt-sc-empty-space"></div>
-	                        <div class="wpb_single_image wpb_content_element vc_align_center">
-
-	                            <figure class="wpb_wrapper vc_figure">
-	                                <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="1170" height="355" data-src="{{ url('wp-content/uploads/sites/12/2018/05/home-img1.jpg')}}" src="{{ url('images/loader.gif')}}" class="vc_single_image-img attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/home-img1.jpg')}} 1170w, {{ url('wp-content/uploads/sites/12/2018/05/home-img1-300x91.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/home-img1-768x233.jpg')}} 768w, {{ url('wp-content/uploads/sites/12/2018/05/home-img1-1024x311.jpg')}} 1024w, {{ url('wp-content/uploads/sites/12/2018/05/home-img1-600x182.jpg')}} 600w"
-	                                        sizes="(max-width: 1170px) 100vw, 1170px" /></div>
-	                            </figure>
-	                        </div>
-	                        <div class="vc_row wpb_row vc_inner vc_row-fluid">
-	                            <div class="top-overlay-content wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill">
-	                                <div class="vc_column-inner vc_custom_1527150322570">
-	                                    <div class="wpb_wrapper">
-	                                        <div id="1527150538439-56b4a6d9-7377" class="dt-sc-empty-space"></div>
-	                                        <div class='dt-sc-title script-with-sub-title subheading-text leftside-border'>
-	                                            <h4>OVER 30 YEARS</h4>
-	                                            <h2>Making Bathroom Look Elegant since 1981</h2>
-	                                        </div>
-	                                        <div class="wpb_text_column wpb_content_element ">
-	                                            <div class="wpb_wrapper">
-	                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-	                                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-	                                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-	                                            </div>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-	                            <div class="wpb_column vc_column_container vc_col-sm-6">
-	                                <div class="vc_column-inner vc_custom_1527153719376">
-	                                    <div class="wpb_wrapper">
-	                                        <div id="1527153750129-c853d516-3158" class="dt-sc-empty-space"></div>
-	                                        <div class='dt-sc-title script-with-sub-title subheading-text'>
-	                                            <h4></h4>
-	                                            <h2>Need advice? Call</h2>
-	                                        </div><a href="tel:{{$site->phone ? $site->phone : env('PHONE1') }}" target='_self' title='' class='dt-sc-button   xlarge icon-left with-icon  filled  with-num'><span class='fa fa-phone'> </span> {{$site->phone ? $site->phone : env('PHONE1') }} </a>
-	                                        <div class='dt-sc-clear '> </div>
-	                                        <div id="1528179986752-c77e5916-e85b" class="dt-sc-empty-space"></div>
-	                                        <p class="text-md-left text-center vc_custom_heading normal">OPEN 7 DAYS : {{$site->working_days ? $site->working_days : env('SITE_WORKING_DAYS') }} {{$site->working_hours ? $site->working_hours : env('SITE_WORKING_HOURS') }},<br /> Special days:{{$site->special_days ? $site->special_days : env('SITE_SPECIAL_DAYS') }} {{$site->special_hours ? $site->special_hours : env('SITE_SPECIAL_HOURS') }}.By Management</p>
-	                                    </div>
-	                                </div>
-	                            </div>
-	                        </div>
-	                        <div id="1556964513230-0a119b82-510a" class="dt-sc-empty-space"></div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
 
 	        <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid dt-sc-dark-bg vc_row-o-full-height vc_row-o-columns-middle vc_row-flex">
                 <div class="wpb_column vc_column_container vc_col-sm-12">
@@ -1248,9 +1031,15 @@
                         <div class="wpb_wrapper">
                             <div id="1528864647558-ffbeb99c-4ad5" class="dt-sc-empty-space"></div>
                             <div class='dt-sc-title script-with-sub-title subheading-text leftside-border'>
-                                <h4>A TRUSTED FIRM</h4>
-                                <h2>Admirable Looks Guranteed with Years of Gurantee</h2>
-                            </div class="text-md-left text-center"><a href='#' target='_self' title='' class='dt-sc-button   medium   bordered  '> View Terms </a></div>
+                                @if($middlepartb)
+                                    <h4>{{$middlepartb->image_heading}}</h4>
+                                    <h2>{{$middlepartb->image_text}}</h2>
+                                @else
+                                    <h4>A TRUSTED FIRM</h4>
+                                    <h2>Admirable Looks Guranteed with Years of Gurantee</h2>
+                                @endif
+                            </div class="text-md-left text-center">
+                        </div>
                     </div>
                 </div>
                 <div class="wpb_column vc_column_container vc_col-sm-6">
@@ -1262,7 +1051,11 @@
                                 <div class="ult_modal ult-fade ult-medium">
                                     <div id="ult-modal-wrap-2833" class="ult_modal-content ult-hide" style="border-style:solid;border-width:2px;border-radius:0px;border-color:#333333;">
                                         <div data-ultimate-target='#ult-modal-wrap-2833 .ult_modal-body' data-responsive-json-new='{"font-size":"","line-height":""}' class="ult_modal-body ult-responsive ult-youtube" style="">
+                                            @if($middlepartb)
+                                            <iframe loading="lazy" style="border: 0;" data-src="{{$middlepartb->video_link}}" src="{{ url('images/loader.gif')}}" width="560" height="315" allowfullscreen="allowfullscreen"></iframe>
+                                            @else
                                             <iframe loading="lazy" style="border: 0;" data-src="//www.youtube.com/embed/DbWCAMA4wgk" src="{{ url('images/loader.gif')}}" width="560" height="315" allowfullscreen="allowfullscreen"></iframe>
+                                            @endif
                                         </div>
                                     </div>
                                 </div>
@@ -1281,111 +1074,34 @@
                     </div>
                 </div>
             </div>
+
             <div class="vc_row-full-width vc_clearfix"></div>
             <div class="upb_bg_img" data-ultimate-bg="url({{ url('wp-content/uploads/sites/12/2018/05/home-bg2.jpg')}})" data-image-id="id^14558|url^{{ url('wp-content/uploads/sites/12/2018/05/home-bg2.jpg')}}|caption^null|alt^null|title^home-bg2|description^null"
                             data-ultimate-bg-style="vcpb-vz-jquery" data-bg-img-repeat="repeat" data-bg-img-size="cover" data-bg-img-position="" data-parallx_sense="30" data-bg-override="0" data-bg_img_attach="scroll" data-upb-overlay-color="rgba(29,55,80,0.75)"
                             data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true"
                             data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.7.0" data-is_old_vc="" data-theme-support="" data-overlay="true" data-overlay-color="rgba(29,55,80,0.75)" data-overlay-pattern="" data-overlay-pattern-opacity="0.8"
                             data-overlay-pattern-size="" data-overlay-pattern-attachment="scroll"></div>
-             <div class="vc_row wpb_row vc_row-fluid vc_custom_1556965770413">
-                <div class="wpb_column vc_column_container vc_col-sm-12">
-                    <div class="vc_column-inner " style=" text-align:left; ">
-                        <div class="wpb_wrapper">
-                            <div id="1556965774094-117144ea-d6ee" class="dt-sc-empty-space"></div>
-                            <div class='dt-sc-title script-with-sub-title subheading-text aligncenter'>
-                                <h4>HAVE ANY QUERIES?</h4>
-                                <h2>Frequently asked questions</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+             
 
-            <div class="vc_row wpb_row vc_row-fluid vc_custom_1556965843591">
-	            <div class="wpb_column vc_column_container vc_col-sm-12">
-	                <div class="vc_column-inner ">
-	                    <div class="wpb_wrapper">
-	                        <div class='dt-sc-toggle-frame-set type2 '>
-	                            <div class="dt-sc-toggle-frame">
-	                                <h5 class='dt-sc-toggle-accordion '><a href='#'>How to excepteur sint occaecat cupidatat non proident, sunt in culpa</a></h5>
-	                                <div class="dt-sc-toggle-content" style="display: none;">
-	                                    <div class="block">
-	                                        <div class="wpb_text_column wpb_content_element  vc_custom_1527921991332">
-	                                            <div class="wpb_wrapper">
-	                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-	                                                    per inceptos himenaeos.</p>
-
-	                                            </div>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-	                            <div class="dt-sc-toggle-frame">
-	                                <h5 class='dt-sc-toggle-accordion '><a href='#'>Do you offer suscipit leo non velit lobortis porttitor tempus id neque.</a></h5>
-	                                <div class="dt-sc-toggle-content" style="display: none;">
-	                                    <div class="block">
-	                                        <div class="wpb_text_column wpb_content_element  vc_custom_1451047751409">
-	                                            <div class="wpb_wrapper">
-	                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-	                                                    per inceptos himenaeos. </p>
-
-	                                            </div>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-	                            <div class="dt-sc-toggle-frame">
-	                                <h5 class='dt-sc-toggle-accordion '><a href='#'>Will you pellentesque sit amet risus viverra, luctus est vitae, posuere arcu</a></h5>
-	                                <div class="dt-sc-toggle-content" style="display: none;">
-	                                    <div class="block">
-	                                        <div class="wpb_text_column wpb_content_element  vc_custom_1451047751409">
-	                                            <div class="wpb_wrapper">
-	                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-	                                                    per inceptos himenaeos. </p>
-
-	                                            </div>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-	                            <div class="dt-sc-toggle-frame">
-	                                <h5 class='dt-sc-toggle-accordion '><a href='#'>Can you Vivamus condimentum metus at lectus accumsan cursus et non libero</a></h5>
-	                                <div class="dt-sc-toggle-content" style="display: none;">
-	                                    <div class="block">
-	                                        <div class="wpb_text_column wpb_content_element  vc_custom_1451047751409">
-	                                            <div class="wpb_wrapper">
-	                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-	                                                    per inceptos himenaeos. </p>
-
-	                                            </div>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-	                            <div class="dt-sc-toggle-frame">
-	                                <h5 class='dt-sc-toggle-accordion '><a href='#'>Excepteur sint occaecat cupidatat non proident, sunt in culpa</a></h5>
-	                                <div class="dt-sc-toggle-content" style="display: none;">
-	                                    <div class="block">
-	                                        <div class="wpb_text_column wpb_content_element  vc_custom_1451047751409">
-	                                            <div class="wpb_wrapper">
-	                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-	                                                    per inceptos himenaeos. </p>
-
-	                                            </div>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
-	                        </div>
-	                        <div id="1556965847106-a0c91042-7e32" class="dt-sc-empty-space"></div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
+          
 
 	        <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid dt-skin-primary-bg vcr_align-half vc_row-no-padding vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
                 <div class="dt-sc-dark-bg vcr_team-top wpb_column vc_column_container vc_col-sm-4">
                     <div class="vc_column-inner vc_custom_1529052260195">
+                        @if($middlepartc)
+                        <div class="wpb_wrapper">
+                            <div class='dt-sc-title script-with-sub-title subheading-text'>
+                                <h4>{{$middlepartc->small_heading}}</h4>
+                                <h2>{{$middlepartc->big_heading}}</h2>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element  vc_custom_1557233510368">
+                                <div class="wpb_wrapper">
+                                    <p>{{$middlepartc->text}}</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        @else
                         <div class="wpb_wrapper">
                             <div class='dt-sc-title script-with-sub-title subheading-text'>
                                 <h4>FROM THE FINEST</h4>
@@ -1398,12 +1114,32 @@
                                 </div>
                             </div>
                         </div>
+                        @endif
                     </div>
                 </div>
                 <div class="wpb_column vc_column_container vc_col-sm-8">
                     <div class="vc_column-inner ">
                         <div class="wpb_wrapper">
                             <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                @if(count($developers) > 0)
+                                @foreach ($developers as $dev)
+                                <div class="wpb_column vc_column_container vc_col-sm-3">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class='dt-sc-team hide-details-show-on-hover full-height-center'>
+                                                <div class='dt-sc-team-thumb'><img width="420" height="466" src="{{ url('images/loader.gif')}}" data-src="/homepage/{{$dev->image_270x300}}" class="attachment-full" alt="" loading="lazy" srcset="/homepage/{{$dev->image_270x300}} 420w,"
+                                                        sizes="(max-width: 420px) 100vw, 420px" /></div>
+                                                <div class='dt-sc-team-details'>
+                                                    <h4>{{$dev->name}}</h4>
+                                                    <h5>{{$dev->title}}</h5>
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
+                                @else
                                 <div class="wpb_column vc_column_container vc_col-sm-3">
                                     <div class="vc_column-inner ">
                                         <div class="wpb_wrapper">
@@ -1464,12 +1200,15 @@
                                         </div>
                                     </div>
                                 </div>
+                                @endif
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
            <div class="vc_row-full-width vc_clearfix"></div>
+
            <div class="vc_row wpb_row vc_row-fluid">
 	        <div class="wpb_column vc_column_container vc_col-sm-12">
 	            <div class="vc_column-inner ">
@@ -1482,6 +1221,20 @@
 	                    <div id="1556972365450-1952f6c4-0567" class="dt-sc-empty-space"></div>
 	                    <div id="ult-carousel-103892515062d6943e0c18d" class="ult-carousel-wrapper  pdt-img-scroll type2 ult_horizontal" data-gutter="15" data-rtl="false">
 	                        <div class="ult-carousel-64958531662d6943e0c17a ">
+                                @if (count($reviews) > 0)
+                                @foreach ($reviews as $review)
+                                 <div class="ult-item-wrap" data-animation="animated no-animation">
+                                    <div class="dt-sc-testimonial-wrapper">
+                                        <div class='dt-sc-testimonial type2 leftside-quote'>
+                                            <div class="dt-sc-testimonial-quote">
+                                                <blockquote><q>{{$review->review}}</q></blockquote>
+                                            </div>
+                                            <div class="dt-sc-testimonial-author"><span><img width="300" height="300" data-src="/homepage/{{$review->profile_300x300}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="/homepage/{{$review->profile_300x300}} 300w" sizes="(max-width: 300px) 100vw, 300px" /></span><cite>{{$review->name}}<small>-{{$review->title}}</small></cite></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
+                                @else
 	                            <div class="ult-item-wrap" data-animation="animated no-animation">
 	                                <div class="dt-sc-testimonial-wrapper">
 	                                    <div class='dt-sc-testimonial type2 leftside-quote'>
@@ -1512,6 +1265,7 @@
 	                                    </div>
 	                                </div>
 	                            </div>
+                                @endif
 	                        </div>
 	                    </div>
 	                    <script type="text/javascript">
@@ -1567,86 +1321,6 @@
 	            </div>
 	        </div>
 	    </div>
-
-	    <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid dt-skin-secondary-bg dt-sc-dark-bg vcr_hook-top vc_row-o-equal-height vc_row-flex">
-	        <div class="dt-sc-skin-highlight wpb_column vc_column_container vc_col-sm-3 vc_col-has-fill">
-	            <div class="vc_column-inner vc_custom_1529052253245" style=" text-align:left; ">
-	                <div class="wpb_wrapper"><img width="199" height="49" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/light-logo.png')}}" class="aligncenter attachment-full" alt="image" loading="lazy" /></div>
-	            </div>
-	        </div>
-            <div class="wpb_column vc_column_container vc_col-sm-9">
-                <div class="vc_column-inner ">
-                    <div class="wpb_wrapper">
-                        <div id="1527924860910-3b690236-7ce1" class="dt-sc-empty-space"></div>
-                        <div id="ult-carousel-290295695562d6943e0cd45" class="ult-carousel-wrapper   ult_horizontal" data-gutter="15" data-rtl="false">
-                            <div class="ult-carousel-29161344662d6943e0cd34 ">
-                                <div class="ult-item-wrap" data-animation="animated no-animation">
-                                	<img width="188" height="89" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client01.png')}}" class="alignnone attachment-full" alt="" loading="lazy" />
-                                </div>
-                                <div class="ult-item-wrap"
-                                    data-animation="animated no-animation"><img width="188" height="89" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client02.png')}}" class="alignnone attachment-full" alt="" loading="lazy" /></div>
-                                <div class="ult-item-wrap"
-                                    data-animation="animated no-animation"><img width="188" height="89" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client03.png')}}" class="alignnone attachment-full" alt="" loading="lazy" /></div>
-                                <div class="ult-item-wrap"
-                                    data-animation="animated no-animation"><img width="188" height="89" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client04.png')}}" class="alignnone attachment-full" alt="" loading="lazy" /></div>
-                                <div class="ult-item-wrap"
-                                    data-animation="animated no-animation"><img width="188" height="89" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client01.png')}}" class="alignnone attachment-full" alt="" loading="lazy" /></div>
-                                <div class="ult-item-wrap"
-                                    data-animation="animated no-animation"><img width="188" height="89" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client01.png')}}" class="alignnone attachment-full" alt="" loading="lazy" /></div>
-                            </div>
-                        </div>
-                        <script type="text/javascript">
-                            jQuery(document).ready(function($) {
-                                if (typeof jQuery('.ult-carousel-29161344662d6943e0cd34').slick == "function") {
-                                    $('.ult-carousel-29161344662d6943e0cd34').slick({
-                                        dots: false,
-                                        autoplay: true,
-                                        autoplaySpeed: 5000,
-                                        speed: 300,
-                                        infinite: true,
-                                        arrows: false,
-                                        slidesToScroll: 3,
-                                        slidesToShow: 3,
-                                        swipe: true,
-                                        draggable: true,
-                                        touchMove: true,
-                                        pauseOnHover: true,
-                                        pauseOnFocus: false,
-                                        responsive: [{
-                                                breakpoint: 1026,
-                                                settings: {
-                                                    slidesToShow: 3,
-                                                    slidesToScroll: 3,
-                                                }
-                                            },
-                                            {
-                                                breakpoint: 1025,
-                                                settings: {
-                                                    slidesToShow: 3,
-                                                    slidesToScroll: 3
-                                                }
-                                            },
-                                            {
-                                                breakpoint: 760,
-                                                settings: {
-                                                    slidesToShow: 1,
-                                                    slidesToScroll: 1
-                                                }
-                                            }
-                                        ],
-                                        pauseOnDotsHover: true,
-                                        customPaging: function(slider, i) {
-                                            return '<i type="button" style= "color:#333333;" class="ultsl-record" data-role="none"></i>';
-                                        },
-                                    });
-                                }
-                            });
-                        </script>
-                        <div id="1528461286148-83ff3a31-9fef" class="dt-sc-empty-space"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="vc_row-full-width vc_clearfix"></div>
 	</section>
 </div>

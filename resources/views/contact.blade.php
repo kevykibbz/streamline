@@ -919,31 +919,8 @@
                     </div>
                 </div>
                 <div class="vc_row-full-width vc_clearfix"></div>
-                <div class="vc_row wpb_row vc_row-fluid map-overlay-top vc_custom_1528453604963 vc_row-has-fill">
-                    <div class="wpb_column vc_column_container vc_col-sm-4">
-                        <div class="vc_column-inner ">
-                            <div class="wpb_wrapper">
-                                <div class="dt-sc-image-caption  location">
-                                    <div class="dt-sc-image-wrapper"><img width="480" height="350"
-                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/contact-img1.jpg')}}"
-                                            class="attachment-full" alt="" loading="lazy"
-                                            srcset="{{ url('wp-content/uploads/sites/12/2018/05/contact-img1.jpg')}} 480w, {{ url('wp-content/uploads/sites/12/2018/05/contact-img1-300x219.jpg')}} 300w"
-                                            sizes="(max-width: 480px) 100vw, 480px">
-                                        <div class="icon-wrapper"><span class="fa fa-map-marker"> </span></div>
-                                    </div>
-                                    <div class="dt-sc-image-content">
-                                        <div class="dt-sc-image-title">
-                                            <h3>Amarillo, TX</h3>
-                                        </div>
-                                        <p>906 Sleepy Hollow Ave<br>
-                                            Amarillo, TX 79106<br>
-                                            (220) 150-7702</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wpb_column vc_column_container vc_col-sm-4">
+                <div class="vc_row wpb_row vc_row-fluid map-overlay-top vc_custom_1528453604963 vc_row-has-fill" >
+                    <div class="wpb_column vc_column_container vc_col-sm-4" >
                         <div class="vc_column-inner ">
                             <div class="wpb_wrapper">
                                 <div class="dt-sc-image-caption  location">
@@ -956,34 +933,9 @@
                                     </div>
                                     <div class="dt-sc-image-content">
                                         <div class="dt-sc-image-title">
-                                            <h3>Cambridge, NJ</h3>
+                                            <h3>{{$site->site_location ? $site->site_location : env('SITE_LOcATION') }}</h3>
                                         </div>
-                                        <p>3524 Deerfield Drive<br>
-                                            Valdosta, GA 31601<br>
-                                            (973) 486-4862</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wpb_column vc_column_container vc_col-sm-4">
-                        <div class="vc_column-inner ">
-                            <div class="wpb_wrapper">
-                                <div class="dt-sc-image-caption  location">
-                                    <div class="dt-sc-image-wrapper"><img width="480" height="350"
-                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/contact-img3.jpg')}}"
-                                            class="attachment-full" alt="" loading="lazy"
-                                            srcset="{{ url('wp-content/uploads/sites/12/2018/05/contact-img3.jpg')}} 480w, {{ url('wp-content/uploads/sites/12/2018/05/contact-img3-300x219.jpg')}} 300w"
-                                            sizes="(max-width: 480px) 100vw, 480px">
-                                        <div class="icon-wrapper"><span class="fa fa-map-marker"> </span></div>
-                                    </div>
-                                    <div class="dt-sc-image-content">
-                                        <div class="dt-sc-image-title">
-                                            <h3>Carrollton, GA</h3>
-                                        </div>
-                                        <p>54 Andover Street<br>
-                                            Carrollton, GA 30117<br>
-                                            (500) 236-9982</p>
+                                        <p>{{$site->site_address ? $site->site_address : env('SITE_ADDRESS') }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -1009,154 +961,6 @@
                                     class="aligncenter attachment-full" alt="" loading="lazy"></div>
                         </div>
                     </div>
-                    <div class="wpb_column vc_column_container vc_col-sm-9">
-                        <div class="vc_column-inner ">
-                            <div class="wpb_wrapper">
-                                <div id="1527937793632-147a1d9c-1787" class="dt-sc-empty-space"></div>
-                                <div id="ult-carousel-144836377662daa469350ea"
-                                    class="ult-carousel-wrapper   ult_horizontal" data-gutter="15" data-rtl="false">
-                                    <div class="ult-carousel-271032616862daa469350d4 slick-initialized slick-slider">
-                                        <div aria-live="polite" class="slick-list draggable">
-                                            <div class="slick-track" role="listbox"
-                                                style="opacity: 1; width: 2676px; transform: translate3d(-1338px, 0px, 0px);">
-                                                <div class="ult-item-wrap slick-slide slick-cloned"
-                                                    data-animation="animated no-animation" tabindex="-1" role="option"
-                                                    aria-describedby="slick-slide03" style="width: 193px;"
-                                                    data-slick-index="-3" id="" aria-hidden="true"><img width="188"
-                                                        height="89"
-                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client04.png')}}"
-                                                        class="alignnone attachment-full" alt="" loading="lazy"></div>
-                                                <div class="ult-item-wrap slick-slide slick-cloned"
-                                                    data-animation="animated no-animation" tabindex="-1" role="option"
-                                                    aria-describedby="slick-slide04" style="width: 193px;"
-                                                    data-slick-index="-2" id="" aria-hidden="true"><img width="188"
-                                                        height="89"
-                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client01.png')}}"
-                                                        class="alignnone attachment-full" alt="" loading="lazy"></div>
-                                                <div class="ult-item-wrap slick-slide slick-cloned"
-                                                    data-animation="animated no-animation" tabindex="-1" role="option"
-                                                    aria-describedby="slick-slide05" style="width: 193px;"
-                                                    data-slick-index="-1" id="" aria-hidden="true"><img width="188"
-                                                        height="89"
-                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client02.png')}}"
-                                                        class="alignnone attachment-full" alt="" loading="lazy"></div>
-                                                <div class="ult-item-wrap animated no-animation slick-slide"
-                                                    data-animation="animated no-animation" tabindex="-1" role="option"
-                                                    aria-describedby="slick-slide00" style="width: 193px;"
-                                                    data-slick-index="0" aria-hidden="true"><img width="188" height="89"
-                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client01.png')}}"
-                                                        class="alignnone attachment-full" alt="" loading="lazy"></div>
-                                                <div class="ult-item-wrap slick-slide animated no-animation"
-                                                    data-animation="animated no-animation" tabindex="-1" role="option"
-                                                    aria-describedby="slick-slide01" style="width: 193px;"
-                                                    data-slick-index="1" aria-hidden="true"><img width="188" height="89"
-                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client02.png')}}"
-                                                        class="alignnone attachment-full" alt="" loading="lazy"></div>
-                                                <div class="ult-item-wrap slick-slide animated no-animation"
-                                                    data-animation="animated no-animation" tabindex="-1" role="option"
-                                                    aria-describedby="slick-slide02" style="width: 193px;"
-                                                    data-slick-index="2" aria-hidden="true"><img width="188" height="89"
-                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client03.png')}}"
-                                                        class="alignnone attachment-full" alt="" loading="lazy"></div>
-                                                <div class="ult-item-wrap slick-slide slick-current slick-active animated no-animation"
-                                                    data-animation="animated no-animation" tabindex="-1" role="option"
-                                                    aria-describedby="slick-slide03" style="width: 193px;"
-                                                    data-slick-index="3" aria-hidden="false"><img width="188"
-                                                        height="89"
-                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client04.png')}}"
-                                                        class="alignnone attachment-full" alt="" loading="lazy"></div>
-                                                <div class="ult-item-wrap slick-slide slick-active animated no-animation"
-                                                    data-animation="animated no-animation" tabindex="-1" role="option"
-                                                    aria-describedby="slick-slide04" style="width: 193px;"
-                                                    data-slick-index="4" aria-hidden="false"><img width="188"
-                                                        height="89"
-                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client01.png')}}"
-                                                        class="alignnone attachment-full" alt="" loading="lazy"></div>
-                                                <div class="ult-item-wrap slick-slide slick-active animated no-animation"
-                                                    data-animation="animated no-animation" tabindex="-1" role="option"
-                                                    aria-describedby="slick-slide05" style="width: 193px;"
-                                                    data-slick-index="5" aria-hidden="false"><img width="188"
-                                                        height="89"
-                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client02.png')}}"
-                                                        class="alignnone attachment-full" alt="" loading="lazy"></div>
-                                                <div class="ult-item-wrap slick-slide slick-cloned animated no-animation"
-                                                    data-animation="animated no-animation" tabindex="-1" role="option"
-                                                    aria-describedby="slick-slide00" style="width: 193px;"
-                                                    data-slick-index="6" id="" aria-hidden="true"><img width="188"
-                                                        height="89"
-                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client01.png')}}"
-                                                        class="alignnone attachment-full" alt="" loading="lazy"></div>
-                                                <div class="ult-item-wrap slick-slide slick-cloned"
-                                                    data-animation="animated no-animation" tabindex="-1" role="option"
-                                                    aria-describedby="slick-slide01" style="width: 193px;"
-                                                    data-slick-index="7" id="" aria-hidden="true"><img width="188"
-                                                        height="89"
-                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client02.png')}}"
-                                                        class="alignnone attachment-full" alt="" loading="lazy"></div>
-                                                <div class="ult-item-wrap slick-slide slick-cloned"
-                                                    data-animation="animated no-animation" tabindex="-1" role="option"
-                                                    aria-describedby="slick-slide02" style="width: 193px;"
-                                                    data-slick-index="8" id="" aria-hidden="true"><img width="188"
-                                                        height="89"
-                                                        src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/client03.png')}}"
-                                                        class="alignnone attachment-full" alt="" loading="lazy"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <script type="text/javascript">
-                                jQuery(document).ready(function($) {
-                                    if (typeof jQuery('.ult-carousel-271032616862daa469350d4').slick ==
-                                        "function") {
-                                        $('.ult-carousel-271032616862daa469350d4').slick({
-                                            dots: false,
-                                            autoplay: true,
-                                            autoplaySpeed: 5000,
-                                            speed: 300,
-                                            infinite: true,
-                                            arrows: false,
-                                            slidesToScroll: 3,
-                                            slidesToShow: 3,
-                                            swipe: true,
-                                            draggable: true,
-                                            touchMove: true,
-                                            pauseOnHover: true,
-                                            pauseOnFocus: false,
-                                            responsive: [{
-                                                    breakpoint: 1026,
-                                                    settings: {
-                                                        slidesToShow: 3,
-                                                        slidesToScroll: 3,
-                                                    }
-                                                },
-                                                {
-                                                    breakpoint: 1025,
-                                                    settings: {
-                                                        slidesToShow: 3,
-                                                        slidesToScroll: 3
-                                                    }
-                                                },
-                                                {
-                                                    breakpoint: 760,
-                                                    settings: {
-                                                        slidesToShow: 1,
-                                                        slidesToScroll: 1
-                                                    }
-                                                }
-                                            ],
-                                            pauseOnDotsHover: true,
-                                            customPaging: function(slider, i) {
-                                                return '<i type="button" style= "color:#333333;" class="ultsl-record" data-role="none"></i>';
-                                            },
-                                        });
-                                    }
-                                });
-                                </script>
-                                <div id="1527937801046-ce3306e4-0605" class="dt-sc-empty-space"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="vc_row-full-width vc_clearfix"></div>
             </div><!-- #post-13924 -->
         </section><!-- Primary End -->

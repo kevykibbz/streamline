@@ -30,7 +30,7 @@ class CategoryView extends Controller
     {
     	$validator=Validator::make($request->all(),[
             'category'=>'required|string|unique:categories',
-            'tagname'=>'required|string|unique:categories'
+            'tagname'=>'required|string'
         ]);
 
         if(!$validator->passes())

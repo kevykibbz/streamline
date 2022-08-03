@@ -291,8 +291,8 @@
                                                         <li class="close-nav"></li>
                                                         <li id="menu-item-14827" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home  page_item page-item-4 @if($path=='home')current_page_item @endif menu-item-14827 dt-menu-item-14827 "><a href="{{ url('/')}}" class="item-has-icon icon-position-left"><span>Home </span></a></li>
                                                         <li id="menu-item-14828" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14828 dt-menu-item-14828 @if($path=='about')current_page_item @endif"><a href="{{ url('about') }}" class="item-has-icon icon-position-left"><span>About Us</span></a></li>
-                                                        <li id="menu-item-14833" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14833 dt-menu-item-14833 @if($path=='services')current_page_item @endif"><a href="{{ url('/services')}}" class="item-has-icon icon-position-left"><span>Services</span></a></li>
-                                                        <li id="menu-item-15255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-15255 dt-menu-item-15255 @if($path=='proroducts')current_page_item @endif"><a href="/products" class="item-has-icon icon-position-left"><span>Products</span></a>
+                                                        <li id="menu-item-14833" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14833 dt-menu-item-14833 @if($path=='brochure')current_page_item @endif"><a href="{{ url('/pages/brochure')}}" class="item-has-icon icon-position-left"><span>Brochure</span></a></li>
+                                                        <li id="menu-item-15255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-15255 dt-menu-item-15255 @if($path=='product')current_page_item @endif"><a href="/products" class="item-has-icon icon-position-left"><span>Products</span></a>
                                                             <ul class="sub-menu is-hidden ">
                                                                 @if(count($categories) > 0)
                                                                 @foreach ($categories as $category)
@@ -349,7 +349,7 @@
                                                 <h2 style="color: #ffffff;text-align: center" class="vc_custom_heading">ABOUT</h2>
                                                 <div class="wpb_text_column wpb_content_element ">
                                                     <div class="wpb_wrapper">
-                                                        <p style="text-align: center;">When you found him, you know very well that you have found your prince. Because your smile is not only on your face but also in your heart and in your very being…</p>
+                                                        <p style="text-align: center;">{{$site->site_descreption ? $site->site_descreption : env('SITE_DESCRIPTION') }}</p>
 
                                                     </div>
                                                 </div>
@@ -371,29 +371,11 @@
                                                     data-hover-decoration="none" data-divider="yes">
                                                     <div class="menu-footer-link-i-container">
                                                         <ul id="menu-footer-link-i" class="custom-sub-nav dt-custom-nav">
-                                                            <li id="menu-item-14183" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14183"><a href="#" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Latest News</span></a><span class="divider"></span></li>
-                                                            <li id="menu-item-14184" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14184"><a href="#" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Newsletter</span></a><span class="divider"></span></li>
-                                                            <li id="menu-item-14185" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14185"><a href="#" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Careers</span></a><span class="divider"></span></li>
-                                                            <li id="menu-item-14944" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14944"><a href="{{ url('/contact')}}" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Contact Us</span></a><span class="divider"></span></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="wpb_column vc_column_container vc_col-sm-3">
-                                        <div class="vc_column-inner ">
-                                            <div class="wpb_wrapper">
-                                                <div id="1527927974828-f4724266-012e" class="dt-sc-empty-space"></div>
-                                                <h3 style="text-align: left" class="vc_custom_heading footer-title">Support</h3>
-                                                <div id="dt-1527925222966-dfd0389f-1516" class="dt-custom-nav-wrapper none" data-default-style="none" data-hover-style="none" data-link-icon-position="outside" data-link-icon-style="square" data-default-decoration="none"
-                                                    data-hover-decoration="none" data-divider="yes">
-                                                    <div class="menu-footer-link-ii-container">
-                                                        <ul id="menu-footer-link-ii" class="custom-sub-nav dt-custom-nav">
-                                                            <li id="menu-item-14186" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14186"><a href="#" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Our Proud Career</span></a><span class="divider"></span></li>
-                                                            <li id="menu-item-14187" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14187"><a href="#" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Privacy Policy</span></a><span class="divider"></span></li>
-                                                            <li id="menu-item-14188" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14188"><a href="#" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Terms of use</span></a><span class="divider"></span></li>
-                                                            <li id="menu-item-14189" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14189"><a href="#" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Faq</span></a><span class="divider"></span></li>
+                                                            <li id="menu-item-14183" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14183"><a href="/about" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>About</span></a><span class="divider"></span></li>
+                                                            <li id="menu-item-14184" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14184"><a href="/site/products" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Products</span></a><span class="divider"></span></li>
+                                                            <li id="menu-item-14185" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14185"><a href="/" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Home</span></a><span class="divider"></span></li>
+                                                            <li id="menu-item-14944" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14944"><a href="{{ url('/contact')}}" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Contact Us</span></a><span class="divider"></span></li> 
+                                                            <li id="menu-item-14944" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14944"><a href="{{ url('/privacy/policy')}}" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Privacy Policy </span></a><span class="divider"></span></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -420,6 +402,7 @@
                     </div>
                 </div>
                 <div class="vc_row-full-width vc_clearfix"></div>
+
                 <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid dt-sc-dark-bg footer-34 vc_custom_1527940655187 vc_row-has-fill">
                     <div class="wpb_column vc_column_container vc_col-sm-12">
                         <div class="vc_column-inner ">
@@ -485,68 +468,11 @@
 
         <div class='dt-sc-tabs-vertical-container ' data-effect='fade'>
             <ul class='dt-sc-tabs-vertical'>
-                <li><a href="javascript:void(0);">How we use cookies</a></li>
-                <li><a href="javascript:void(0);">Essential Website Cookies</a></li>
-                <li><a href="javascript:void(0);">Google Analytics Cookies</a></li>
-                <li><a href="javascript:void(0);">Other external services</a></li>
                 <li><a href="javascript:void(0);">Privacy Policy</a></li>
             </ul>
-            <div class='dt-sc-tabs-vertical-content'>We may request cookies to be set on your device. We use cookies to let us know when you visit our websites, how you interact with us, to enrich your user experience, and to customize your relationship with our website. <br><br>Click on the
-                different category headings to find out more. You can also change some of your preferences. Note that blocking some types of cookies may impact your experience on our websites and the services we are able to offer.</div>
-            <div class='dt-sc-tabs-vertical-content'>These cookies are strictly necessary to provide you with services available through our website and to use some of its features. <br><br>Because these cookies are strictly necessary to deliver the website, you cannot refuse them without impacting
-                how our site functions. You can block or delete them by changing your browser settings and force blocking all cookies on this website.</div>
-            <div class='dt-sc-tabs-vertical-content'>These cookies collect information that is used either in aggregate form to help us understand how our website is being used or how effective our marketing campaigns are, or to help us customize our website and application for you in order
-                to enhance your experience. <br><br>If you do not want that we track your visist to our site you can disable tracking in your browser here:
-                <div class="dt-toggle-switch"><label><input type="checkbox"  checked="checked" id="dtPrivacyGoogleTrackingDisabled" name="dtPrivacyGoogleTrackingDisabled" class="dtPrivacyGoogleTrackingDisabled"><span>Click to enable/disable google analytics tracking.</span></label></div>
-            </div>
-            <div class='dt-sc-tabs-vertical-content'>We also use different external services like Google Webfonts, Google Maps and external Video providers. Since these providers may collect personal data like your IP address we allow you to block them here. Please be aware that this might heavily
-                reduce the functionality and appearance of our site. Changes will take effect once you reload the page.<br><br> Google Webfont Settings:
-                <div class="dt-toggle-switch"><label><input type="checkbox"  checked="checked" id="dtPrivacyGoogleWebfontsDisabled" name="dtPrivacyGoogleWebfontsDisabled" class="dtPrivacyGoogleWebfontsDisabled"><span>Click to enable/disable google webfonts.</span></label></div>
-
-                Google Map Settings:
-                <div class="dt-toggle-switch"><label><input type="checkbox"  checked="checked" id="dtPrivacyGoogleMapsDisabled" name="dtPrivacyGoogleMapsDisabled" class="dtPrivacyGoogleMapsDisabled"><span>Click to enable/disable google maps.</span></label></div>
-
-                Vimeo and Youtube video embeds:
-                <div class="dt-toggle-switch"><label><input type="checkbox"  checked="checked" id="dtPrivacyVideoEmbedsDisabled" name="dtPrivacyVideoEmbedsDisabled" class="dtPrivacyVideoEmbedsDisabled"><span>Click to enable/disable video embeds.</span></label></div>
-            </div>
-            <div class='dt-sc-tabs-vertical-content'>You can read about our cookies and privacy settings in detail on our Privacy Policy Page. <br><br> <a href='#'>Privacy Policy</a></div>
+            <div class='dt-sc-tabs-vertical-content'>You can read about our cookies and privacy settings in detail on our Privacy Policy Page. <br><br> <a href='/privacy/policy'>Privacy Policy</a></div>
         </div>
     </div>
-    <script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"Product","@id":"http:\/\/homi.themesrain.kinsta.cloud\/product\/bath-tub\/#product","name":"Bath Tub","url":"http:\/\/homi.themesrain.kinsta.cloud\/product\/bath-tub\/","description":"This is an external product.","image":"http:\/\/homi.themesrain.kinsta.cloud\/wp-content\/uploads\/sites\/12\/2017\/12\/product-1.jpg","sku":"wp-pennant","offers":[{"@type":"Offer","price":"11.05","priceValidUntil":"2023-12-31","priceSpecification":{"price":"11.05","priceCurrency":"USD","valueAddedTaxIncluded":"false"},"priceCurrency":"USD","availability":"http:\/\/schema.org\/InStock","url":"http:\/\/homi.themesrain.kinsta.cloud\/product\/bath-tub\/","seller":{"@type":"Organization","name":"Homi","url":"http:\/\/homi.themesrain.kinsta.cloud"}}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.00","reviewCount":2},"review":[{"@type":"Review","reviewRating":{"@type":"Rating","bestRating":"5","ratingValue":"4","worstRating":"1"},"author":{"@type":"Person","name":"Akila"},"reviewBody":"Test Reviews","datePublished":"2019-07-01T04:56:26+00:00"},{"@type":"Review","reviewRating":{"@type":"Rating","bestRating":"5","ratingValue":"4","worstRating":"1"},"author":{"@type":"Person","name":"Akila"},"reviewBody":"Test Review","datePublished":"2019-06-27T09:41:07+00:00"}]}</script><script type="text/html" id="wpb-modifications"></script>
-      <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-         <div class="pswp__bg"></div>
-         <div class="pswp__scroll-wrap">
-            <div class="pswp__container">
-               <div class="pswp__item"></div>
-               <div class="pswp__item"></div>
-               <div class="pswp__item"></div>
-            </div>
-            <div class="pswp__ui pswp__ui--hidden">
-               <div class="pswp__top-bar">
-                  <div class="pswp__counter"></div>
-                  <button class="pswp__button pswp__button--close" aria-label="Close (Esc)"></button>
-                  <button class="pswp__button pswp__button--share" aria-label="Share"></button>
-                  <button class="pswp__button pswp__button--fs" aria-label="Toggle fullscreen"></button>
-                  <button class="pswp__button pswp__button--zoom" aria-label="Zoom in/out"></button>
-                  <div class="pswp__preloader">
-                     <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                           <div class="pswp__preloader__donut"></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                  <div class="pswp__share-tooltip"></div>
-               </div>
-               <button class="pswp__button pswp__button--arrow--left" aria-label="Previous (arrow left)"></button>
-               <button class="pswp__button pswp__button--arrow--right" aria-label="Next (arrow right)"></button>
-               <div class="pswp__caption">
-                  <div class="pswp__caption__center"></div>
-               </div>
-            </div>
-         </div>
-      </div>
      <!-- Small Modal -->
     <div class="modal fade small-model bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-sm">

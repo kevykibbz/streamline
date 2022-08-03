@@ -48,8 +48,6 @@
                                    <th class="border-top-0">Category Name</th>
                                    <th class="border-top-0">Tag Name</th>
                                    <th class="border-top-0">Name of Product</th>
-                                   <th class="border-top-0">Previous price</th>
-                                   <th class="border-top-0">Current price</th>
                                    <th class="border-top-0">Image</th>
                                    <th class="border-top-0">Date Created/Modified</th>
                                    <th class="border-top-0">Action</th>
@@ -64,9 +62,6 @@
                                   <tr id="id_{{$product->product_id}}">
                                       <td>@php echo $counter+=1;@endphp</td>
                                       <td>{{$product->category}}</td>
-                                      <td>{{$product->tagname}}</td>
-                                      <td>{{number_format($product->prev_price)}}</td>
-                                      <td>{{number_format($product->price)}}</td>
                                       <td>{{$product->tagname}}</td>
                                       <td>{{$product->product_name}}</td>
                                       <td>
@@ -87,7 +82,7 @@
                                 @endforeach
                               @else
                               <tr>
-                                 <td colspan="9" class="text-center text-info">
+                                 <td colspan="7" class="text-center text-info">
                                     <i class="fa fa-exclamation-circle"></i> No product(s) data found
                                  </td>
                               </tr>

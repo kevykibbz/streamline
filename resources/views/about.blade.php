@@ -24,68 +24,54 @@
    	<!-- Primary -->
   	<section id="primary" class="content-full-width">
 		<div id="post-14600" class="post-14600 page type-page status-publish hentry">
-			<div class="vc_row wpb_row vc_row-fluid">
-				<div class="wpb_column vc_column_container vc_col-sm-12">
+			<div data-vc-full-width="true" data-vc-full-width-init="false"
+				class="vc_row wpb_row vc_row-fluid dt-sc-dark-bg vcr_full-tab vc_row-o-equal-height vc_row-flex">
+				@if ($memory)
+				<div class="wpb_column vc_column_container vc_col-sm-6">
 					<div class="vc_column-inner ">
 						<div class="wpb_wrapper">
-							<div id="1556964498396-90ff88af-6ae2" class="dt-sc-empty-space"></div>
-							<div class="wpb_single_image wpb_content_element vc_align_center">
+							<div id="1527932304085-178f6931-7e19" class="dt-sc-empty-space"></div>
+							<div class='dt-sc-title script-with-sub-title subheading-text'>
+								<h4 style="text-transform:uppercase;">{{$memory->small_heading}}</h4>
+								<h2 style="text-transform:capitalize;">{{$memory->big_heading}}</h2>
+							</div>
+							<div
+								class="vc_icon_element vc_icon_element-outer vc_custom_1527586641787 vc_icon_element-align-left">
+								<div
+									class="vc_icon_element-inner vc_icon_element-color-white vc_icon_element-size-lg vc_icon_element-style- vc_icon_element-background-color-grey">
+									<span class="vc_icon_element-icon fa fa-quote-left"></span></div>
+							</div>
+							<h4 style="line-height: 1.6;text-align: left" class="vc_custom_heading"><i>{{$memory->text}}</i></h4>
+							<div class="wpb_single_image wpb_content_element vc_align_left">
 
 								<figure class="wpb_wrapper vc_figure">
-									<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="1170" height="355"
-											src="{{ url('wp-content/uploads/sites/12/2018/05/home-img2.jpg')}}"
-											class="vc_single_image-img attachment-full" alt="" loading="lazy"
-											srcset="{{ url('wp-content/uploads/sites/12/2018/05/home-img2.jpg')}} 1170w, {{ url('wp-content/uploads/sites/12/2018/05/home-img2-300x91.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/home-img2-768x233.jpg')}} 768w, {{ url('wp-content/uploads/sites/12/2018/05/home-img2-1024x311.jpg')}} 1024w, {{ url('wp-content/uploads/sites/12/2018/05/home-img2-600x182.jpg')}} 600w"
-											sizes="(max-width: 1170px) 100vw, 1170px" /></div>
+									<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="175" height="51"
+											src="/aboutpage/{{$memory->image_175x51}}"
+											class="vc_single_image-img attachment-full" alt="" loading="lazy" /></div>
 								</figure>
 							</div>
-							<div class="vc_row wpb_row vc_inner vc_row-fluid">
-								<div class="top-overlay-content wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill">
-									<div class="vc_column-inner vc_custom_1527150322570">
-										<div class="wpb_wrapper">
-											<div id="1527150538439-56b4a6d9-7377" class="dt-sc-empty-space"></div>
-											<div class='dt-sc-title script-with-sub-title subheading-text leftside-border'>
-												<h4>KNOW ABOUT US</h4>
-												<h2>We Provide Sensational Products for your Bathrooms</h2>
-											</div>
-											<div class="wpb_text_column wpb_content_element ">
-												<div class="wpb_wrapper">
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-														tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-														veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-														commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-														velit esse cillum dolore eu fugiat nulla pariatur.</p>
-													<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-														deserunt mollit anim id est laborum. Sed do eiusmod tempor incididunt ut
-														labore et dolore magna aliqua.</p>
-
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="wpb_column vc_column_container vc_col-sm-6">
-									 <div class="vc_column-inner vc_custom_1527153719376">
-	                                    <div class="wpb_wrapper">
-	                                        <div id="1527153750129-c853d516-3158" class="dt-sc-empty-space"></div>
-	                                        <div class='dt-sc-title script-with-sub-title subheading-text'>
-	                                            <h4></h4>
-	                                            <h2>Need advice? Call</h2>
-	                                        </div><a href="tel:{{$site->phone ? $site->phone : env('PHONE1') }}" target='_self' title='' class='dt-sc-button   xlarge icon-left with-icon  filled  with-num'><span class='fa fa-phone'> </span> {{$site->phone ? $site->phone : env('PHONE1') }} </a>
-	                                        <div class='dt-sc-clear '> </div>
-	                                        <div id="1528179986752-c77e5916-e85b" class="dt-sc-empty-space"></div>
-	                                        <p class="text-md-left text-center vc_custom_heading normal">OPEN 7 DAYS : {{$site->working_days ? $site->working_days : env('SITE_WORKING_DAYS') }} {{$site->working_hours ? $site->working_hours : env('SITE_WORKING_HOURS') }},<br /> Special days:{{$site->special_days ? $site->special_days : env('SITE_SPECIAL_DAYS') }} {{$site->special_hours ? $site->special_hours : env('SITE_SPECIAL_HOURS') }}.By Management</p>
-	                                    </div>
-	                                </div>
-								</div>
-							</div>
-							<div id="1556964513230-0a119b82-510a" class="dt-sc-empty-space"></div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div data-vc-full-width="true" data-vc-full-width-init="false"
-				class="vc_row wpb_row vc_row-fluid dt-sc-dark-bg vcr_full-tab vc_row-o-equal-height vc_row-flex">
+				<div class="wpb_column vc_column_container vc_col-sm-6">
+					<div class="vc_column-inner ">
+						<div class="wpb_wrapper">
+							<div id="1527932291658-a4b80c06-5a59" class="dt-sc-empty-space"></div>
+							<div
+								class="wpb_single_image wpb_content_element vc_align_center  vc_custom_1529054346471  vcr_tab-img-bottom">
+
+								<figure class="wpb_wrapper vc_figure">
+									<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="494" height="702"
+											src="/aboutpage/{{$memory->image_494x702}}"
+											class="vc_single_image-img attachment-full" alt="" loading="lazy"
+											srcset="/aboutpage/{{$memory->image_494x702}} 494w"
+											sizes="(max-width: 494px) 100vw, 494px" /></div>
+								</figure>
+							</div>
+						</div>
+					</div>
+				</div>
+				@else
 				<div class="wpb_column vc_column_container vc_col-sm-6">
 					<div class="vc_column-inner ">
 						<div class="wpb_wrapper">
@@ -133,6 +119,7 @@
 						</div>
 					</div>
 				</div>
+				@endif
 			</div>
 			<div class="vc_row-full-width vc_clearfix"></div><!-- Row Backgrounds -->
 			<div class="upb_bg_img"
@@ -168,6 +155,80 @@
 							<div id="ult-carousel-359500837062da910e42c9b"
 								class="ult-carousel-wrapper  pdt-img-scroll ult_horizontal" data-gutter="15" data-rtl="false">
 								<div class="ult-carousel-196828047362da910e42c86 ">
+									@if(count($featured) > 0)
+									@foreach($featured as $feature)
+									<div class="ult-item-wrap" data-animation="animated no-animation">
+										<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1527929374013">
+											<div class="ult-item-wrap" data-animation="animated no-animation">
+												<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-has-fill"
+													style=" text-align:center; ">
+													<div class="vc_column-inner vc_custom_1527929268414">
+														<div class="wpb_wrapper">
+															<div class="ult-item-wrap" data-animation="animated no-animation">
+																<div
+																	class="wpb_single_image wpb_content_element vc_align_left   img-carousel">
+																	<h2 class="wpb_heading wpb_singleimage_heading">{{$feature->title}}</h2>
+																	<figure class="wpb_wrapper vc_figure">
+																		<div
+																			class="vc_single_image-wrapper   vc_box_border_grey">
+																			<img width="480" height="430"
+																				src="/aboutpage/{{$feature->image_480x430}}"
+																				class="vc_single_image-img attachment-full"
+																				alt="" loading="lazy"
+																				srcset="/aboutpage/{{$feature->image_480x430}} 480w"
+																				sizes="(max-width: 480px) 100vw, 480px" /></div>
+																	</figure>
+																</div>
+															</div>
+															<div class="ult-item-wrap" data-animation="animated no-animation">
+																<div class="ult-content-box-container ">
+																	<div class="ult-content-box"
+																		style="box-shadow: px px px px none;padding-top:50px;padding-right:20px;padding-bottom:0px;padding-left:20px;-webkit-transition: all 700ms ease;-moz-transition: all 700ms ease;-ms-transition: all 700ms ease;-o-transition: all 700ms ease;transition: all 700ms ease;"
+																		data-hover_box_shadow="none">
+																		<div class="ult-item-wrap"
+																			data-animation="animated no-animation">
+																			<h3>{{$feature->heading}}</h3>
+																		</div>
+																		<div class="ult-item-wrap"
+																			data-animation="animated no-animation">
+																			<div class="wpb_text_column wpb_content_element ">
+																				<div class="wpb_wrapper">
+																					<p>{{$feature->text}}</p>
+
+																				</div>
+																			</div>
+																		</div>
+																		<div class="ult-item-wrap"
+																			data-animation="animated no-animation">
+																			<div class="ult-spacer spacer-62da910e44917"
+																				data-id="62da910e44917" data-height="20"
+																				data-height-mobile="" data-height-tab="20"
+																				data-height-tab-portrait="20"
+																				data-height-mobile-landscape="20"
+																				style="clear:both;display:block;"></div>
+																		</div>
+																		<div class="ult-item-wrap"
+																			data-animation="animated no-animation"></div>
+																		<div class="ult-item-wrap"
+																			data-animation="animated no-animation">
+																			<div class="ult-spacer spacer-62da910e44941"
+																				data-id="62da910e44941" data-height="40"
+																				data-height-mobile="40" data-height-tab="40"
+																				data-height-tab-portrait="40"
+																				data-height-mobile-landscape="40"
+																				style="clear:both;display:block;"></div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									@endforeach
+									@else
 									<div class="ult-item-wrap" data-animation="animated no-animation">
 										<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1527929352451">
 											<div class="ult-item-wrap" data-animation="animated no-animation">
@@ -222,11 +283,7 @@
 																				style="clear:both;display:block;"></div>
 																		</div>
 																		<div class="ult-item-wrap"
-																			data-animation="animated no-animation"><a
-																				href='http://homi.vedicthemes.com/products/'
-																				target='_self' title=''
-																				class='dt-sc-button   small   bordered  '> Shop
-																				Now </a></div>
+																			data-animation="animated no-animation"></div>
 																		<div class="ult-item-wrap"
 																			data-animation="animated no-animation">
 																			<div class="ult-spacer spacer-62da910e43538"
@@ -299,11 +356,7 @@
 																				style="clear:both;display:block;"></div>
 																		</div>
 																		<div class="ult-item-wrap"
-																			data-animation="animated no-animation"><a
-																				href='http://homi.vedicthemes.com/products/'
-																				target='_self' title=''
-																				class='dt-sc-button   small   bordered  '> Shop
-																				Now </a></div>
+																			data-animation="animated no-animation"></div>
 																		<div class="ult-item-wrap"
 																			data-animation="animated no-animation">
 																			<div class="ult-spacer spacer-62da910e43bb8"
@@ -376,11 +429,7 @@
 																				style="clear:both;display:block;"></div>
 																		</div>
 																		<div class="ult-item-wrap"
-																			data-animation="animated no-animation"><a
-																				href='http://homi.vedicthemes.com/products/'
-																				target='_self' title=''
-																				class='dt-sc-button   small   bordered  '> Shop
-																				Now </a></div>
+																			data-animation="animated no-animation"></div>
 																		<div class="ult-item-wrap"
 																			data-animation="animated no-animation">
 																			<div class="ult-spacer spacer-62da910e44242"
@@ -453,11 +502,7 @@
 																				style="clear:both;display:block;"></div>
 																		</div>
 																		<div class="ult-item-wrap"
-																			data-animation="animated no-animation"><a
-																				href='http://homi.vedicthemes.com/products/'
-																				target='_self' title=''
-																				class='dt-sc-button   small   bordered  '> Shop
-																				Now </a></div>
+																			data-animation="animated no-animation"></div>
 																		<div class="ult-item-wrap"
 																			data-animation="animated no-animation">
 																			<div class="ult-spacer spacer-62da910e44941"
@@ -476,6 +521,7 @@
 											</div>
 										</div>
 									</div>
+									@endif
 								</div>
 							</div>
 							<script type="text/javascript">
@@ -530,230 +576,244 @@
 					</div>
 				</div>
 			</div>
-			<div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true"
-				class="vc_row wpb_row vc_row-fluid dt-skin-primary-bg dt-sc-dark-bg vcr_align-half vc_row-no-padding vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
-				<div class="dt-sc-dark-bg vcr_team-top wpb_column vc_column_container vc_col-sm-4">
-					<div class="vc_column-inner vc_custom_1557234179924">
-						<div class="wpb_wrapper">
-							<div class='dt-sc-title script-with-sub-title subheading-text'>
-								<h4>TEAM BEHIND US</h4>
-								<h2>Our Design Experts</h2>
-							</div>
-							<div class="wpb_text_column wpb_content_element  vc_custom_1557234053860">
-								<div class="wpb_wrapper">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-										ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
 
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="wpb_column vc_column_container vc_col-sm-8">
-					<div class="vc_column-inner ">
-						<div class="wpb_wrapper">
-							<div class="vc_row wpb_row vc_inner vc_row-fluid">
-								<div class="wpb_column vc_column_container vc_col-sm-3">
-									<div class="vc_column-inner ">
-										<div class="wpb_wrapper">
-											<div class='dt-sc-team hide-details-show-on-hover full-height-center'>
-												<div class='dt-sc-team-thumb'><img width="420" height="466"
-														src="{{ url('wp-content/uploads/sites/12/2018/05/team1.jpg')}}"
-														class="attachment-full" alt="" loading="lazy"
-														srcset="{{ url('wp-content/uploads/sites/12/2018/05/team1.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/team1-270x300.jpg')}} 270w"
-														sizes="(max-width: 420px) 100vw, 420px" /></div>
-												<div class='dt-sc-team-details'>
-													<h4>Melissa Thane</h4>
-													<h5>Marketing</h5>
-													<p></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="wpb_column vc_column_container vc_col-sm-3">
-									<div class="vc_column-inner ">
-										<div class="wpb_wrapper">
-											<div class='dt-sc-team hide-details-show-on-hover full-height-center'>
-												<div class='dt-sc-team-thumb'><img width="420" height="466"
-														src="{{ url('wp-content/uploads/sites/12/2018/05/team2.jpg')}}"
-														class="attachment-full" alt="" loading="lazy"
-														srcset="{{ url('wp-content/uploads/sites/12/2018/05/team2.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/team2-270x300.jpg')}} 270w"
-														sizes="(max-width: 420px) 100vw, 420px" /></div>
-												<div class='dt-sc-team-details'>
-													<h4>Darren Tiler</h4>
-													<h5>Design Inspector</h5>
-													<p></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="wpb_column vc_column_container vc_col-sm-3">
-									<div class="vc_column-inner ">
-										<div class="wpb_wrapper">
-											<div class='dt-sc-team hide-details-show-on-hover full-height-center'>
-												<div class='dt-sc-team-thumb'><img width="420" height="466"
-														src="{{ url('wp-content/uploads/sites/12/2018/05/team3.jpg')}}"
-														class="attachment-full" alt="" loading="lazy"
-														srcset="{{ url('wp-content/uploads/sites/12/2018/05/team3.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/team3-270x300.jpg')}} 270w"
-														sizes="(max-width: 420px) 100vw, 420px" /></div>
-												<div class='dt-sc-team-details'>
-													<h4>Laura Noel</h4>
-													<h5>Manager</h5>
-													<p></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="wpb_column vc_column_container vc_col-sm-3">
-									<div class="vc_column-inner ">
-										<div class="wpb_wrapper">
-											<div class='dt-sc-team hide-details-show-on-hover full-height-center'>
-												<div class='dt-sc-team-thumb'><img width="420" height="466"
-														src="{{ url('wp-content/uploads/sites/12/2018/05/team4.jpg')}}"
-														class="attachment-full" alt="" loading="lazy"
-														srcset="{{ url('wp-content/uploads/sites/12/2018/05/team4.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/team4-270x300.jpg')}} 270w"
-														sizes="(max-width: 420px) 100vw, 420px" /></div>
-												<div class='dt-sc-team-details'>
-													<h4>Miles Kart</h4>
-													<h5>CEO</h5>
-													<p></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			<div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid dt-skin-primary-bg vcr_align-half vc_row-no-padding vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
+                <div class="dt-sc-dark-bg vcr_team-top wpb_column vc_column_container vc_col-sm-4">
+                    <div class="vc_column-inner vc_custom_1529052260195">
+                        @if($middlepartc)
+                        <div class="wpb_wrapper">
+                            <div class='dt-sc-title script-with-sub-title subheading-text'>
+                                <h4>{{$middlepartc->small_heading}}</h4>
+                                <h2>{{$middlepartc->big_heading}}</h2>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element  vc_custom_1557233510368">
+                                <div class="wpb_wrapper">
+                                    <p>{{$middlepartc->text}}</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        @else
+                        <div class="wpb_wrapper">
+                            <div class='dt-sc-title script-with-sub-title subheading-text'>
+                                <h4>FROM THE FINEST</h4>
+                                <h2>Our Design Experts</h2>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element  vc_custom_1557233510368">
+                                <div class="wpb_wrapper">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        @endif
+                    </div>
+                </div>
+                <div class="wpb_column vc_column_container vc_col-sm-8">
+                    <div class="vc_column-inner ">
+                        <div class="wpb_wrapper">
+                            <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                @if(count($developers) > 0)
+                                @foreach ($developers as $dev)
+                                <div class="wpb_column vc_column_container vc_col-sm-3">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class='dt-sc-team hide-details-show-on-hover full-height-center'>
+                                                <div class='dt-sc-team-thumb'><img width="420" height="466" src="{{ url('images/loader.gif')}}" data-src="/homepage/{{$dev->image_270x300}}" class="attachment-full" alt="" loading="lazy" srcset="/homepage/{{$dev->image_270x300}} 420w,"
+                                                        sizes="(max-width: 420px) 100vw, 420px" /></div>
+                                                <div class='dt-sc-team-details'>
+                                                    <h4>{{$dev->name}}</h4>
+                                                    <h5>{{$dev->title}}</h5>
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
+                                @else
+                                <div class="wpb_column vc_column_container vc_col-sm-3">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class='dt-sc-team hide-details-show-on-hover full-height-center'>
+                                                <div class='dt-sc-team-thumb'><img width="420" height="466" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/team1.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/team1.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/team1-270x300.jpg')}} 270w"
+                                                        sizes="(max-width: 420px) 100vw, 420px" /></div>
+                                                <div class='dt-sc-team-details'>
+                                                    <h4>Maya Lee</h4>
+                                                    <h5>Receptionist</h5>
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wpb_column vc_column_container vc_col-sm-3">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class='dt-sc-team hide-details-show-on-hover full-height-center'>
+                                                <div class='dt-sc-team-thumb'><img width="420" height="466" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/team2.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/team2.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/team2-270x300.jpg')}} 270w"
+                                                        sizes="(max-width: 420px) 100vw, 420px" /></div>
+                                                <div class='dt-sc-team-details'>
+                                                    <h4>Darren Tiler</h4>
+                                                    <h5>Manager</h5>
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wpb_column vc_column_container vc_col-sm-3">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class='dt-sc-team hide-details-show-on-hover full-height-center'>
+                                                <div class='dt-sc-team-thumb'><img width="420" height="466" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/team3.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/team3.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/team3-270x300.jpg')}} 270w"
+                                                        sizes="(max-width: 420px) 100vw, 420px" /></div>
+                                                <div class='dt-sc-team-details'>
+                                                    <h4>Mia Sara</h4>
+                                                    <h5>Designer</h5>
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wpb_column vc_column_container vc_col-sm-3">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class='dt-sc-team hide-details-show-on-hover full-height-center'>
+                                                <div class='dt-sc-team-thumb'><img width="420" height="466" src="{{ url('images/loader.gif')}}" data-src="{{ url('wp-content/uploads/sites/12/2018/05/team4.jpg')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/team4.jpg')}} 420w, {{ url('wp-content/uploads/sites/12/2018/05/team4-270x300.jpg')}} 270w"
+                                                        sizes="(max-width: 420px) 100vw, 420px" /></div>
+                                                <div class='dt-sc-team-details'>
+                                                    <h4>Sam Jones</h4>
+                                                    <h5>CEO</h5>
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endif
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 			<div class="vc_row-full-width vc_clearfix"></div>
+
 			<div class="vc_row wpb_row vc_row-fluid">
-				<div class="wpb_column vc_column_container vc_col-sm-12">
-					<div class="vc_column-inner ">
-						<div class="wpb_wrapper">
-							<div id="1556966008317-5eb73f98-803a" class="dt-sc-empty-space"></div>
-							<div class='dt-sc-title script-with-sub-title subheading-text aligncenter'>
-								<h4>PEOPLE LOVE US</h4>
-								<h2>Client Testimonials</h2>
-							</div>
-							<div id="1556972365450-1952f6c4-0567" class="dt-sc-empty-space"></div>
-							<div id="ult-carousel-23605277562da910e462dd"
-								class="ult-carousel-wrapper  pdt-img-scroll type2 ult_horizontal" data-gutter="15"
-								data-rtl="false">
-								<div class="ult-carousel-240846178662da910e462c5 ">
-									<div class="ult-item-wrap" data-animation="animated no-animation">
-										<div class="dt-sc-testimonial-wrapper">
-											<div class='dt-sc-testimonial type2 leftside-quote'>
-												<div class="dt-sc-testimonial-quote">
-													<blockquote><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-															Morbi hendrerit elit turpis, a porttitor tellus sollicitudin
-															at.Class aptent taciti sociosqu ad litora torquent per conubia
-															nostra, per inceptos himenaeos.</q></blockquote>
-												</div>
-												<div class="dt-sc-testimonial-author"><span><img width="300" height="300"
-															src="{{ url('wp-content/uploads/sites/12/2018/05/testimonial8.jpg')}}"
-															class="attachment-full" alt="" loading="lazy"
-															srcset="{{ url('wp-content/uploads/sites/12/2018/05/testimonial8.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/testimonial8-150x150.jpg')}} 150w, {{ url('wp-content/uploads/sites/12/2018/05/testimonial8-100x100.jpg')}} 100w"
-															sizes="(max-width: 300px) 100vw, 300px" /></span><cite>Miranda
-														Kerr<small>-Senior Designer</small></cite></div>
-											</div>
-										</div>
-									</div>
-									<div class="ult-item-wrap" data-animation="animated no-animation">
-										<div class="dt-sc-testimonial-wrapper">
-											<div class='dt-sc-testimonial type2 leftside-quote'>
-												<div class="dt-sc-testimonial-quote">
-													<blockquote><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-															Morbi hendrerit elit turpis, a porttitor tellus sollicitudin
-															at.Class aptent taciti sociosqu ad litora torquent per conubia
-															nostra, per inceptos himenaeos.</q></blockquote>
-												</div>
-												<div class="dt-sc-testimonial-author"><span><img width="300" height="300"
-															src="{{ url('wp-content/uploads/sites/12/2018/05/testimonial4.jpg')}}"
-															class="attachment-full" alt="" loading="lazy"
-															srcset="{{ url('wp-content/uploads/sites/12/2018/05/testimonial4.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/testimonial4-150x150.jpg')}} 150w, {{ url('wp-content/uploads/sites/12/2018/05/testimonial4-100x100.jpg')}} 100w"
-															sizes="(max-width: 300px) 100vw, 300px" /></span><cite>Allen
-														Spicer<small>-Senior Designer</small></cite></div>
-											</div>
-										</div>
-									</div>
-									<div class="ult-item-wrap" data-animation="animated no-animation">
-										<div class="dt-sc-testimonial-wrapper">
-											<div class='dt-sc-testimonial type2 leftside-quote'>
-												<div class="dt-sc-testimonial-quote">
-													<blockquote><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-															Morbi hendrerit elit turpis, a porttitor tellus sollicitudin
-															at.Class aptent taciti sociosqu ad litora torquent per conubia
-															nostra, per inceptos himenaeos.</q></blockquote>
-												</div>
-												<div class="dt-sc-testimonial-author"><span><img width="300" height="300"
-															src="{{ url('wp-content/uploads/sites/12/2018/05/testimonial7.jpg')}}"
-															class="attachment-full" alt="" loading="lazy"
-															srcset="{{ url('wp-content/uploads/sites/12/2018/05/testimonial7.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/testimonial7-150x150.jpg')}} 150w, {{ url('wp-content/uploads/sites/12/2018/05/testimonial7-100x100.jpg')}} 100w"
-															sizes="(max-width: 300px) 100vw, 300px" /></span><cite>Mia
-														Sara<small>-Senior Designer</small></cite></div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<script type="text/javascript">
-							jQuery(document).ready(function($) {
-								if (typeof jQuery('.ult-carousel-240846178662da910e462c5').slick == "function") {
-									$('.ult-carousel-240846178662da910e462c5').slick({
-										dots: true,
-										autoplay: true,
-										autoplaySpeed: 5000,
-										speed: 300,
-										infinite: true,
-										arrows: false,
-										slidesToScroll: 2,
-										slidesToShow: 2,
-										swipe: true,
-										draggable: true,
-										touchMove: true,
-										pauseOnHover: true,
-										pauseOnFocus: false,
-										responsive: [{
-												breakpoint: 1026,
-												settings: {
-													slidesToShow: 2,
-													slidesToScroll: 2,
-												}
-											},
-											{
-												breakpoint: 1025,
-												settings: {
-													slidesToShow: 2,
-													slidesToScroll: 2
-												}
-											},
-											{
-												breakpoint: 760,
-												settings: {
-													slidesToShow: 1,
-													slidesToScroll: 1
-												}
-											}
-										],
-										pauseOnDotsHover: true,
-										customPaging: function(slider, i) {
-											return '<i type="button" style= "color:#e5e5e5;" class="ultsl-record" data-role="none"></i>';
-										},
-									});
-								}
-							});
-							</script>
-							<div class='dt-sc-clear '> </div>
-							<div id="1556966066152-44bff6c0-81da" class="dt-sc-empty-space"></div>
-						</div>
-					</div>
-				</div>
-			</div>
+	        <div class="wpb_column vc_column_container vc_col-sm-12">
+	            <div class="vc_column-inner ">
+	                <div class="wpb_wrapper">
+	                    <div id="1556966008317-5eb73f98-803a" class="dt-sc-empty-space"></div>
+	                    <div class='dt-sc-title script-with-sub-title subheading-text aligncenter'>
+	                        <h4>WORDS FROM OUR CUSTOMERS</h4>
+	                        <h2>Testimonials</h2>
+	                    </div>
+	                    <div id="1556972365450-1952f6c4-0567" class="dt-sc-empty-space"></div>
+	                    <div id="ult-carousel-103892515062d6943e0c18d" class="ult-carousel-wrapper  pdt-img-scroll type2 ult_horizontal" data-gutter="15" data-rtl="false">
+	                        <div class="ult-carousel-64958531662d6943e0c17a ">
+                                @if (count($reviews) > 0)
+                                @foreach ($reviews as $review)
+                                 <div class="ult-item-wrap" data-animation="animated no-animation">
+                                    <div class="dt-sc-testimonial-wrapper">
+                                        <div class='dt-sc-testimonial type2 leftside-quote'>
+                                            <div class="dt-sc-testimonial-quote">
+                                                <blockquote><q>{{$review->review}}</q></blockquote>
+                                            </div>
+                                            <div class="dt-sc-testimonial-author"><span><img width="300" height="300" data-src="/homepage/{{$review->profile_300x300}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="/homepage/{{$review->profile_300x300}} 300w" sizes="(max-width: 300px) 100vw, 300px" /></span><cite>{{$review->name}}<small>-{{$review->title}}</small></cite></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
+                                @else
+	                            <div class="ult-item-wrap" data-animation="animated no-animation">
+	                                <div class="dt-sc-testimonial-wrapper">
+	                                    <div class='dt-sc-testimonial type2 leftside-quote'>
+	                                        <div class="dt-sc-testimonial-quote">
+	                                            <blockquote><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</q></blockquote>
+	                                        </div>
+	                                        <div class="dt-sc-testimonial-author"><span><img width="300" height="300" data-src="{{ url('wp-content/uploads/sites/12/2018/05/testimonial8.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/testimonial8.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/testimonial8-150x150.jpg')}} 150w, {{ url('wp-content/uploads/sites/12/2018/05/testimonial8-100x100.jpg')}} 100w" sizes="(max-width: 300px) 100vw, 300px" /></span><cite>Miranda Kerr<small>-Senior Designer</small></cite></div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <div class="ult-item-wrap" data-animation="animated no-animation">
+	                                <div class="dt-sc-testimonial-wrapper">
+	                                    <div class='dt-sc-testimonial type2 leftside-quote'>
+	                                        <div class="dt-sc-testimonial-quote">
+	                                            <blockquote><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</q></blockquote>
+	                                        </div>
+	                                        <div class="dt-sc-testimonial-author"><span><img width="300" height="300" data-src="{{ url('wp-content/uploads/sites/12/2018/05/testimonial4.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/testimonial4.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/testimonial4-150x150.jpg')}} 150w, {{ url('wp-content/uploads/sites/12/2018/05/testimonial4-100x100.jpg')}} 100w" sizes="(max-width: 300px) 100vw, 300px" /></span><cite>Allen Spicer<small>-Senior Designer</small></cite></div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <div class="ult-item-wrap" data-animation="animated no-animation">
+	                                <div class="dt-sc-testimonial-wrapper">
+	                                    <div class='dt-sc-testimonial type2 leftside-quote'>
+	                                        <div class="dt-sc-testimonial-quote">
+	                                            <blockquote><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit elit turpis, a porttitor tellus sollicitudin at.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</q></blockquote>
+	                                        </div>
+	                                        <div class="dt-sc-testimonial-author"><span><img width="300" height="300" data-src="{{ url('wp-content/uploads/sites/12/2018/05/testimonial7.jpg')}}" src="{{ url('images/loader.gif')}}" class="attachment-full" alt="" loading="lazy" srcset="{{ url('wp-content/uploads/sites/12/2018/05/testimonial7.jpg')}} 300w, {{ url('wp-content/uploads/sites/12/2018/05/testimonial7-150x150.jpg')}} 150w, {{ url('wp-content/uploads/sites/12/2018/05/testimonial7-100x100.jpg')}} 100w" sizes="(max-width: 300px) 100vw, 300px" /></span><cite>Mia Sara<small>-Senior Designer</small></cite></div>
+	                                    </div>
+	                                </div>
+	                            </div>
+                                @endif
+	                        </div>
+	                    </div>
+	                    <script type="text/javascript">
+	                        jQuery(document).ready(function($) {
+	                            if (typeof jQuery('.ult-carousel-64958531662d6943e0c17a').slick == "function") {
+	                                $('.ult-carousel-64958531662d6943e0c17a').slick({
+	                                    dots: true,
+	                                    autoplay: true,
+	                                    autoplaySpeed: 5000,
+	                                    speed: 300,
+	                                    infinite: true,
+	                                    arrows: false,
+	                                    slidesToScroll: 2,
+	                                    slidesToShow: 2,
+	                                    swipe: true,
+	                                    draggable: true,
+	                                    touchMove: true,
+	                                    pauseOnHover: true,
+	                                    pauseOnFocus: false,
+	                                    responsive: [{
+	                                            breakpoint: 1026,
+	                                            settings: {
+	                                                slidesToShow: 2,
+	                                                slidesToScroll: 2,
+	                                            }
+	                                        },
+	                                        {
+	                                            breakpoint: 1025,
+	                                            settings: {
+	                                                slidesToShow: 2,
+	                                                slidesToScroll: 2
+	                                            }
+	                                        },
+	                                        {
+	                                            breakpoint: 760,
+	                                            settings: {
+	                                                slidesToShow: 1,
+	                                                slidesToScroll: 1
+	                                            }
+	                                        }
+	                                    ],
+	                                    pauseOnDotsHover: true,
+	                                    customPaging: function(slider, i) {
+	                                        return '<i type="button" style= "color:#e5e5e5;" class="ultsl-record" data-role="none"></i>';
+	                                    },
+	                                });
+	                            }
+	                        });
+	                    </script>
+	                    <div class='dt-sc-clear '> </div>
+	                    <div id="1556966066152-44bff6c0-81da" class="dt-sc-empty-space"></div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+
 			<div data-vc-full-width="true" data-vc-full-width-init="false"
 				class="vc_row wpb_row vc_row-fluid dt-sc-dark-bg dt-skin-secondary-bg vc_custom_1527226045945">
 				<div class="wpb_column vc_column_container vc_col-sm-3">
@@ -825,9 +885,9 @@
 						<div class="wpb_wrapper">
 							<div id="1556973123546-246d213b-502a" class="dt-sc-empty-space"></div>
 							<h2 style="font-size: 45px;text-align: center" class="vc_custom_heading">Luxury ranges that add a
-								new look to the bathroom with a style</h2><a href='#' target='_self' title=''
-								class='dt-sc-button   medium   bordered  margin-right'> Get in Touch </a><a href='#'
-								target='_self' title='' class='dt-sc-button   medium   filled  '> Purchase Theme </a>
+								new look to the bathroom with a style</h2><a href='/contact' target='_self' title=''
+								class='dt-sc-button   medium   bordered  margin-right'> Get in Touch </a><a href='/site/products'
+								target='_self' title='' class='dt-sc-button   medium   filled  '> Products </a>
 							<div id="1556973145467-a260e2d7-6084" class="dt-sc-empty-space"></div>
 						</div>
 					</div>

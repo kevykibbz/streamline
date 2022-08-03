@@ -63,7 +63,6 @@
                             <a href="#reviews" class="woocommerce-review-link" rel="nofollow">(<span class="count">{{number_format(count($reviews))}}</span> customer reviews)</a>
                         @endif
                     </div>
-                    <p class="price"><span class="woocommerce-Price-amount amount">Price: <bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>{{number_format($product->price)}}</bdi></span></p>
                     <div class="woocommerce-product-details__short-description">
                         <strong>Description:</strong>
                        <p>{{$product->description}}</p>
@@ -86,23 +85,6 @@
                             @endforeach
                         @endif
                     </span>
-                    </div>
-                    <div class="wc_cart_btn_wrapper wc_btn_inline">
-                        @if ($product->tagname == 'out of stock')
-                        <a
-                            href="javascript:void(0);" data-quantity="1"
-                            class="dt-sc-button too-small button product_type_simple add_to_cart_button ajax_add_to_cart"
-                            data-product_id="60" data-product_sku="woo-cap"
-                            aria-label="Add &ldquo;{{$product->product_name}}&rdquo; to your cart"
-                            rel="nofollow">Add to cart</a>
-                        @else
-                        <a
-                            href="/cart/{{$product->product_id}}" data-quantity="1"
-                            class="dt-sc-button too-small button product_type_simple add_to_cart_button ajax_add_to_cart"
-                            data-product_id="60" data-product_sku="woo-cap"
-                            aria-label="Add &ldquo;{{$product->product_name}}&rdquo; to your cart"
-                            rel="nofollow">Add to cart</a>
-                        @endif
                     </div>
                  </div>
 

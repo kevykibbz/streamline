@@ -187,7 +187,7 @@ $(document).on('submit','.SubmitForm',function()
         {
             $.each(callback.errors,function(key,value)
             {
-              el.find("input[name='"+key+"'],select[name='"+key+"']").addClass('is-invalid').parents('.form-group').find('.feedback').addClass('invalid-feedback').html('<i class="fa fa-exclamation-circle"></i> '+value);
+              el.find("input[name='"+key+"'],textarea[name='"+key+"'],select[name='"+key+"']").addClass('is-invalid').parents('.form-group').find('.feedback').addClass('invalid-feedback').html('<i class="fa fa-exclamation-circle"></i> '+value);
             });
         }
         if(callback.error)

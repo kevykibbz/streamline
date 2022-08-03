@@ -179,12 +179,15 @@ class ProductView extends Controller
     protected function update(Request $request)
 	{
 		$validator=Validator::make($request->all(),[
-            'product_name'=>'required|string',
+          'product_name'=>'required|string',
             'category'=>'required|string',
             'tagname'=>'required|string',
-            'prev_price'=>'required|numeric',
-            'price'=>'required|numeric',
-            'image'=>'mimes:jpg,png,jpeg|dimensions:min_width=100,min_height=100'
+            'image_1000'=>'mimes:jpg,png,jpeg|dimensions:min_width=1000,min_height=1000,max_width=1000,max_height=1000', 
+            'image_768'=>'mimes:jpg,png,jpeg|dimensions:min_width=768,min_height=768,max_width=768,max_height=768', 
+            'image_600'=>'mimes:jpg,png,jpeg|dimensions:min_width=600,min_height=600,max_width=600,max_height=600', 
+            'image_300'=>'mimes:jpg,png,jpeg|dimensions:min_width=300,min_height=300,max_width=300,max_height=300',
+            'image_150'=>'mimes:jpg,png,jpeg|dimensions:min_width=150,min_height=150,max_width=150,max_height=150',
+            'image_100'=>'mimes:jpg,png,jpeg|dimensions:min_width=100,min_height=100,max_width=100,max_height=100',
         ]);
 
         if(!$validator->passes())
@@ -195,75 +198,83 @@ class ProductView extends Controller
         {
         	$files=Product::where('product_id',$request->product_id)->get()[0];
         	if($request->hasFile('logo'))
-           	{
-           	 	$logo=$request->file('logo');
+            {
+                if(File::exists(public_path().'/products/logos/'.$files->logo))
+                {
+                    File::delete(public_path().'/products/logos/'.$files->logo);
+                }
+                $logo=$request->file('logo');
                 $newlogo=date('YmdHi').'_'.$logo->getClientOriginalName();
                 $logo->move(public_path('products/logos'),$newlogo);
-           	}
+            }
 
-           	if($request->hasFile('image'))
-           	{
-           	 	$image=$request->file('image');
-           	 	/*300x300 resize*/
-                $newimage300=date('YmdHi').'_300x300_'.$image->getClientOriginalName();
-                $image_resize=Image::make($image->getRealPath());
-                $image_resize->resize(300,300);
+            /*300x300*/
+            if($request->hasFile('image_300'))
+            {
+                $image_300=$request->file('image_300');
+                $newimage_300=date('YmdHi').'_300x300_'.$image_300->getClientOriginalName();
                 if(File::exists(public_path().'/products/'.$files->image_300))
-	            {
-	            	File::delete(public_path().'/products/'.$files->image_300);
-	            }
-                $image_resize->save(public_path('products/'.$newimage300));
-
-                /*1000x1000 resize*/
-                $newimage1000=date('YmdHi').'_1000x1000_'.$image->getClientOriginalName();
-                $image_resize=Image::make($image->getRealPath());
-                $image_resize->resize(1000,1000);
-                if(File::exists(public_path().'/products/'.$files->image_1000))
-	            {
-	            	File::delete(public_path().'/products/'.$files->image_1000);
-	            }
-                $image_resize->save(public_path('products/'.$newimage1000));
-
-                /*768x768 resize*/
-                $newimage768=date('YmdHi').'_768x768_'.$image->getClientOriginalName();
-                $image_resize=Image::make($image->getRealPath());
-                $image_resize->resize(768,768);
-                if(File::exists(public_path().'/products/'.$files->image_768))
-	            {
-	            	File::delete(public_path().'/products/'.$files->image_768);
-	            }
-                $image_resize->save(public_path('products/'.$newimage768));
-
-                /*600x600 resize*/
-                $newimage600=date('YmdHi').'_600x600_'.$image->getClientOriginalName();
-                $image_resize=Image::make($image->getRealPath());
-                $image_resize->resize(600,600);
+                {
+                    File::delete(public_path().'/products/'.$files->image_300);
+                }
+                $image_300->move(public_path('products'),$newimage_300);
+            }
+            /*600x600*/
+            if($request->hasFile('image_600'))
+            {
+                $image_600=$request->file('image_600');
+                $newimage_600=date('YmdHi').'_600x600_'.$image_600->getClientOriginalName();
                 if(File::exists(public_path().'/products/'.$files->image_600))
-	            {
-	            	File::delete(public_path().'/products/'.$files->image_600);
-	            }
-                $image_resize->save(public_path('products/'.$newimage600));
-
-                /*150x150 resize*/
-                $newimage150=date('YmdHi').'_150x150_'.$image->getClientOriginalName();
-                $image_resize=Image::make($image->getRealPath());
-                $image_resize->resize(150,150);
-                if(File::exists(public_path().'/products/'.$files->image_150))
-	            {
-	            	File::delete(public_path().'/products/'.$files->image_150);
-	            }
-                $image_resize->save(public_path('products/'.$newimage150));
-
-                /*100x100 resize*/
-                $newimage100=date('YmdHi').'_100x100_'.$image->getClientOriginalName();
-                $image_resize=Image::make($image->getRealPath());
-                $image_resize->resize(100,100);
+                {
+                    File::delete(public_path().'/products/'.$files->image_600);
+                }
+                $image_600->move(public_path('products'),$newimage_600);
+            }
+            /*1000x1000*/
+            if($request->hasFile('image_1000'))
+            {
+                $image_1000=$request->file('image_1000');
+                $newimage_1000=date('YmdHi').'_1000x1000_'.$image_1000->getClientOriginalName();
+                if(File::exists(public_path().'/products/'.$files->image_1000))
+                {
+                    File::delete(public_path().'/products/'.$files->image_1000);
+                }
+                $image_1000->move(public_path('products'),$newimage_1000);
+            }   
+            /*100x100*/
+            if($request->hasFile('image_100'))
+            {
+                $image_100=$request->file('image_100');
+                $newimage_100=date('YmdHi').'_100x100_'.$image_100->getClientOriginalName();
                 if(File::exists(public_path().'/products/'.$files->image_100))
-	            {
-	            	File::delete(public_path().'/products/'.$files->image_100);
-	            }
-                $image_resize->save(public_path('products/'.$newimage100));
-	        }
+                {
+                    File::delete(public_path().'/products/'.$files->image_100);
+                }
+                $image_100->move(public_path('products'),$newimage_100);
+            }
+
+            /*150x150*/
+            if($request->hasFile('image_150'))
+            {
+                $image_150=$request->file('image_150');
+                $newimage_150=date('YmdHi').'_150x150_'.$image_150->getClientOriginalName();
+                if(File::exists(public_path().'/products/'.$files->image_150))
+                {
+                    File::delete(public_path().'/products/'.$files->image_150);
+                }
+                $image_150->move(public_path('products'),$newimage_150);
+            }
+            /*768x768*/
+            if($request->hasFile('image_768'))
+            {
+                $image_768=$request->file('image_768');
+                $newimage_768=date('YmdHi').'_768x768_'.$image_768->getClientOriginalName();
+                if(File::exists(public_path().'/products/'.$files->image_768))
+                {
+                    File::delete(public_path().'/products/'.$files->image_768);
+                }
+                $image_768->move(public_path('products'),$newimage_768);
+            }
 
           
 
@@ -272,20 +283,18 @@ class ProductView extends Controller
                 'product_name'=>$request->product_name,
                 'category'=>$request->category,
                 'tagname'=>$request->tagname,
-                'price'=>$request->price,
-               	'prev_price'=>$request->prev_price,
                 'weight'=>$request->weight,
                 'dimension'=>$request->dimension,
                 'color'=>$request->color,
                 'logo'=>$request->logo,
                 'description'=>$request->description,
                 'logo'=>isset($newlogo)? $newlogo:'',
-                'image_1000'=>isset($newimage1000)? $newimage1000:$files->image_1000,
-                'image_768'=>isset($newimage768)? $newimage768:$files->image_768,
-                'image_600'=>isset($newimage600)? $newimage600:$files->image_600,
-                'image_300'=>isset($newimage300)? $newimage300:$files->image_300,
-                'image_150'=>isset($newimage150)? $newimage150:$files->image_150,
-                'image_100'=>isset($newimage100)? $newimage100:$files->image_100,
+                'image_1000'=>isset($newimage_1000)? $newimage_1000:$files->image_1000,
+                'image_768'=>isset($newimage_768)? $newimage_768:$files->image_768,
+                'image_600'=>isset($newimage_600)? $newimage_600:$files->image_600,
+                'image_300'=>isset($newimage_300)? $newimage_300:$files->image_300,
+                'image_150'=>isset($newimage_150)? $newimage_150:$files->image_150,
+                'image_100'=>isset($newimage_100)? $newimage_100:$files->image_100,
             ]);
             if($results)
             {
@@ -302,9 +311,12 @@ class ProductView extends Controller
             'product_name'=>'required|string',
             'category'=>'required|string',
             'tagname'=>'required|string',
-            'price'=>'required|numeric',
-            'prev_price'=>'required|numeric',
-            'image'=>'required|mimes:jpg,png,jpeg|dimensions:min_width=100,min_height=100'
+            'image_1000'=>'required|mimes:jpg,png,jpeg|dimensions:min_width=1000,min_height=1000,max_width=1000,max_height=1000', 
+            'image_768'=>'required|mimes:jpg,png,jpeg|dimensions:min_width=768,min_height=768,max_width=768,max_height=768', 
+            'image_600'=>'required|mimes:jpg,png,jpeg|dimensions:min_width=600,min_height=600,max_width=600,max_height=600', 
+            'image_300'=>'required|mimes:jpg,png,jpeg|dimensions:min_width=300,min_height=300,max_width=300,max_height=300',
+            'image_150'=>'required|mimes:jpg,png,jpeg|dimensions:min_width=150,min_height=150,max_width=150,max_height=150',
+            'image_100'=>'required|mimes:jpg,png,jpeg|dimensions:min_width=100,min_height=100,max_width=100,max_height=100',
         ]);
 
         if(!$validator->passes())
@@ -320,44 +332,37 @@ class ProductView extends Controller
                 $logo->move(public_path('products/logos'),$newlogo);
            }
 
-           if($request->hasFile('image'))
+           if($request->hasFile('image_1000'))
            {
-           	 	$image=$request->file('image');
-           	 	/*300x300 resize*/
-                $newimage300=date('YmdHi').'_300x300_'.$image->getClientOriginalName();
-                $image_resize=Image::make($image->getRealPath());
-                $image_resize->resize(300,300);
-                $image_resize->save(public_path('products/'.$newimage300));
+                /*300x300 resize*/
+           	 	$image_300=$request->file('image_300');
+                $newimage_300=date('YmdHi').'_300x300_'.$image_300->getClientOriginalName();
+                $image_300->move(public_path('products'),$newimage_300);
 
                 /*1000x1000 resize*/
-                $newimage1000=date('YmdHi').'_1000x1000_'.$image->getClientOriginalName();
-                $image_resize=Image::make($image->getRealPath());
-                $image_resize->resize(1000,1000);
-                $image_resize->save(public_path('products/'.$newimage1000));
+                $image_1000=$request->file('image_1000');
+                $newimage_1000=date('YmdHi').'_1000x1000_'.$image_1000->getClientOriginalName();
+                $image_1000->move(public_path('products'),$newimage_1000);
 
                 /*768x768 resize*/
-                $newimage768=date('YmdHi').'_768x768_'.$image->getClientOriginalName();
-                $image_resize=Image::make($image->getRealPath());
-                $image_resize->resize(768,768);
-                $image_resize->save(public_path('products/'.$newimage768));
+                $image_768=$request->file('image_768');
+                $newimage_768=date('YmdHi').'_768x768_'.$image_768->getClientOriginalName();
+                $image_768->move(public_path('products'),$newimage_768);
 
                 /*600x600 resize*/
-                $newimage600=date('YmdHi').'_600x600_'.$image->getClientOriginalName();
-                $image_resize=Image::make($image->getRealPath());
-                $image_resize->resize(600,600);
-                $image_resize->save(public_path('products/'.$newimage600));
+                $image_600=$request->file('image_600');
+                $newimage_600=date('YmdHi').'_600x600_'.$image_600->getClientOriginalName();
+                $image_600->move(public_path('products'),$newimage_600);
 
                 /*150x150 resize*/
-                $newimage150=date('YmdHi').'_150x150_'.$image->getClientOriginalName();
-                $image_resize=Image::make($image->getRealPath());
-                $image_resize->resize(150,150);
-                $image_resize->save(public_path('products/'.$newimage150)); 
+                $image_150=$request->file('image_150');
+                $newimage_150=date('YmdHi').'_150x150_'.$image_150->getClientOriginalName();
+                $image_150->move(public_path('products'),$newimage_150); 
 
                 /*100x100 resize*/
-                $newimage100=date('YmdHi').'_100x100_'.$image->getClientOriginalName();
-                $image_resize=Image::make($image->getRealPath());
-                $image_resize->resize(100,100);
-                $image_resize->save(public_path('products/'.$newimage100));
+                $image_100=$request->file('image_100');
+                $newimage_100=date('YmdHi').'_100x100_'.$image_100->getClientOriginalName();
+                $image_100->move(public_path('products'),$newimage_100);
                 
                 $results=Product::insert(
 	            [
@@ -365,20 +370,18 @@ class ProductView extends Controller
 	                'product_name'=>$request->product_name,
 	                'category'=>$request->category,
 	                'tagname'=>$request->tagname,
-	                'price'=>$request->price,
-	                'prev_price'=>$request->prev_price,
 	                'weight'=>$request->weight,
 	                'dimension'=>$request->dimension,
 	                'color'=>$request->color,
 	                'logo'=>$request->logo,
 	                'description'=>$request->description,
 	                'logo'=>isset($newlogo)? $newlogo:'',
-	                'image_1000'=>isset($newimage1000)? $newimage1000:'',
-	                'image_768'=>isset($newimage768)? $newimage768:'',
-	                'image_600'=>isset($newimage600)? $newimage600:'',
-	                'image_300'=>isset($newimage300)? $newimage300:'',
-	                'image_150'=>isset($newimage150)? $newimage150:'',
-	                'image_100'=>isset($newimage100)? $newimage100:'',
+	                'image_1000'=>isset($newimage_1000)? $newimage_1000:'',
+	                'image_768'=>isset($newimage_768)? $newimage_768:'',
+	                'image_600'=>isset($newimage_600)? $newimage_600:'',
+	                'image_300'=>isset($newimage_300)? $newimage_300:'',
+	                'image_150'=>isset($newimage_150)? $newimage_150:'',
+	                'image_100'=>isset($newimage_100)? $newimage_100:'',
 	            ]);
 	            if($results)
 	            {

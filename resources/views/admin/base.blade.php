@@ -379,11 +379,23 @@
                         <a class="has-arrow" href="javascript:void(0)" aria-expanded="false">
                             <i class="nav-icon ti ti-rocket"></i>
                             <span class="nav-title">Home</span>
-                            <span class="nav-label label label-info">2</span>
+                            <span class="nav-label label label-info">1</span>
                         </a>
                         <ul aria-expanded="false">
                             <li class="active"> <a href="{{ url('management/dashboard') }}">Dashboard</a> </li>
-                            <li> <a href="/management/site/settings">Site Settings</a> </li>
+                        </ul>
+                    </li>
+                     <li class="active">
+                        <a class="has-arrow" href="javascript:void(0)" aria-expanded="false">
+                            <i class="nav-icon ti ti-rocket"></i>
+                            <span class="nav-title">Site Settings</span>
+                            <span class="nav-label label label-info">2</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li class="active"> <a href="/management/site/settings">General Settings</a> </li>
+                            <li> <a href="/home/settings">Home Page</a> </li>
+                            <li> <a href="/about/settings">About Page</a> </li>
+                            <li> <a href="/brochure/settings">Brochure Page</a> </li>
                         </ul>
                     </li>
                     <li><a href="/admins" aria-expanded="false"><i class="nav-icon ti ti-shield"></i><span class="nav-title">Admins </span></a> </li>
