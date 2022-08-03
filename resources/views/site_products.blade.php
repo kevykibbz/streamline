@@ -64,27 +64,10 @@
                                             srcset="/products/{{$product->image_300}} 300w, /products/{{$product->image_150}} 150w, /products/{{$product->image_768}} 768w, /products/{{$product->image_600}} 600w, /products/{{$product->image_100}} 100w, /products/{{$product->image_1000}} 1000w"
                                             sizes="(max-width: 300px) 100vw, 300px" />
                                     </a>    
-                                    <div class="product-buttons-wrapper">
-                                        <div class="wc_inline_buttons">
-                                            <div class="wc_cart_btn_wrapper wc_btn_inline">
-                                                <a
-                                                    href="/cart/{{$product->product_id}}" data-quantity="1"
-                                                    class="dt-sc-button too-small button product_type_simple add_to_cart_button ajax_add_to_cart"
-                                                    data-product_id="60" data-product_sku="woo-cap"
-                                                    aria-label="Add &ldquo;{{$product->product_name}}&rdquo; to your cart"
-                                                    rel="nofollow">Add to cart</a>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class='product-details'>
                                     <h5><a
-                                            href="/product/description/{{$product->product_id}}">{{$product->product_name}}</a></h5><span class="product-price"><span
-                                            class="price"><del aria-hidden="true"><span
-                                                    class="woocommerce-Price-amount amount"><bdi><span
-                                                            class="woocommerce-Price-currencySymbol">&#36;</span>{{number_format($product->prev_price)}}</bdi></span></del>
-                                            <ins><span class="woocommerce-Price-amount amount"><bdi><span
-                                                            class="woocommerce-Price-currencySymbol">&#36;</span>{{number_format($product->price)}}</bdi></span></ins></span></span>
+                                            href="/product/description/{{$product->product_id}}">{{$product->product_name}}</a></h5>
                                     <div class="product-rating-wrapper"></div>
                                 </div>
                             </div> <!-- .product-wrapper -->
