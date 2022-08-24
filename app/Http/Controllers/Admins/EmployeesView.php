@@ -43,6 +43,12 @@ class EmployeesView extends Controller
     	}
     }
 
+    protected function delete(Request $request)
+    {
+    	User::where('id',$request->id)->delete();
+        return response()->json(['valid'=>true,'message'=>'Employee deleted  successfully.']);
+    } 
+
     protected function update(Request $request)
     {
     	$validator=Validator::make($request->all(),[

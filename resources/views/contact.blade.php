@@ -33,13 +33,13 @@
                         class="dt-sc-dark-bg vcr_mobile-top-space wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill">
                         <div class="vc_column-inner vc_custom_1529390796568" style="background-image: url('{{ url('wp-content/uploads/sites/12/2018/05/contact-bg.jpg')}}'); background-position: left top; background-size: auto; background-repeat: no-repeat; background-attachment: fixed; ">
                             <div class="wpb_wrapper">
-                                <h2 style="font-size: 60px;line-height: 1;text-align: left" class="vc_custom_heading">
+                                <h2 style="font-size: 40px;line-height: 1;text-align: left" class="vc_custom_heading">
                                     Toll Free<br>
                                     <strong>{{$site->phone ? $site->phone : env('PHONE1') }}</strong>
                                 </h2>
                                 <div class="wpb_text_column wpb_content_element ">
                                     <div class="wpb_wrapper">
-                                        <p>Want to get the best of the interiors for Bathrooms. View our Wide Range of
+                                        <p>Want to get the best of the interiors for Bathrooms.<br> our Wide Range of
                                             Portfolios.</p>
                                         <p>Get in touch with us filling out this form.</p>
 
@@ -391,13 +391,6 @@
                                                                     style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: -512px;">
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div
-                                                            style="width: 57px; height: 92px; overflow: hidden; position: absolute; left: -29px; top: -92px; z-index: 0;">
-                                                            <img alt=""
-                                                                src="{{ url('wp-content/uploads/sites/12/2018/05/map-marker.png')}}"
-                                                                draggable="false"
-                                                                style="position: absolute; left: 0px; top: 0px; user-select: none; width: 57px; height: 92px; border: 0px; padding: 0px; margin: 0px; max-width: none;">
                                                         </div>
                                                     </div>
                                                     <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">

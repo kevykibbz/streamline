@@ -321,7 +321,7 @@
                                         <li><a href="javascript:void(0);">Hot Tubs</a></li>
                                         <li><a href="javascript:void(0);">Faucets</a></li>
                                         <li><a href="javascript:void(0);">Wash Basin</a></li>
-                                        <li><a href="javascript:void(0);">Saunasddddd</a></li>
+                                        <li><a href="javascript:void(0);">Saunas</a></li>
                                         <li><a href="javascript:void(0);">Showers</a></li>
                                         @endif
                                     </ul>
@@ -1052,7 +1052,7 @@
                                     <div id="ult-modal-wrap-2833" class="ult_modal-content ult-hide" style="border-style:solid;border-width:2px;border-radius:0px;border-color:#333333;">
                                         <div data-ultimate-target='#ult-modal-wrap-2833 .ult_modal-body' data-responsive-json-new='{"font-size":"","line-height":""}' class="ult_modal-body ult-responsive ult-youtube" style="">
                                             @if($middlepartb)
-                                            <iframe loading="lazy" style="border: 0;" data-src="{{$middlepartb->video_link}}" src="{{ url('images/loader.gif')}}" width="560" height="315" allowfullscreen="allowfullscreen"></iframe>
+                                            <iframe loading="lazy" style="border: 0;" src="{{$middlepartb->video_link}}" width="560" height="315" allowfullscreen="allowfullscreen"></iframe>
                                             @else
                                             <iframe loading="lazy" style="border: 0;" data-src="//www.youtube.com/embed/DbWCAMA4wgk" src="{{ url('images/loader.gif')}}" width="560" height="315" allowfullscreen="allowfullscreen"></iframe>
                                             @endif

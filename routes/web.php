@@ -177,6 +177,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/add/employees', [EmployeesView::class, 'add']);
     Route::post('/add/employees', [EmployeesView::class, 'save']);
     Route::get('/edit/employee/{id}', [EmployeesView::class, 'edit']);
+    Route::get('/delete/employee/{id}', [EmployeesView::class, 'delete']);
     Route::post('/edit/employee/{id}', [EmployeesView::class, 'update']);
     Route::get('/view/message/{id}', [MessagesView::class, 'viewMessage']);
     Route::get('/delete/message/{id}', [MessagesView::class, 'deleteMessage']);

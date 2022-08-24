@@ -22,7 +22,7 @@ class AdminsView extends Controller
         $unread=Contact::where('is_read',false)->count();
     	return view('admin.admins',['unread'=>$unread,'site'=>$site,'admins'=>$admins]);
     } 
-    protected function delete(Request$request)
+    protected function delete(Request $request)
     {
     	User::where('id',$request->id)->delete();
         return response()->json(['valid'=>true,'message'=>'Admin deleted  successfully.']);
@@ -31,7 +31,7 @@ class AdminsView extends Controller
     {
     	$site=SiteConstants::all()[0];
         $unread=Contact::where('is_read',false)->count();
-    	return view('admin.add_admins',['unread'=.$unread,'site'=>$site,'title'=>'Add Admins']);
+    	return view('admin.add_admins',['unread'=>$unread,'site'=>$site,'title'=>'Add Admins']);
     }
     protected function edit(Request $request)
     {

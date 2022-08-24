@@ -143,7 +143,7 @@
     <script type="text/javascript">
         function setREVStartSize(e)
         {
-            //window.requestAnimationFrame(function() {				 
+            //window.requestAnimationFrame(function() {              
             window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
             window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
             try {
@@ -239,8 +239,8 @@
                                                             <div id="dt-1528866901077-ca741579-b467" class="dt-custom-nav-wrapper none" data-default-style="none" data-hover-style="none" data-default-decoration="none" data-hover-decoration="none" data-divider="yes">
                                                                 <div class="menu-top-bar-container">
                                                                     <ul id="menu-top-bar" class="custom-sub-nav dt-custom-nav">
-                                                                        <li id="menu-item-15293" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15293"><a href="#" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i>
-                                                                            <span>Support{{$site->phone ? $site->phone : env('SITE_PHONE1') }}
+                                                                        <li id="menu-item-15293" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15293"><a href="tel:{{$site->phone ? $site->phone : env('SITE_PHONE1') }}" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i>
+                                                                            <span>Support {{$site->phone ? $site->phone : env('SITE_PHONE1') }}
                                                                             </span></a><span class="divider"></span></li>
                                                                     </ul>
                                                                 </div>
@@ -432,8 +432,6 @@
                                 <div id="dt-1520591573539-6b39821d-3e99" class="dt-custom-nav-wrapper none inline-horizontal" data-default-style="none" data-hover-style="none" data-default-decoration="none" data-hover-decoration="none">
                                     <div class="menu-footer-link-i-container">
                                         <ul id="menu-footer-link-i-1" class="custom-sub-nav dt-custom-nav">
-                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14183"><a href="#" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Latest News</span></a></li>
-                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14184"><a href="#" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Newsletter</span></a></li>
                                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14185"><a href="#" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Careers</span></a></li>
                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14944"><a href="{{ url('/contact') }}" class="item-has-icon icon-position-left"><i class="menu-item-icon"></i><span>Contact Us</span></a></li>
                                         </ul>
