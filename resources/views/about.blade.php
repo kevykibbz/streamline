@@ -886,7 +886,7 @@
 							<div id="1556973123546-246d213b-502a" class="dt-sc-empty-space"></div>
 							<h2 style="font-size: 45px;text-align: center" class="vc_custom_heading">Luxury ranges that add a
 								new look to the bathroom with a style</h2><a href='/contact' target='_self' title=''
-								class='dt-sc-button   medium   bordered  margin-right'> Get in Touch </a><a href='/site/products'
+								class='dt-sc-button   medium   bordered  margin-right'> Get in Touch </a><a href='/pages/products'
 								target='_self' title='' class='dt-sc-button   medium   filled  '> Products </a>
 							<div id="1556973145467-a260e2d7-6084" class="dt-sc-empty-space"></div>
 						</div>
