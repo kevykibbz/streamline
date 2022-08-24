@@ -38,6 +38,7 @@
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <link rel='dns-prefetch' href='<?php echo url()->full(); ?>' />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link href='//fonts.gstatic.com' crossorigin rel='preconnect' />
     <link rel="icon" href="/logos/{{$site->favicon}}" sizes="16x16" />
     <link rel="icon" href="/logos/{{$site->favicon}}" sizes="32x32" />
@@ -534,8 +535,31 @@
     <script type='text/javascript' src="{{ url('wp-content/plugins/Ultimate_VC_Addons/assets/min-js/ultimate_bg.min.js')}}"></script>
     <script type='text/javascript' src="{{ url('wp-content/plugins/Ultimate_VC_Addons/assets/min-js/vhparallax.min.js')}}" ></script>
     <script type='text/javascript' src="{{ url('js/streamline.js')}}" ></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"defer
+    ></script>
     <script type="text/javascript">
             $.ajaxSetup({ headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}});
+    </script>
+    <script>
+        /* Initialize and add the map */
+        function initMap() 
+        {
+          /* The location of Uluru*/
+          const uluru = { lat: -25.344, lng: 131.031 };
+          const map = new google.maps.Map(document.getElementById("map"), 
+          {
+            zoom: 4,
+            center: uluru,
+          });
+
+          /* Set The position marker*/
+          const marker = new google.maps.Marker(
+          {
+            position: uluru,
+            map: map,
+          });
+        }
+        window.initMap = initMap;
     </script>
 </body>
 </html>
