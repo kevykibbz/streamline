@@ -180,7 +180,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="map"></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.454221119879!2d77.38581931508025!3d28.526063982459885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7b6f5cf1a0c0a1c9!2zMjjCsDMxJzMzLjgiTiA3N8KwMjMnMTYuOCJF!5e0!3m2!1sen!2sin!4v1661416235149!5m2!1sen!2sin"  style="width:100%;height:600px;border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="vc_row-full-width vc_clearfix"></div>
                 <div class="vc_row wpb_row vc_row-fluid map-overlay-top vc_custom_1528453604963 vc_row-has-fill" >
                     <div class="wpb_column vc_column_container vc_col-sm-4" >
